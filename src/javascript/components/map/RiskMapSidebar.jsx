@@ -1,205 +1,164 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import RecommendedCard from './RecommendedCard'
+import riskPoints from '../../data/riskPoints.json'
 
-const RiskMapSidebar = ({ onFilterChange }) => {
-  const [riskTypes, setRiskTypes] = useState({
-    toxic: false,
-    contact: false,
-    seasonal: false,
-    poisonous: false,
-    catDanger: false,
-    dogDanger: false
-  })
+const TAGS = [
+  { label: 'Все', value: '' },
+  { label: 'Мероприятия', value: 'events' },
+  { label: 'Лето 2026', value: 'summer2026' },
+  { label: 'Кинологические центры', value: 'cynology' },
+  { label: 'Лето', value: 'summer' },
+  { label: 'Ветеринарные клиники', value: 'vet' },
+  { label: 'Зоомагазины', value: 'petshop' },
+  { label: 'Кафе, рестораны', value: 'cafe' },
+  { label: 'Груминг', value: 'grooming' }
+]
 
-  const [phases, setPhases] = useState({
-    flowering: false,
-    fruiting: false,
-    springActive: false,
-    summerActive: false,
-    fallActive: false
-  })
-
-  const [zones, setZones] = useState({
-    home: false,
-    yard: false,
-    city: false,
-    forest: false
-  })
-
-  const [expandedSections, setExpandedSections] = useState({
-    riskTypes: false,
-    phases: false,
-    zones: false
-  })
-
-  const toggleSection = (section) => {
-    setExpandedSections({
-      ...expandedSections,
-      [section]: !expandedSections[section]
-    })
+const CARDS = [
+  {
+    id: 1,
+    image: '../../../images/map/photo1.png',
+    title: 'Друг – Спасатель – Защитник',
+    location: 'По всей Москве',
+    date: '24 мая – 14 сентября',
+    isLarge: true
+  },
+  {
+    id: 2,
+    image: '../../../images/map/photo2.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
+  },
+  {
+    id: 3,
+    image: '../../../images/map/photo3.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
+  },
+  {
+    id: 4,
+    image: '../../../images/map/photo3.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
+  },
+  {
+    id: 5,
+    image: '../../../images/map/photo3.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
+  },
+  {
+    id: 6,
+    image: '../../../images/map/photo3.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
+  },
+  {
+    id: 7,
+    image: '../../../images/map/photo3.png',
+    title: 'Паддел с таксами',
+    location: 'м. Павелецкая',
+    date: '14 мая 18:00',
+    isLarge: false
   }
+]
 
-  const toggleRiskType = (type) => {
-    setRiskTypes({ ...riskTypes, [type]: !riskTypes[type] })
-  }
-
-  const togglePhase = (phase) => {
-    setPhases({ ...phases, [phase]: !phases[phase] })
-  }
-
-  const toggleZone = (zone) => {
-    setZones({ ...zones, [zone]: !zones[zone] })
-  }
+const RiskMapSidebar = () => {
+  const [activeTag, setActiveTag] = useState('')
+  const mapRef = useRef(null)
+  const placemarks = useRef([])
 
   useEffect(() => {
-    const activeFilters = [
-      ...Object.keys(riskTypes).filter((key) => riskTypes[key]),
-      ...Object.keys(phases).filter((key) => phases[key]),
-      ...Object.keys(zones).filter((key) => zones[key])
-    ]
-
-    if (onFilterChange) {
-      onFilterChange(activeFilters)
+    const initMap = () => {
+      if (window.ymaps && !mapRef.current) {
+        window.ymaps.ready(() => {
+          const map = new window.ymaps.Map('yandex-map', {
+            center: [55.751574, 37.573856],
+            zoom: 10,
+            controls: []
+          })
+          mapRef.current = map
+          riskPoints.forEach((point) => {
+            const placemark = new window.ymaps.Placemark(
+              point.coordinates,
+              { balloonContent: point.name },
+              { preset: 'islands#orangeDotIcon' }
+            )
+            placemark.properties.set('types', point.types)
+            map.geoObjects.add(placemark)
+            placemarks.current.push(placemark)
+          })
+        })
+      }
     }
-  }, [riskTypes, phases, zones])
+
+    if (window.ymaps) {
+      initMap()
+    } else {
+      const check = setInterval(() => {
+        if (window.ymaps) {
+          clearInterval(check)
+          initMap()
+        }
+      }, 100)
+      return () => clearInterval(check)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (!mapRef.current || placemarks.current.length === 0) return
+    placemarks.current.forEach((p) => {
+      const types = p.properties.get('types')
+      const visible = !activeTag || types.includes(activeTag)
+      p.options.set('visible', visible)
+    })
+  }, [activeTag])
 
   return (
-    <div className="O_riskMapSidebar">
-      <div className="W_sidebarHeader">
-        <h1>Карта рисков</h1>
-        <p className="A_cityName">г. Москва</p>
-      </div>
-
-      <div className="W_filterSection">
-        <div
-          className="W_filterSectionHeader"
-          onClick={() => toggleSection('riskTypes')}
-        >
-          <p>Тип риска</p>
-          <span className="A_toggleIcon">{expandedSections.riskTypes ? '−' : '+'}</span>
+    <div className="O_riskMapPage">
+      <div className="О_recomendedMapScreen">
+        <div className="С_tagsList">
+          {TAGS.map((tag) => (
+            <button
+              key={tag.value}
+              className={`A_tag ${activeTag === tag.value ? 'A_tag--active' : ''}`}
+              onClick={() => setActiveTag(tag.value)}
+            >
+              {tag.label}
+            </button>
+          ))}
         </div>
-        <div className={`W_filterButtons ${expandedSections.riskTypes ? 'W_filterButtonsExpanded' : ''}`}>
-          <button
-            className={`A_filterButton ${riskTypes.toxic ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('toxic')}
-          >
-            #Токсичные растения
-          </button>
-          <button
-            className={`A_filterButton ${riskTypes.contact ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('contact')}
-          >
-            #Контактно-опасные растения
-          </button>
-          <button
-            className={`A_filterButton ${riskTypes.seasonal ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('seasonal')}
-          >
-            #Сезонные аллергены
-          </button>
-          <button
-            className={`A_filterButton ${riskTypes.poisonous ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('poisonous')}
-          >
-            #Ядовитые дикие растения
-          </button>
-          <button
-            className={`A_filterButton ${riskTypes.catDanger ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('catDanger')}
-          >
-            #Опасные для кошек
-          </button>
-          <button
-            className={`A_filterButton ${riskTypes.dogDanger ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleRiskType('dogDanger')}
-          >
-            #Опасные для собак
-          </button>
+
+        <div className="W_eventList">
+          <h2>Рекомендуем</h2>
+          <div className="C_eventList">
+            {CARDS.map((card) => (
+              <RecommendedCard
+                key={card.id}
+                image={card.image}
+                title={card.title}
+                location={card.location}
+                date={card.date}
+                isLarge={card.isLarge}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="W_filterSection">
-        <div
-          className="W_filterSectionHeader"
-          onClick={() => toggleSection('phases')}
-        >
-          <p>Фаза активности</p>
-          <span className="A_toggleIcon">{expandedSections.phases ? '−' : '+'}</span>
-        </div>
-        <div className={`W_filterButtons ${expandedSections.phases ? 'W_filterButtonsExpanded' : ''}`}>
-          <button
-            className={`A_filterButton ${phases.flowering ? 'A_filterButtonActive' : ''}`}
-            onClick={() => togglePhase('flowering')}
-          >
-            #Сейчас цветёт
-          </button>
-          <button
-            className={`A_filterButton ${phases.fruiting ? 'A_filterButtonActive' : ''}`}
-            onClick={() => togglePhase('fruiting')}
-          >
-            #Период плодоношения
-          </button>
-          <button
-            className={`A_filterButton ${phases.springActive ? 'A_filterButtonActive' : ''}`}
-            onClick={() => togglePhase('springActive')}
-          >
-            #Активно весной
-          </button>
-          <button
-            className={`A_filterButton ${phases.summerActive ? 'A_filterButtonActive' : ''}`}
-            onClick={() => togglePhase('summerActive')}
-          >
-            #Активно летом
-          </button>
-          <button
-            className={`A_filterButton ${phases.fallActive ? 'A_filterButtonActive' : ''}`}
-            onClick={() => togglePhase('fallActive')}
-          >
-            #Активно осенью
-          </button>
-        </div>
+      <div className="W_mapContainer">
+        <div className="W_mapWrapper" id="yandex-map"></div>
       </div>
-
-      <div className="W_filterSection">
-        <div
-          className="W_filterSectionHeader"
-          onClick={() => toggleSection('zones')}
-        >
-          <p>Зона активности</p>
-          <span className="A_toggleIcon">{expandedSections.zones ? '−' : '+'}</span>
-        </div>
-        <div className={`W_filterButtons ${expandedSections.zones ? 'W_filterButtonsExpanded' : ''}`}>
-          <button
-            className={`A_filterButton ${zones.home ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleZone('home')}
-          >
-            #Комната/дом
-          </button>
-          <button
-            className={`A_filterButton ${zones.yard ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleZone('yard')}
-          >
-            #Во дворе
-          </button>
-          <button
-            className={`A_filterButton ${zones.city ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleZone('city')}
-          >
-            #Город
-          </button>
-          <button
-            className={`A_filterButton ${zones.forest ? 'A_filterButtonActive' : ''}`}
-            onClick={() => toggleZone('forest')}
-          >
-            #Лес
-          </button>
-        </div>
-      </div>
-
-      <p className="A_disclaimer">
-        Карта аллергенных зон может быть неточной — проверьте дату обновления и
-        уровень точности; при сомнениях избегайте зоны и сообщите о проблеме,
-        загрузив фото или отчёт.
-      </p>
     </div>
   )
 }

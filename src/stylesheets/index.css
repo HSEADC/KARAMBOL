@@ -3,25 +3,47 @@
 }
 
 body {
-  font-family: 'Gramatika', serif;
-  letter-spacing: 0.07vw;
-  padding: 3.47vw;
-  background-color: var(--background);
+  padding: 2.78vw 3.47vw;
+  background: var(--Onyx);
+}
+
+p,
+li {
+  font-family: 'TT Norms Medium';
+  font-size: 1.11vw;
+  font-style: normal;
+  line-height: 100%; /* 16px */
 }
 
 h1 {
-  font-size: 3.33vw;
+  font-family: 'TT Travels Bold';
+  font-size: 4.44vw;
   font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 3.33vw */
+  font-weight: 700;
+  line-height: 100%; /* 64px */
 }
 
 h2 {
   font-size: var(--h2);
+  font-family: 'TT Norms Medium';
+  font-style: normal;
+  line-height: 100%; /* 36px */
 }
 
 h3 {
-  font-size: var(--h3);
+  font-family: 'TT Norms Medium';
+  font-size: 1.67vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 24px */
+}
+
+h4 {
+  font-family: 'TT Norms Medium';
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 18px */
 }
 
 a {
@@ -31,6 +53,17 @@ a {
 
 button {
   cursor: pointer;
+  font-family: 'TT Norms Medium';
+  font-size: 0.97vw;
+  font-style: normal;
+  line-height: 100%; /* 14px */
+}
+
+.tag {
+  font-family: 'TT Norms Medium';
+  font-size: 0.97vw;
+  font-style: normal;
+  line-height: 100%;
 }
 
 @media screen and (max-width: 767px) {

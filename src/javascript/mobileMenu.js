@@ -1,3 +1,15 @@
+// Подсветка активного пункта навигации
+const currentPath = window.location.pathname
+document.querySelectorAll('.A_chip').forEach((chip) => {
+  const href = chip.getAttribute('href') || ''
+  const isHome = (href === '/' || href === 'index.html') &&
+    (currentPath === '/' || currentPath.endsWith('/index.html') || currentPath.endsWith('/KARAMBOL/'))
+  const isOther = href !== '/' && href !== 'index.html' && currentPath.includes(href.replace('.html', ''))
+  if (isHome || isOther) {
+    chip.classList.add('A_chip--active')
+  }
+})
+
 const burgerBtn = document.getElementById('burgerBtn')
 const mobileMenu = document.getElementById('mobileMenu')
 const menuOverlay = document.getElementById('menuOverlay')

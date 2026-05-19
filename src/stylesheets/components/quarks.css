@@ -1,248 +1,76 @@
-.Q_openFlowersImage {
-  width: 100%;
+.Q_footerImage {
+  position: absolute;
+  bottom: 3.19vw;
+  right: 27.03vw;
+  width: 8.8vw;
   height: auto;
 }
 
-.Q_folderBackground {
+.Q_searchIcon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 58.43vw;
-  height: 27.73vw;
-  border-radius: 1.38vw;
-  background: #222121;
+  left: 0.69vw;
+  top: 0.69vw;
+  width: 1.04vw;
+  height: auto;
+}
 
+.Q_photo {
+  width: 37.5vw;
+  height: 29.17vw;
+  border-radius: 1.74vw;
+}
+
+.Q_galleryPhoto {
+  position: absolute;
+  top: 2.36vw;
+  width: 26.22vw;
+  height: 17.7vw;
+  border-radius: 1.74vw;
+  transform: perspective(55.56vw) rotateY(45deg);
+  object-fit: cover;
+  z-index: 10;
+
+  &:nth-child(1) {
+    left: -1.74vw;
+    object-position: 0vw -6.94vw;
+  }
   &:nth-child(2) {
-    top: -2.22vw;
-    left: 1.53vw;
-    z-index: 3;
+    left: 15.63vw;
   }
   &:nth-child(3) {
-    width: 52.91vw;
-    top: -4.44vw;
-    left: 3.06vw;
-    background: #2f2d2d;
-    z-index: 2;
+    left: 32.99vw;
+    object-position: 0vw -5.56vw;
+  }
+  &:nth-child(4) {
+    left: 50.35vw;
+    object-position: 0vw -13.89vw;
   }
 }
 
-.Q_folderBackgroundArticles {
-  width: 73.47vw;
-
-  &:nth-child(3) {
-    width: 66.53vw;
-    left: 5.42vw;
-  }
-}
-
-.Q_Banners {
-  font-size: var(--banners);
-  color: var(--white);
+.Q_Like {
+  position: absolute;
+  bottom: 0.69vw;
+  right: 0.69vw;
+  width: 2.43vw;
+  height: 2.43vw;
+  border-radius: 2.43vw;
   display: flex;
-}
-
-.Q_Banners::after {
-  content: '%';
-  font-size: var(--h3);
-  color: var(--white);
-}
-
-.Q_Adds {
-  font-size: var(--adds);
-  color: var(--white);
-}
-
-.Q_Card {
-  width: 10.63vw;
-  height: 10.63vw;
-  border-radius: 1.04vw;
-}
-
-.Q_Button {
-  display: flex;
-  gap: 0.83vw;
-  background-color: var(--white);
-  color: var(--darkGray);
-  font-size: var(--p);
-  padding: 0.69vw 1.39vw;
-  height: fit-content;
-  border-radius: 2.78vw;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.Q_Button:hover {
-  background-color: var(--lightGray);
-}
-
-.Q_Button::after {
-  content: url('../../images/arrow.svg');
-  width: 0.9vw;
-}
-
-.Q_Card—first {
-  position: absolute;
-  left: 16vw;
-  bottom: 1.39vw;
-  rotate: -20deg;
-  z-index: 3;
-}
-
-.Q_Card—second {
-  position: absolute;
-  left: 22vw;
-  bottom: 8.33vw;
-  z-index: 2;
-}
-
-.Q_Card—third {
-  position: absolute;
-  left: 32vw;
-  bottom: 11.11vw;
-  rotate: -10deg;
-  z-index: 2;
-}
-
-.Q_Card—fourth {
-  position: absolute;
-  left: 42vw;
-  bottom: 11.81vw;
-  z-index: 1;
-}
-
-.Q_Card—fifth {
-  position: absolute;
-  left: 52vw;
-  bottom: 11.11vw;
-  rotate: 10deg;
-  z-index: 2;
-}
-
-.Q_Card—sixth {
-  position: absolute;
-  left: 62vw;
-  bottom: 8.33vw;
-  rotate: 5deg;
-  z-index: 1;
-}
-
-.Q_Card—seventh {
-  position: absolute;
-  left: 68vw;
-  bottom: 2.08vw;
-  rotate: 20deg;
-  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background: var(--Dim-Grey);
 }
 
 .Q_lineParagraph {
-  width: 0.14vw;
-  background-color: var(--white);
-  align-self: stretch;
+  width: 100%;
+  height: 0.07vw;
+  background: var(--Graphite);
 }
 
 .Q_listBullet {
-  margin-top: 0.42vw;
-  width: 0.21vw;
-  height: 0.21vw;
-  border-radius: 100%;
-  background-color: var(--textBrendbookTopics);
+  width: 0.42vw;
+  height: 0.42vw;
+  border-radius: 50%;
+  background: var(--Blaze-Orange);
   flex-shrink: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .Q_lineParagraph {
-    width: 2px;
-    flex-shrink: 0;
-  }
-
-  .Q_listBullet {
-    margin-top: 1.1vw;
-    width: 0.68vw;
-    height: 0.68vw;
-  }
-
-  .Q_Banners {
-    font-size: 9.29vw;
-  }
-
-  .Q_Banners::after {
-    font-size: 3.49vw;
-  }
-
-  .Q_Adds {
-    font-size: 2.03vw;
-  }
-
-  .Q_Button {
-    gap: 2.27vw;
-    padding: 2.27vw 3.64vw;
-    border-radius: 9.09vw;
-
-    > a {
-      font-size: var(--p);
-    }
-  }
-
-  .Q_Button::after {
-    width: 4.05vw;
-  }
-
-  .Q_Card {
-    width: 19.84vw;
-    height: 19.84vw;
-    border-radius: 1.94vw;
-  }
-
-  .Q_Card—first {
-    left: 0.45vw;
-    bottom: 17.56vw;
-    transform: rotate(-20deg);
-  }
-
-  .Q_Card—second {
-    left: 13.86vw;
-    bottom: 26.14vw;
-    z-index: 4;
-  }
-
-  .Q_Card—third {
-    left: 25.45vw;
-    bottom: 40.23vw;
-    transform: rotate(-10deg);
-    z-index: 5;
-  }
-
-  .Q_Card—fourth {
-    left: 35.45vw;
-    bottom: 26.14vw;
-    transform: rotate(-13.626deg);
-    z-index: 6;
-  }
-
-  .Q_Card—fifth {
-    left: 47.73vw;
-    bottom: 39.09vw;
-    transform: rotate(10deg);
-  }
-
-  .Q_Card—sixth {
-    left: 58.86vw;
-    bottom: 25.45vw;
-    transform: rotate(5deg);
-  }
-
-  .Q_Card—seventh {
-    left: 67.73vw;
-    bottom: 16.02vw;
-    transform: rotate(7deg);
-    z-index: 0;
-  }
-
-  .Q_folderBackground {
-    width: 87.43vw;
-
-    &:nth-child(3) {
-      width: 82.91vw;
-    }
-  }
+  margin-top: 0.35vw;
 }

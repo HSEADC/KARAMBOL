@@ -35,7 +35,7 @@ const articlePages = articleFiles.map((file) => {
     scriptLoading: 'blocking',
     template: './src/article.html',
     filename: `./article/${id}.html`,
-    chunks: ['index', 'mobileMenu', 'article'],
+    chunks: ['index', 'mobileMenu', 'article', 'search'],
     articleId: id,
     title: title,
     templateParameters: makeTemplateParams
@@ -49,10 +49,12 @@ module.exports = {
     swipeCards: './src/javascript/swipeCards.js',
     articles: './src/javascript/articlesApp.jsx',
     tests: './src/javascript/testsApp.jsx',
+    testsPage: './src/javascript/testsPageApp.jsx',
     map: './src/javascript/mapApp.jsx',
-    learning: './src/javascript/learningApp.jsx',
     articlesPage: './src/javascript/articlesPageApp.jsx',
-    article: './src/javascript/articleApp.jsx'
+    article: './src/javascript/articleApp.jsx',
+    search: './src/javascript/searchApp.jsx',
+    searchPage: './src/javascript/searchPageApp.jsx'
   },
   output: {
     filename: '[name].js',
@@ -107,7 +109,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'mobileMenu', 'swipeCards', 'articles', 'tests'],
+      chunks: ['index', 'mobileMenu', 'swipeCards', 'articles', 'tests', 'search'],
       templateParameters: makeTemplateParams
     }),
 
@@ -127,7 +129,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/pages/404.html',
       filename: './404.html',
-      chunks: ['index', 'mobileMenu'],
+      chunks: ['index', 'mobileMenu', 'search'],
       templateParameters: makeTemplateParams
     }),
 
@@ -137,17 +139,7 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/map.html',
       filename: './map.html',
-      chunks: ['index', 'mobileMenu', 'map'],
-      templateParameters: makeTemplateParams
-    }),
-
-    // Learning page
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/learning.html',
-      filename: './learning.html',
-      chunks: ['index', 'mobileMenu', 'learning'],
+      chunks: ['index', 'mobileMenu', 'map', 'search'],
       templateParameters: makeTemplateParams
     }),
 
@@ -157,7 +149,27 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index', 'mobileMenu', 'articlesPage'],
+      chunks: ['index', 'mobileMenu', 'articlesPage', 'search'],
+      templateParameters: makeTemplateParams
+    }),
+
+    // Tests page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/tests.html',
+      filename: './tests.html',
+      chunks: ['index', 'mobileMenu', 'testsPage', 'search'],
+      templateParameters: makeTemplateParams
+    }),
+
+    // Search results page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'mobileMenu', 'searchPage', 'search'],
       templateParameters: makeTemplateParams
     }),
 
