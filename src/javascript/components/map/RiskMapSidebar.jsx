@@ -17,7 +17,7 @@ const TAGS = [
 const CARDS = [
   {
     id: 1,
-    image: '../../../images/map/photo1.png',
+    image: 'images/map/photo1.png',
     title: 'Друг – Спасатель – Защитник',
     location: 'По всей Москве',
     date: '24 мая – 14 сентября',
@@ -25,7 +25,7 @@ const CARDS = [
   },
   {
     id: 2,
-    image: '../../../images/map/photo2.png',
+    image: 'images/map/photo2.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
@@ -33,7 +33,7 @@ const CARDS = [
   },
   {
     id: 3,
-    image: '../../../images/map/photo3.png',
+    image: 'images/map/photo3.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
@@ -41,7 +41,7 @@ const CARDS = [
   },
   {
     id: 4,
-    image: '../../../images/map/photo3.png',
+    image: 'images/map/photo3.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
@@ -49,7 +49,7 @@ const CARDS = [
   },
   {
     id: 5,
-    image: '../../../images/map/photo3.png',
+    image: 'images/map/photo3.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
@@ -57,7 +57,7 @@ const CARDS = [
   },
   {
     id: 6,
-    image: '../../../images/map/photo3.png',
+    image: 'images/map/photo3.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
@@ -65,7 +65,7 @@ const CARDS = [
   },
   {
     id: 7,
-    image: '../../../images/map/photo3.png',
+    image: 'images/map/photo3.png',
     title: 'Паддел с таксами',
     location: 'м. Павелецкая',
     date: '14 мая 18:00',
