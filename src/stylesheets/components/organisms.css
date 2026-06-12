@@ -111,6 +111,11 @@
   }
 }
 
+.O_menuOverlay,
+.O_mobileMenu {
+  display: none;
+}
+
 .O_aboutSection {
   margin: 10.42vw auto 0 auto;
   display: flex;
@@ -365,5 +370,292 @@
     > h1 {
       text-align: center;
     }
+  }
+}
+
+/* Модалка теста (квиз) */
+.O_quizModal {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.78vw;
+  background: rgba(0, 0, 0, 0.75);
+
+  .W_quizModalContent {
+    width: 45vw;
+    max-height: 86vh;
+    overflow-y: auto;
+    padding: 2.78vw;
+    border-radius: 1.74vw;
+    background: var(--Carbon-Black);
+  }
+
+  .M_questionCard,
+  .M_resultCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2.08vw;
+  }
+
+  .W_progressContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.04vw;
+  }
+
+  .A_testProgress {
+    color: var(--Dim-Grey);
+  }
+
+  .A_questionText {
+    color: var(--White);
+    font-size: 1.67vw;
+    line-height: 130%;
+  }
+
+  .W_questionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.74vw;
+  }
+
+  .A_testImageContainer {
+    width: 100%;
+    height: 18vw;
+    border-radius: 1.04vw;
+    overflow: hidden;
+  }
+
+  .A_testQuestionImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.04vw;
+  }
+
+  .W_optionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.69vw;
+  }
+
+  .A_testOption {
+    padding: 1.04vw 1.39vw;
+    border: none;
+    border-radius: 0.69vw;
+    background: var(--Graphite);
+    color: var(--White);
+    font-family: 'TT Norms Medium';
+    font-size: 1.11vw;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #3a3a3a;
+    }
+
+    &.selected {
+      background: var(--Dim-Grey);
+    }
+
+    &.A_testOptionCorrect {
+      background: var(--Sea-Green);
+    }
+
+    &.A_testOptionWrong {
+      background: var(--Vibrant-Coral);
+    }
+
+    &.A_testOptionDisabled {
+      opacity: 0.5;
+    }
+  }
+
+  .W_resultContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.39vw;
+  }
+
+  .A_resultTitle {
+    color: var(--White);
+    font-size: 1.67vw;
+  }
+
+  .M_resultCard .A_testQuestionImage {
+    width: 100%;
+    height: 18vw;
+  }
+
+  .W_resultScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.69vw;
+  }
+
+  .A_resultScore {
+    color: var(--Blaze-Orange);
+  }
+
+  .A_resultDescription {
+    color: var(--Dim-Grey);
+    line-height: 140%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .O_aboutSection {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3.41vw;
+    padding: 0;
+    border-radius: 5.68vw;
+    background: var(--Carbon-Black);
+  }
+
+  .O_aboutMedia {
+    width: 100%;
+    height: auto;
+    gap: 4.55vw;
+  }
+
+  .O_promoArticles {
+    width: 100%;
+    height: auto;
+    gap: 7.27vw;
+  }
+
+  .O_ArticlesShowcase {
+    align-items: stretch;
+    gap: 7.27vw;
+  }
+
+  .O_menuOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+    z-index: 9998;
+
+    &.O_menuOverlayActive {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .O_mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15.91vw 4.55vw 5.45vw;
+    background: var(--Onyx);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 9999;
+
+    &.O_mobileMenuOpen {
+      transform: translateX(0);
+    }
+  }
+
+  .O_searchOverlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7.27vw;
+    padding: 7.27vw 4.55vw;
+    background: var(--Onyx);
+    z-index: 100000;
+  }
+
+  .O_riskMapPage {
+    margin: 31.82vw 0;
+    flex-direction: column;
+    gap: 4.09vw;
+    height: auto;
+  }
+
+  .О_recomendedMapScreen {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 4.09vw;
+    background: transparent;
+  }
+
+  .O_articlesPage {
+    margin: 31.82vw 0;
+    gap: 4.09vw;
+  }
+
+  .O_testsPage {
+    margin: 31.82vw auto;
+    gap: 3.47vw;
+  }
+
+  .O_articleView {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 5.45vw auto 31.82vw;
+  }
+
+  .O_quizModal {
+    padding: 4.55vw;
+  }
+
+  .O_dogsPhotoArea {
+    height: 155vw;
+
+    > img {
+      width: 6.36vw;
+      height: 6.36vw;
+
+      &:nth-child(1) {
+        top: 27.73vw;
+        left: 10.91vw;
+      }
+      &:nth-child(2) {
+        top: 18.18vw;
+        left: 78.64vw;
+      }
+      &:nth-child(3) {
+        top: 5.68vw;
+        left: 34.32vw;
+      }
+      &:nth-child(5) {
+        top: 147.27vw;
+        right: 38.64vw;
+      }
+      &:nth-child(6) {
+        top: 130.91vw;
+        right: 8.41vw;
+      }
+      &:nth-child(7) {
+        top: 136.36vw;
+        right: 73.18vw;
+      }
+    }
+  }
+
+  .O_promoArticles {
+    gap: 12.73vw;
+    width: 86.59vw;
+    height: 190.91vw;
   }
 }

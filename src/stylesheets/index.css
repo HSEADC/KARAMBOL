@@ -35,14 +35,33 @@ button {
 
 @media screen and (max-width: 767px) {
   body {
-    padding: 4.77vw;
+    padding: 16.82vw 4.55vw 9.55vw;
   }
 
   h1 {
     font-size: 7.27vw;
   }
 
+  h2 {
+    font-size: 5.45vw;
+  }
+
+  h3 {
+    font-size: 4.55vw;
+  }
+
+  h4 {
+    font-size: 3.64vw;
+    line-height: 110%;
+  }
+
   p {
     font-size: 4.09vw;
+    line-height: 120%;
+  }
+
+  .tag {
+    font-size: 2.95vw;
+    line-height: 120%;
   }
 }

@@ -869,3 +869,250 @@
     border-radius: 4.08vw;
   }
 }
+
+.A_burger,
+.A_searchTrigger {
+  display: none;
+}
+
+.A_searchEmpty {
+  color: var(--Dim-Grey);
+  text-align: center;
+  padding: 1.39vw 0;
+}
+
+@media screen and (max-width: 767px) {
+  .A_Logo {
+    > img {
+      width: 7.73vw;
+      height: auto;
+    }
+  }
+
+  .A_searchButton {
+    display: none;
+  }
+
+  .A_searchTrigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.73vw;
+    height: 7.73vw;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    > img {
+      width: 4.77vw;
+      height: auto;
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .A_burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.14vw;
+    width: 5.45vw;
+    height: 5.45vw;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    > span {
+      display: block;
+      width: 5.45vw;
+      height: 0.45vw;
+      border-radius: 0.55vw;
+      background: var(--White);
+      transition:
+        transform 0.3s ease,
+        opacity 0.2s ease;
+    }
+
+    &.A_burger--open > span:nth-child(1) {
+      transform: translateY(2.37vw) rotate(45deg);
+    }
+
+    &.A_burger--open > span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.A_burger--open > span:nth-child(3) {
+      transform: translateY(-2.37vw) rotate(-45deg);
+    }
+  }
+
+  .A_mobileLink {
+    display: block;
+
+    > span {
+      font-family: 'TT Norms Medium';
+      font-size: 3.64vw;
+      color: var(--White);
+    }
+  }
+
+  .A_searchClose {
+    position: relative;
+    flex-shrink: 0;
+    width: 8.18vw;
+    height: 8.18vw;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7.27vw;
+      height: 0.55vw;
+      border-radius: 0.55vw;
+      background: var(--White);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  .A_tag {
+    min-width: 8.61vw;
+    padding: 0.45vw 2.27vw;
+    gap: 0.69vw;
+    border-radius: 5.68vw;
+    font-size: 2.95vw;
+  }
+
+  .A_articleDescription,
+  .A_articleDate {
+    color: var(--Dim-Grey) !important;
+    font-size: 2.95vw;
+  }
+
+  .A_articleSplitLeft {
+    font-size: 4.09vw;
+  }
+
+  .A_articleListItem {
+    gap: 2.73vw;
+    font-size: 4.09vw;
+  }
+
+  .A_articleScrollBtn {
+    order: 3;
+    align-self: flex-start;
+    margin-top: 9.09vw;
+    padding: 2.95vw 4.55vw;
+    border-radius: 7.95vw;
+    font-size: 3.64vw;
+  }
+
+  .A_testPageDesc {
+    font-size: 2.95vw;
+  }
+
+  .A_button {
+    padding: 2.95vw 3.41vw;
+    gap: 2.27vw;
+    border-radius: 7.95vw;
+    order: 2;
+
+    > p {
+      font-size: 3.18vw;
+    }
+
+    > img {
+      width: 2.27vw;
+    }
+  }
+
+  .A_searchPageDesc,
+  .A_searchPageMeta {
+    font-size: 2.95vw;
+  }
+
+  .A_mobileLogo > img {
+    width: 32vw;
+    height: auto;
+  }
+
+  .A_menuClose {
+    position: relative;
+    width: 5.45vw;
+    height: 5.45vw;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 7.27vw;
+      height: 0.55vw;
+      border-radius: 0.55vw;
+      background: var(--White);
+
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  .A_social {
+    display: flex;
+    color: var(--White);
+
+    > svg {
+      width: 5.45vw;
+      height: 5.45vw;
+    }
+  }
+
+  .A_questionText {
+    font-size: 5vw;
+  }
+
+  .A_testImageContainer {
+    height: 50vw;
+    border-radius: 3.41vw;
+  }
+
+  .A_testQuestionImage {
+    border-radius: 3.41vw;
+  }
+
+  .A_testOption {
+    padding: 3.64vw 4.09vw;
+    border-radius: 2.73vw;
+    font-size: 4.09vw;
+  }
+
+  .A_testProgress {
+    font-size: 4.55vw;
+  }
+
+  .A_resultTitle {
+    font-size: 5.45vw;
+  }
+
+  .A_resultScore {
+    font-size: 9.09vw;
+  }
+
+  .A_resultDescription {
+    font-size: 4.09vw;
+  }
+}

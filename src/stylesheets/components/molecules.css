@@ -260,81 +260,222 @@
     width: 100%;
   }
 
-  .M_articleCardSmall {
-    height: 63.64vw;
+  &:hover {
+    background: #3a3a3a;
+  }
+}
+
+.M_searchPageCard {
+  display: flex;
+  align-items: center;
+  gap: 2.78vw;
+  padding: 1.39vw;
+  border-radius: 1.74vw;
+  background: var(--Carbon-Black);
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: #252424;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .M_aboutInfo {
+    height: auto;
+    padding: 0 2.27vw 3.41vw 3.41vw;
+    gap: 4.55vw;
+    background: transparent;
+
+    > .tag {
+      font-size: 2.95vw;
+    }
+  }
+
+  .M_galleryArticles {
+    width: 86.59vw;
+    height: 165.91vw;
+
+    .A_tag {
+      z-index: 10;
+
+      > p {
+        font-size: 2.95vw;
+      }
+
+      &:nth-child(5) {
+        top: 41vw;
+        left: -0.45vw;
+        right: auto;
+      }
+      &:nth-child(6) {
+        top: -1.45vw;
+        left: auto;
+        right: 8.55vw;
+      }
+      &:nth-child(7) {
+        top: 105vw;
+        left: 4.55vw;
+        right: auto;
+      }
+      &:nth-child(8) {
+        top: 68vw;
+        left: auto;
+        right: 2.55vw;
+      }
+      &:nth-child(9) {
+        top: 162vw;
+        left: auto;
+        right: 12.55vw;
+      }
+    }
+  }
+
+  .M_searchOverlay {
+    width: 100%;
+    height: auto;
+    padding: 3.64vw 4.55vw 3.64vw 12.73vw;
+    font-family: 'TT Norms Medium';
+    font-size: 4.09vw;
+    line-height: 100%;
+    border-radius: 9.09vw;
+    background: var(--Graphite);
+    color: var(--White);
+  }
+
+  .M_searchResultCard {
+    padding: 1.14vw;
+    gap: 3.41vw;
+    border-radius: 5.68vw;
+
+    > p {
+      font-size: 3.64vw;
+    }
+  }
+
+  .A_searchEmpty {
+    font-size: 4.09vw;
+    padding: 4.55vw 0;
+  }
+
+  .M_reccomendedCard,
+  .M_reccomendedCard--large,
+  .M_reccomendedCard--small {
+    width: 100%;
+  }
+
+  .M_reccomendedCard {
+    gap: 2.27vw;
+    border-radius: 5.68vw;
+    background: var(--Carbon-Black);
+  }
+
+  .M_homeTestCard {
+    width: 100%;
+    height: auto;
+    padding: 5.45vw 4.55vw;
+    gap: 3.41vw;
+    border-radius: 5.68vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .W_testContent,
+    .W_testFooter {
+      display: contents;
+    }
+
+    .A_testFacts {
+      display: none;
+    }
+
+    .A_testMeta {
+      order: 0;
+      font-size: 2.95vw;
+    }
+
+    .A_testTitle {
+      order: 1;
+      font-size: 5vw;
+    }
+
+    .A_button {
+      order: 2;
+      margin-top: 2.27vw;
+    }
   }
 
   .M_articleCard {
     width: 100%;
+    padding-bottom: 3.64vw;
+    gap: 3.41vw;
+    border-radius: 5.68vw;
   }
 
-  .M_articleCardSmall {
-    height: 63.64vw;
+  .M_testPageCard {
+    overflow: hidden;
+    justify-content: flex-start;
+    width: 90.91vw;
+    height: 71.82vw;
+    padding: 0 0 3.41vw 0;
+    gap: 3.41vw;
+    border-radius: 5.68vw;
   }
 
-  .M_articleHero {
-    gap: 3.47vw;
-    width: 100%;
+  .M_searchPageCard {
+    gap: 3.41vw;
+    padding: 1.14vw;
+    border-radius: 5.68vw;
   }
 
   .M_articleTextSplit {
-    gap: 5.45vw;
+    gap: 9.09vw;
   }
 
   .M_articleListBlock {
-    gap: 2.08vw;
+    gap: 4.55vw;
 
     > h2 {
-      font-size: var(--h3);
+      font-size: 5.45vw;
     }
   }
 
-  .M_Stat {
-    gap: 2.5vw;
+  .M_questionCard,
+  .M_resultCard {
+    gap: 5.45vw;
   }
 
-  .M_testCard {
-    height: 63.64vw;
-    width: 100%;
+  .M_resultCard .A_testQuestionImage {
+    height: 50vw;
   }
 
-  .M_swipeCardNext {
-    top: 1vw;
-    left: -1vw;
-    height: 66.44vw;
-    border-radius: 5.68vw;
+  .M_centerOfPhotoArea {
+    margin-top: 51.36vw;
+    gap: 10.83vw;
   }
 
-  .M_swipeCard {
-    height: 66.44vw;
-    border-radius: 3.67vw;
-    padding: 5.91vw 3.18vw;
+  .M_folder {
+    > img {
+      width: 65.68vw;
+    }
+
+    .A_tag {
+      bottom: 5.11vw;
+
+      > p {
+        font-size: 2.95vw;
+      }
+    }
   }
 
-  .M_Stat {
-    gap: 2.5vw;
+  .M_spesialInscription {
+    gap: 2.73vw;
   }
 
-  .M_testCard {
-    height: 63.64vw;
-    width: 100%;
-  }
+  .M_mediaInscription {
+    margin: -7.13vw auto 0;
+    gap: 4.55vw;
 
-  .M_swipeCardNext {
-    top: 1vw;
-    left: -1vw;
-    height: 66.44vw;
-    border-radius: 5.68vw;
-  }
-
-  .M_swipeCard {
-    height: 66.44vw;
-    border-radius: 3.67vw;
-    padding: 5.91vw 3.18vw;
-  }
-
-  .M_dropdownGroup {
-    flex-direction: column;
-    gap: 2.27vw;
+    > h2 {
+      font-size: 6.36vw;
+    }
   }
 }

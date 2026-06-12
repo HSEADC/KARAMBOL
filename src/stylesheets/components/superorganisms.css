@@ -63,3 +63,17 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .SO_Footer {
+    gap: 16.36vw;
+    width: 100%;
+    padding: 5.68vw 3.41vw;
+    border-radius: 5.68vw;
+  }
+
+  .SO_indexPage {
+    margin: 4.55vw 0 31.82vw;
+    gap: 31.82vw;
+  }
+}

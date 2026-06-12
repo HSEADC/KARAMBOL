@@ -141,108 +141,59 @@
 }
 
 .Q_listBullet {
-  margin-top: 0.42vw;
-  width: 0.21vw;
-  height: 0.21vw;
-  border-radius: 100%;
-  background-color: var(--textBrendbookTopics);
+  width: 0.91vw;
+  height: 0.91vw;
+  border-radius: 50%;
+  background: var(--Blaze-Orange);
   flex-shrink: 0;
+  margin-top: 2.35vw;
 }
 
 @media screen and (max-width: 767px) {
-  .Q_lineParagraph {
-    width: 2px;
-    flex-shrink: 0;
+  .Q_searchOverlayIcon {
+    position: absolute;
+    top: 50%;
+    left: 4.55vw;
+    transform: translateY(-50%);
+    width: 5vw;
+    height: auto;
+    filter: brightness(0) invert(1);
   }
 
-  .Q_listBullet {
-    margin-top: 1.1vw;
-    width: 0.68vw;
-    height: 0.68vw;
+  .Q_footerImage {
+    right: 3.41vw;
+    bottom: 5.68vw;
+    width: 23.64vw;
   }
 
-  .Q_Banners {
-    font-size: 9.29vw;
+  .Q_photo {
+    width: 100%;
+    height: 51.82vw;
+    border-radius: 5.68vw 5.68vw 0 0;
+    object-fit: cover;
   }
 
-  .Q_Banners::after {
-    font-size: 3.49vw;
-  }
+  .Q_galleryPhoto {
+    position: absolute;
+    left: 15.45vw !important;
+    width: 54.73vw;
+    height: 50vw;
+    border-radius: 5.68vw;
+    transform: perspective(33.56vw) rotateX(-20deg);
+    object-fit: cover;
+    object-position: center;
 
-  .Q_Adds {
-    font-size: 2.03vw;
-  }
-
-  .Q_Button {
-    gap: 2.27vw;
-    padding: 2.27vw 3.64vw;
-    border-radius: 9.09vw;
-
-    > a {
-      font-size: var(--p);
+    &:nth-child(1) {
+      top: 6.82vw;
     }
-  }
-
-  .Q_Button::after {
-    width: 4.05vw;
-  }
-
-  .Q_Card {
-    width: 19.84vw;
-    height: 19.84vw;
-    border-radius: 1.94vw;
-  }
-
-  .Q_Card—first {
-    left: 0.45vw;
-    bottom: 17.56vw;
-    transform: rotate(-20deg);
-  }
-
-  .Q_Card—second {
-    left: 13.86vw;
-    bottom: 26.14vw;
-    z-index: 4;
-  }
-
-  .Q_Card—third {
-    left: 25.45vw;
-    bottom: 40.23vw;
-    transform: rotate(-10deg);
-    z-index: 5;
-  }
-
-  .Q_Card—fourth {
-    left: 35.45vw;
-    bottom: 26.14vw;
-    transform: rotate(-13.626deg);
-    z-index: 6;
-  }
-
-  .Q_Card—fifth {
-    left: 47.73vw;
-    bottom: 39.09vw;
-    transform: rotate(10deg);
-  }
-
-  .Q_Card—sixth {
-    left: 58.86vw;
-    bottom: 25.45vw;
-    transform: rotate(5deg);
-  }
-
-  .Q_Card—seventh {
-    left: 67.73vw;
-    bottom: 16.02vw;
-    transform: rotate(7deg);
-    z-index: 0;
-  }
-
-  .Q_folderBackground {
-    width: 87.43vw;
-
+    &:nth-child(2) {
+      top: 45vw;
+    }
     &:nth-child(3) {
-      width: 82.91vw;
+      top: 84vw;
+    }
+    &:nth-child(4) {
+      top: 122vw;
     }
   }
 }
