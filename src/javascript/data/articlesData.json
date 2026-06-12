@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Питомец и биофлора дома и двора",
-    "image": "../../images/tests/dog-cheese.png",
+    "image": "images/tests/dog-cheese.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "pets",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Питомец и биофлора дома и двора",
-    "image": "../../images/tests/dog-cheese.png",
+    "image": "images/tests/dog-cheese.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "pets",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Питомец и биофлора дома и двора: растения, продукты и здоровье",
-    "image": "../../images/tests/test1.png",
+    "image": "images/tests/test1.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "plants",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "Питомец и биофлора дома и двора: растения, продукты и здоровье",
-    "image": "../../images/tests/test1.png",
+    "image": "images/tests/test1.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "plants",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Питомец и биофлора дома и двора",
-    "image": "../../images/tests/dog-cheese.png",
+    "image": "images/tests/dog-cheese.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "pets",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Питомец и биофлора дома и двора",
-    "image": "../../images/tests/dog-cheese.png",
+    "image": "images/tests/dog-cheese.png",
     "readTime": "3-5 минут",
     "date": "1 декабря 2025",
     "category": "health",

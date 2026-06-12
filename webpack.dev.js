@@ -14,6 +14,7 @@ module.exports = merge(common, {
     }
   },
   output: {
-    path: path.resolve(__dirname, 'dev_build')
+    path: path.resolve(__dirname, 'dev_build'),
+    publicPath: '/'
   }
 })

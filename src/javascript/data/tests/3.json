@@ -1,7 +1,7 @@
 {
   "id": 3,
   "card": {
-    "image": "../../images/tests/test3.jpg",
+    "image": "images/tests/test3.jpg",
     "readTime": "5 минут",
     "tags": ["Кошки", "Про животных"],
     "title": "Ты точно живёшь с питомцем? 10 фактов, которые ломают мозг",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../../images/tests/test_process/test3/1.png",
+      "image": "images/tests/test_process/test3/1.png",
       "question": "Почему кошка может внезапно укусить во время ласки?",
       "options": [
         { "id": "a", "text": "Злится", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../../images/tests/test_process/test3/2.png",
+      "image": "images/tests/test_process/test3/2.png",
       "question": "Почему собака иногда «улыбается» во сне?",
       "options": [
         { "id": "a", "text": "Видит хозяина", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../../images/tests/test_process/test3/3.png",
+      "image": "images/tests/test_process/test3/3.png",
       "question": "Почему кошка пьёт из крана, игнорируя миску?",
       "options": [
         { "id": "a", "text": "Играет", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../../images/tests/test_process/test3/4.png",
+      "image": "images/tests/test_process/test3/4.png",
       "question": "Почему собака нюхает человека дольше обычного?",
       "options": [
         { "id": "a", "text": "Ищет еду", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../../images/tests/test_process/test3/5.png",
+      "image": "images/tests/test_process/test3/5.png",
       "question": "Почему кошка спит на голове человека?",
       "options": [
         { "id": "a", "text": "Выше — безопаснее", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../../images/tests/test_process/test3/6.png",
+      "image": "images/tests/test_process/test3/6.png",
       "question": "Почему собака выбирает одного члена семьи «главным»?",
       "options": [
         { "id": "a", "text": "Кто кормит", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../../images/tests/test_process/test3/7.png",
+      "image": "images/tests/test_process/test3/7.png",
       "question": "Почему кошки любят ронять предметы?",
       "options": [
         { "id": "a", "text": "Вредничают", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../../images/tests/test_process/test3/8.png",
+      "image": "images/tests/test_process/test3/8.png",
       "question": "Почему собака может лизать пол?",
       "options": [
         { "id": "a", "text": "Ищет еду", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../../images/tests/test_process/test3/9.png",
+      "image": "images/tests/test_process/test3/9.png",
       "question": "Почему кошка может «залипать» на вентилятор?",
       "options": [
         { "id": "a", "text": "Боится", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../../images/tests/test_process/test3/10.png",
+      "image": "images/tests/test_process/test3/10.png",
       "question": "Почему собака приносит вам тапок?",
       "options": [
         { "id": "a", "text": "Играет", "isCorrect": false },

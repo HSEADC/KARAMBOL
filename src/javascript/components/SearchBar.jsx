@@ -189,7 +189,9 @@ const SearchBar = () => {
           }}
           style={{ width: focused ? '50.42vw' : '' }}
         />
-        <button className="A_searchButton" onClick={goToSearchPage}>Поиск</button>
+        <button className="A_searchButton" onClick={goToSearchPage}>
+          Поиск
+        </button>
       </div>
 
       <button

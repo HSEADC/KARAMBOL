@@ -1,7 +1,7 @@
 {
   "id": 11,
   "card": {
-    "image": "../../images/tests/test11.jpg",
+    "image": "images/tests/test11.jpg",
     "readTime": "7 минут",
     "tags": ["Цветы", "Про растения"],
     "title": "Популярные комнатные растения, которые нельзя держать с питомцами",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../images/tests/test_process/test11/1.png",
+      "image": "images/tests/test_process/test11/1.png",
       "question": "Какое растение особенно опасно для кошек?",
       "options": [
         { "id": "a", "text": "Хлорофитум", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../images/tests/test_process/test11/2.png",
+      "image": "images/tests/test_process/test11/2.png",
       "question": "Чем опасна монстера?",
       "options": [
         { "id": "a", "text": "Листья большие", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../images/tests/test_process/test11/3.png",
+      "image": "images/tests/test_process/test11/3.png",
       "question": "Чем опасен замиокулькас?",
       "options": [
         { "id": "a", "text": "Листья", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../images/tests/test_process/test11/4.png",
+      "image": "images/tests/test_process/test11/4.png",
       "question": "Почему опасен сансевиерия (щучий хвост)?",
       "options": [
         { "id": "a", "text": "Острые листья", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../images/tests/test_process/test11/5.png",
+      "image": "images/tests/test_process/test11/5.png",
       "question": "Чем опасен филодендрон?",
       "options": [
         { "id": "a", "text": "Листья", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../images/tests/test_process/test11/6.png",
+      "image": "images/tests/test_process/test11/6.png",
       "question": "Чем опасна азалия?",
       "options": [
         { "id": "a", "text": "Цветы", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../images/tests/test_process/test11/7.png",
+      "image": "images/tests/test_process/test11/7.png",
       "question": "Почему опасен кротон?",
       "options": [
         { "id": "a", "text": "Яркий", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../images/tests/test_process/test11/8.png",
+      "image": "images/tests/test_process/test11/8.png",
       "question": "Чем опасен плющ?",
       "options": [
         { "id": "a", "text": "Вьётся", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../images/tests/test_process/test11/9.png",
+      "image": "images/tests/test_process/test11/9.png",
       "question": "Почему опасен олеандр?",
       "options": [
         { "id": "a", "text": "Цветы", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../images/tests/test_process/test11/10.png",
+      "image": "images/tests/test_process/test11/10.png",
       "question": "Чем опасен каланхоэ?",
       "options": [
         { "id": "a", "text": "Листья", "isCorrect": false },

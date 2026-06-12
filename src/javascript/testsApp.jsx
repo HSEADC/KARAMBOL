@@ -70,5 +70,5 @@ const HomeTests = () => {
 const container = document.querySelector('.С_Tests')
 if (container) {
   const root = createRoot(container)
-  root.render(<TestSlider tests={testsData} />)
+  root.render(<HomeTests />)
 }

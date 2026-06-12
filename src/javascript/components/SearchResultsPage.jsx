@@ -17,12 +17,21 @@ const articlesData = articlesContext.keys().map((key) => {
   }
 })
 
-const SearchResultCard = ({ image, title, description, meta, link, centered }) => (
+const SearchResultCard = ({
+  image,
+  title,
+  description,
+  meta,
+  link,
+  centered
+}) => (
   <a href={link} className="M_searchPageCard">
     <div className="W_searchPageCardImage">
       {image && <img src={image} alt={title} />}
     </div>
-    <div className={`W_searchPageCardContent${centered ? ' W_searchPageCardContent--centered' : ''}`}>
+    <div
+      className={`W_searchPageCardContent${centered ? ' W_searchPageCardContent--centered' : ''}`}
+    >
       <div className="W_articleMainInfoDesc">
         <h3>{title}</h3>
         {description && <p className="A_searchPageDesc">{description}</p>}
@@ -116,7 +125,9 @@ const SearchResultsPage = () => {
         className="A_tag W_searchPageCount"
         style={{ background: 'var(--Sea-Green)', width: 'fit-content' }}
       >
-        <p>Найдено {totalCount} {pluralResult(totalCount)}</p>
+        <p>
+          Найдено {totalCount} {pluralResult(totalCount)}
+        </p>
       </div>
 
       <div className="W_searchPageContent">

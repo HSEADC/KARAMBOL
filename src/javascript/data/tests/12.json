@@ -1,7 +1,7 @@
 {
   "id": 12,
   "card": {
-    "image": "../../images/tests/test12.jpg",
+    "image": "images/tests/test12.jpg",
     "readTime": "7 минут",
     "tags": ["Цветы", "Про растения"],
     "title": "Весна, дача и питомец: 10 реальных рисков от растений и химии",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../images/tests/test_process/test12/1.png",
+      "image": "images/tests/test_process/test12/1.png",
       "question": "Почему удобрения опасны для собак?",
       "options": [
         { "id": "a", "text": "Пахнут", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../images/tests/test_process/test12/2.png",
+      "image": "images/tests/test_process/test12/2.png",
       "question": "Чем опасна скорлупа от какао?",
       "options": [
         { "id": "a", "text": "Скользкая", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../images/tests/test_process/test12/3.png",
+      "image": "images/tests/test_process/test12/3.png",
       "question": "Почему компост опасен?",
       "options": [
         { "id": "a", "text": "Пахнет", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../images/tests/test_process/test12/4.png",
+      "image": "images/tests/test_process/test12/4.png",
       "question": "Чем опасны луковицы тюльпанов?",
       "options": [
         { "id": "a", "text": "Твёрдые", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../images/tests/test_process/test12/5.png",
+      "image": "images/tests/test_process/test12/5.png",
       "question": "Почему средства от слизней опасны?",
       "options": [
         { "id": "a", "text": "Скользкие", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../images/tests/test_process/test12/6.png",
+      "image": "images/tests/test_process/test12/6.png",
       "question": "Чем опасна обработка участка гербицидами?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../images/tests/test_process/test12/7.png",
+      "image": "images/tests/test_process/test12/7.png",
       "question": "Почему кострище опасно?",
       "options": [
         { "id": "a", "text": "Горячо", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../images/tests/test_process/test12/8.png",
+      "image": "images/tests/test_process/test12/8.png",
       "question": "Чем опасны декоративные лилии на клумбе?",
       "options": [
         { "id": "a", "text": "Красивые", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../images/tests/test_process/test12/9.png",
+      "image": "images/tests/test_process/test12/9.png",
       "question": "Почему бочки с водой опасны?",
       "options": [
         { "id": "a", "text": "Глубокие", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../images/tests/test_process/test12/10.png",
+      "image": "images/tests/test_process/test12/10.png",
       "question": "Чем опасны инсектициды на растениях?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },

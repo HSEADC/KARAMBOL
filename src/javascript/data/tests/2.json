@@ -1,7 +1,7 @@
 {
   "id": 2,
   "card": {
-    "image": "../../images/tests/test2.jpg",
+    "image": "images/tests/test2.jpg",
     "readTime": "4 минуты",
     "tags": ["Собаки", "Про животных"],
     "title": "Твоя собака делает это не просто так: 10 скрытых причин странного поведения",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../../images/tests/test_process/test2/1.png",
+      "image": "images/tests/test_process/test2/1.png",
       "question": "Почему собака крутится перед тем как лечь?",
       "options": [
         { "id": "a", "text": "Играет", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../../images/tests/test_process/test2/2.png",
+      "image": "images/tests/test_process/test2/2.png",
       "question": "Почему собака зевает при разговоре с хозяином?",
       "options": [
         { "id": "a", "text": "Скучно", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../../images/tests/test_process/test2/3.png",
+      "image": "images/tests/test_process/test2/3.png",
       "question": "Почему собака приносит игрушку, но не отдаёт?",
       "options": [
         { "id": "a", "text": "Дразнит", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../../images/tests/test_process/test2/4.png",
+      "image": "images/tests/test_process/test2/4.png",
       "question": "Почему собака может лизать воздух?",
       "options": [
         { "id": "a", "text": "Чует запах", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../../images/tests/test_process/test2/5.png",
+      "image": "images/tests/test_process/test2/5.png",
       "question": "Почему собака кладёт лапу на хозяина?",
       "options": [
         { "id": "a", "text": "Просит еду", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../../images/tests/test_process/test2/6.png",
+      "image": "images/tests/test_process/test2/6.png",
       "question": "Почему собака спит спиной к вам?",
       "options": [
         { "id": "a", "text": "Не доверяет", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../../images/tests/test_process/test2/7.png",
+      "image": "images/tests/test_process/test2/7.png",
       "question": "Почему собака может «улыбаться»?",
       "options": [
         { "id": "a", "text": "Копирует человека", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../../images/tests/test_process/test2/8.png",
+      "image": "images/tests/test_process/test2/8.png",
       "question": "Почему собака роет постель?",
       "options": [
         { "id": "a", "text": "Ищет еду", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../../images/tests/test_process/test2/9.png",
+      "image": "images/tests/test_process/test2/9.png",
       "question": "Почему собака смотрит на вас во время туалета?",
       "options": [
         { "id": "a", "text": "Стыдится", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../../images/tests/test_process/test2/10.png",
+      "image": "images/tests/test_process/test2/10.png",
       "question": "Почему собака вздыхает и ложится рядом?",
       "options": [
         { "id": "a", "text": "Устала", "isCorrect": false },

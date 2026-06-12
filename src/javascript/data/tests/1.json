@@ -1,7 +1,7 @@
 {
   "id": 1,
   "card": {
-    "image": "../../images/tests/test1.jpg",
+    "image": "images/tests/test1.jpg",
     "readTime": "4 минуты",
     "tags": ["Кошки", "Про животных"],
     "title": "Твой кот — не тот, за кого себя выдаёт: 10 странных фактов",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../../images/tests/test_process/test1/1.png",
+      "image": "images/tests/test_process/test1/1.png",
       "question": "Почему кошки иногда резко бегают по дому без причины («zoomies»)?",
       "options": [
         { "id": "a", "text": "Избыток сахара в крови", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../../images/tests/test_process/test1/2.png",
+      "image": "images/tests/test_process/test1/2.png",
       "question": "Зачем коты «мнут» лапами плед или человека?",
       "options": [
         { "id": "a", "text": "Разминают мышцы", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../../images/tests/test_process/test1/3.png",
+      "image": "images/tests/test_process/test1/3.png",
       "question": "Почему кошка может игнорировать дорогую лежанку и спать в коробке?",
       "options": [
         { "id": "a", "text": "Любит картон", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../../images/tests/test_process/test1/4.png",
+      "image": "images/tests/test_process/test1/4.png",
       "question": "Почему кот приносит «добычу» хозяину?",
       "options": [
         { "id": "a", "text": "Хвастается", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../../images/tests/test_process/test1/5.png",
+      "image": "images/tests/test_process/test1/5.png",
       "question": "Почему кошка может смотреть в стену?",
       "options": [
         { "id": "a", "text": "Видит призраков", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../../images/tests/test_process/test1/6.png",
+      "image": "images/tests/test_process/test1/6.png",
       "question": "Почему кошки любят сидеть на ноутбуке?",
       "options": [
         { "id": "a", "text": "Ревнуют к технике", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../../images/tests/test_process/test1/7.png",
+      "image": "images/tests/test_process/test1/7.png",
       "question": "Почему кошка медленно моргает?",
       "options": [
         { "id": "a", "text": "Устала", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../../images/tests/test_process/test1/8.png",
+      "image": "images/tests/test_process/test1/8.png",
       "question": "Почему кошки трутся головой о предметы?",
       "options": [
         { "id": "a", "text": "Чешутся", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../../images/tests/test_process/test1/9.png",
+      "image": "images/tests/test_process/test1/9.png",
       "question": "Почему кот может спать на вашей одежде?",
       "options": [
         { "id": "a", "text": "Мягко", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../../images/tests/test_process/test1/10.png",
+      "image": "images/tests/test_process/test1/10.png",
       "question": "Почему кошка иногда «клацает» зубами, глядя в окно на птиц?",
       "options": [
         { "id": "a", "text": "Сердится", "isCorrect": false },

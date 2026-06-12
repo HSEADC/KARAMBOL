@@ -1,152 +1,78 @@
-.Q_openFlowersImage {
-  width: 100%;
+.Q_footerImage {
+  position: absolute;
+  bottom: 3.19vw;
+  right: 27.03vw;
+  width: 8.8vw;
   height: auto;
 }
 
-.Q_folderBackground {
+.Q_searchIcon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 58.43vw;
-  height: 27.73vw;
-  border-radius: 1.38vw;
-  background: #222121;
+  left: 0.69vw;
+  top: 0.69vw;
+  width: 1.04vw;
+  height: auto;
+}
 
+.Q_photo {
+  width: 37.5vw;
+  height: 29.17vw;
+  border-radius: 1.74vw;
+}
+
+.Q_galleryPhoto {
+  position: absolute;
+  top: 2.36vw;
+  width: 26.22vw;
+  height: 17.7vw;
+  border-radius: 1.74vw;
+  transform: perspective(55.56vw) rotateY(45deg);
+  object-fit: cover;
+  z-index: 10;
+
+  &:nth-child(1) {
+    left: -1.74vw;
+    object-position: 0vw -6.94vw;
+  }
   &:nth-child(2) {
-    top: -2.22vw;
-    left: 1.53vw;
-    z-index: 3;
+    left: 15.63vw;
   }
   &:nth-child(3) {
-    width: 52.91vw;
-    top: -4.44vw;
-    left: 3.06vw;
-    background: #2f2d2d;
-    z-index: 2;
+    left: 32.99vw;
+    object-position: 0vw -5.56vw;
+  }
+  &:nth-child(4) {
+    left: 50.35vw;
+    object-position: 0vw -13.89vw;
   }
 }
 
-.Q_folderBackgroundArticles {
-  width: 73.47vw;
-
-  &:nth-child(3) {
-    width: 66.53vw;
-    left: 5.42vw;
-  }
-}
-
-.Q_Banners {
-  font-size: var(--banners);
-  color: var(--white);
+.Q_Like {
+  position: absolute;
+  bottom: 0.69vw;
+  right: 0.69vw;
+  width: 2.43vw;
+  height: 2.43vw;
+  border-radius: 2.43vw;
   display: flex;
-}
-
-.Q_Banners::after {
-  content: '%';
-  font-size: var(--h3);
-  color: var(--white);
-}
-
-.Q_Adds {
-  font-size: var(--adds);
-  color: var(--white);
-}
-
-.Q_Card {
-  width: 10.63vw;
-  height: 10.63vw;
-  border-radius: 1.04vw;
-}
-
-.Q_Button {
-  display: flex;
-  gap: 0.83vw;
-  background-color: var(--white);
-  color: var(--darkGray);
-  font-size: var(--p);
-  padding: 0.69vw 1.39vw;
-  height: fit-content;
-  border-radius: 2.78vw;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.Q_Button:hover {
-  background-color: var(--lightGray);
-}
-
-.Q_Button::after {
-  content: url('../../images/arrow.svg');
-  width: 0.9vw;
-}
-
-.Q_Card—first {
-  position: absolute;
-  left: 16vw;
-  bottom: 1.39vw;
-  rotate: -20deg;
-  z-index: 3;
-}
-
-.Q_Card—second {
-  position: absolute;
-  left: 22vw;
-  bottom: 8.33vw;
-  z-index: 2;
-}
-
-.Q_Card—third {
-  position: absolute;
-  left: 32vw;
-  bottom: 11.11vw;
-  rotate: -10deg;
-  z-index: 2;
-}
-
-.Q_Card—fourth {
-  position: absolute;
-  left: 42vw;
-  bottom: 11.81vw;
-  z-index: 1;
-}
-
-.Q_Card—fifth {
-  position: absolute;
-  left: 52vw;
-  bottom: 11.11vw;
-  rotate: 10deg;
-  z-index: 2;
-}
-
-.Q_Card—sixth {
-  position: absolute;
-  left: 62vw;
-  bottom: 8.33vw;
-  rotate: 5deg;
-  z-index: 1;
-}
-
-.Q_Card—seventh {
-  position: absolute;
-  left: 68vw;
-  bottom: 2.08vw;
-  rotate: 20deg;
-  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  background: var(--Dim-Grey);
 }
 
 .Q_lineParagraph {
-  width: 0.14vw;
-  background-color: var(--white);
-  align-self: stretch;
+  width: 100%;
+  height: 0.07vw;
+  background: var(--Graphite);
 }
 
 .Q_listBullet {
-  width: 0.91vw;
-  height: 0.91vw;
+  width: 0.61vw;
+  height: 0.61vw;
   border-radius: 50%;
   background: var(--Blaze-Orange);
   flex-shrink: 0;
-  margin-top: 2.35vw;
+  margin-top: 0.55vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -171,6 +97,15 @@
     height: 51.82vw;
     border-radius: 5.68vw 5.68vw 0 0;
     object-fit: cover;
+  }
+
+  .Q_listBullet {
+    width: 1.61vw;
+    height: 1.61vw;
+    border-radius: 50%;
+    background: var(--Blaze-Orange);
+    flex-shrink: 0;
+    margin-top: 2.55vw;
   }
 
   .Q_galleryPhoto {

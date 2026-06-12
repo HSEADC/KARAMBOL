@@ -1,29 +1,17 @@
 :root {
-  --white: white;
-  --gray: #444040;
-  --darkGray: #1a1919;
-  --lightGray: #7a7474;
-  --textBrendbookTopics: #cac0c0;
-  --background: #0f0e0e;
-  --styleguideBackground: #1e1e1e;
-  --roundGradient: radial-gradient(
-    51.82% 100% at 50% 100%,
-    #e85102 3.85%,
-    #b50700 17.31%,
-    #151313 100%
-  );
+  --Carbon-Black: #1a1919;
+  --Onyx: #0f0e0e;
+  --Dim-Grey: #767070;
+  --White: #ffffff;
+  --Graphite: #292929;
+  --Amber-Honey: #e2aa00;
+  --Pumpkin-Spice: #fe8640;
+  --Blaze-Orange: #ff5e00;
+  --Wild-Strawberry: #fb4d8d;
+  --Red-Ochre: #d92200;
+  --Vibrant-Coral: #f15551;
+  --Indigo: #500d85;
+  --Sea-Green: #328f6e;
 
-  --banners: 4.44vw;
-  --h1: 3.2vw;
-  --h2: 2.4vw;
-  --h3: 1.5vw;
-  --p: 1.053vw;
-  --adds: 0.9vw;
-
-  @media screen and (max-width: 767px) {
-    --adds: 2.73vw;
-    --h2: 5.45vw;
-    --h3: 4.09vw;
-    --p: 3.18vw;
-  }
+  --h2: 2.5vw;
 }

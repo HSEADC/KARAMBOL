@@ -1,7 +1,7 @@
 {
   "id": 8,
   "card": {
-    "image": "../../images/tests/test8.jpg",
+    "image": "images/tests/test8.jpg",
     "readTime": "5 минут",
     "tags": ["Собаки", "Про растения"],
     "title": "Собака и дом: 10 смертельных вещей, которые ты не считаешь опасными",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../images/tests/test_process/test8/1.png",
+      "image": "images/tests/test_process/test8/1.png",
       "question": "Почему ксилит опасен?",
       "options": [
         { "id": "a", "text": "Аллергия", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../images/tests/test_process/test8/2.png",
+      "image": "images/tests/test_process/test8/2.png",
       "question": "Чем опасен виноград?",
       "options": [
         { "id": "a", "text": "Косточки", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../images/tests/test_process/test8/3.png",
+      "image": "images/tests/test_process/test8/3.png",
       "question": "Почему лук опасен?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../images/tests/test_process/test8/4.png",
+      "image": "images/tests/test_process/test8/4.png",
       "question": "Чем опасны батарейки?",
       "options": [
         { "id": "a", "text": "Металл", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../images/tests/test_process/test8/5.png",
+      "image": "images/tests/test_process/test8/5.png",
       "question": "Почему шоколад опасен?",
       "options": [
         { "id": "a", "text": "Сладкий", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../images/tests/test_process/test8/6.png",
+      "image": "images/tests/test_process/test8/6.png",
       "question": "Чем опасны эфирные масла?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../images/tests/test_process/test8/7.png",
+      "image": "images/tests/test_process/test8/7.png",
       "question": "Почему опасны таблетки на тумбочке?",
       "options": [
         { "id": "a", "text": "Горькие", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../images/tests/test_process/test8/8.png",
+      "image": "images/tests/test_process/test8/8.png",
       "question": "Чем опасны носки?",
       "options": [
         { "id": "a", "text": "Грязные", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../images/tests/test_process/test8/9.png",
+      "image": "images/tests/test_process/test8/9.png",
       "question": "Почему опасны мусорные пакеты?",
       "options": [
         { "id": "a", "text": "Шуршат", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../images/tests/test_process/test8/10.png",
+      "image": "images/tests/test_process/test8/10.png",
       "question": "Чем опасны чистящие средства на полу?",
       "options": [
         { "id": "a", "text": "Скользко", "isCorrect": false },

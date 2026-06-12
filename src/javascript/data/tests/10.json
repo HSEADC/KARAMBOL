@@ -1,7 +1,7 @@
 {
   "id": 10,
   "card": {
-    "image": "../../images/tests/test10.jpg",
+    "image": "images/tests/test10.jpg",
     "readTime": "6 минут",
     "tags": ["Кошки", "Про растения"],
     "title": "Кошка в квартире: 10 скрытых угроз, которые есть почти у всех",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../images/tests/test_process/test10/1.png",
+      "image": "images/tests/test_process/test10/1.png",
       "question": "Почему откидные окна опасны для кошек?",
       "options": [
         { "id": "a", "text": "Холодно", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../images/tests/test_process/test10/2.png",
+      "image": "images/tests/test_process/test10/2.png",
       "question": "Чем опасны нитки и мишура?",
       "options": [
         { "id": "a", "text": "Путаются", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../images/tests/test_process/test10/3.png",
+      "image": "images/tests/test_process/test10/3.png",
       "question": "Почему ароматические свечи опасны?",
       "options": [
         { "id": "a", "text": "Огонь", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../images/tests/test_process/test10/4.png",
+      "image": "images/tests/test_process/test10/4.png",
       "question": "Чем опасны пакеты?",
       "options": [
         { "id": "a", "text": "Шуршат", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../images/tests/test_process/test10/5.png",
+      "image": "images/tests/test_process/test10/5.png",
       "question": "Почему стиральная машина — риск?",
       "options": [
         { "id": "a", "text": "Шумная", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../images/tests/test_process/test10/6.png",
+      "image": "images/tests/test_process/test10/6.png",
       "question": "Чем опасны таблетки без упаковки?",
       "options": [
         { "id": "a", "text": "Маленькие", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../images/tests/test_process/test10/7.png",
+      "image": "images/tests/test_process/test10/7.png",
       "question": "Почему тефлоновые сковороды опасны при перегреве?",
       "options": [
         { "id": "a", "text": "Дым", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../images/tests/test_process/test10/8.png",
+      "image": "images/tests/test_process/test10/8.png",
       "question": "Чем опасна новогодняя «дождинка»?",
       "options": [
         { "id": "a", "text": "Блестит", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../images/tests/test_process/test10/9.png",
+      "image": "images/tests/test_process/test10/9.png",
       "question": "Почему открытые балконы опасны?",
       "options": [
         { "id": "a", "text": "Высота", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../images/tests/test_process/test10/10.png",
+      "image": "images/tests/test_process/test10/10.png",
       "question": "Чем опасны комнатные диффузоры?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },

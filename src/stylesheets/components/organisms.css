@@ -1,114 +1,8 @@
-.O_navigationLinks {
+.O_Header {
   display: flex;
-  gap: 1.39vw;
-}
-
-.O_info404 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.08vw;
-  z-index: 5;
-
-  > h1 {
-    color: #fff;
-    font-size: 6.67vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-  }
-
-  > a {
-    display: flex;
-    width: 16.6vw;
-    height: 2.92vw;
-    padding: 0.35vw 1.39vw 0.21vw 1.39vw;
-    justify-content: center;
-    align-items: center;
-    gap: 0.83vw;
-    border-radius: 2.78vw;
-    background: var(--White, #fff);
-
-    color: black;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-  }
-}
-
-.O_mainSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 17.36vw;
-  gap: 13.89vw;
-  position: relative;
-  overflow: hidden;
-
-  > h1 {
-    color: #fff;
-    width: 60.14vw;
-    text-align: center;
-    z-index: 4;
-  }
-
-  > img[class^='Q_openFlowers'] {
-    position: relative;
-    z-index: 2;
-  }
-
-  .bubble-icon {
-    position: absolute;
-    bottom: 3.47vw;
-    animation: floatUp linear forwards;
-    animation-fill-mode: both;
-    z-index: 1;
-  }
-}
-
-.O_quizModal {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(15, 14, 14, 0.7);
-  backdrop-filter: blur(0.52vw);
-  display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-@keyframes floatUp {
-  0% {
-    transform: translateY(0) translateX(0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 0.7;
-  }
-  25% {
-    transform: translateY(-25vh) translateX(calc(var(--float-x) * 0.3))
-      rotate(calc(var(--float-rotate) * 0.3));
-  }
-  50% {
-    transform: translateY(-50vh) translateX(calc(var(--float-x) * 0.7))
-      rotate(calc(var(--float-rotate) * 0.6));
-  }
-  75% {
-    transform: translateY(-75vh) translateX(calc(var(--float-x) * 0.5))
-      rotate(calc(var(--float-rotate) * 0.8));
-  }
-  90% {
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(-100vh) translateX(var(--float-x))
-      rotate(var(--float-rotate));
-    opacity: 0;
-  }
+  justify-content: space-between;
 }
 
 .O_menuOverlay,
@@ -117,260 +11,135 @@
 }
 
 .O_aboutSection {
-  margin: 10.42vw auto 0 auto;
   display: flex;
-  gap: 2.78vw;
-
-  > div {
-    width: 53.68vw;
-    height: 13.89vw;
-    border-radius: 1.39vw;
-    background: url(../../images/Gemini_Generated_Image_sj97t3sj97t3sj97.png);
-    flex-shrink: 0;
-    background-size: cover;
-  }
-
-  > h2 {
-    color: var(--lightGray);
-    font-size: var(--h2);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 2.75vw */
-
-    > span {
-      color: var(--white);
-    }
-  }
+  width: 100%;
+  align-items: center;
+  gap: 1.6vw;
 }
 
-.O_searchSection {
-  margin: 15.28vw auto 0 auto;
-  width: fit-content;
-
+.O_promoArticles {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7.64vw;
+  gap: 5.56vw;
+  width: 75.83vw;
+  height: 32.92vw;
+  margin: 0 auto;
 }
 
-.O_statisticArea {
+.O_ArticlesShowcase {
   display: flex;
-  margin-top: 15.28vw;
-  gap: 9.03vw;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.26vw;
+}
 
-  > h2 {
-    color: var(--lightGray);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 2.75vw */
-
-    > span {
-      color: var(--white);
-    }
+.O_mainScreenSection {
+  > img {
+    margin-top: -13.82vw;
+    width: calc(100% + 3.47vw * 2);
+    margin-left: -3.47vw;
+    height: auto;
   }
 }
 
-.O_articleSlider {
-  margin-top: 15.28vw;
-}
-
-.O_cardsMedia {
+.O_dogsPhotoArea {
+  width: 100%;
+  height: 29.24vw;
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
-  margin: 15.28vw 0;
-  gap: 1.39vw;
+  justify-content: center;
 
-  > h2 {
-    color: var(--white);
-    font-size: var(--h2);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 2.75vw */
+  > img {
+    position: absolute;
+    width: 3.76vw;
+    height: 3.76vw;
+
+    &:nth-child(1) {
+      top: 3.96vw;
+      left: 3.82vw;
+    }
+    &:nth-child(2) {
+      top: 13.33vw;
+      left: 15.76vw;
+    }
+    &:nth-child(3) {
+      top: 24.79vw;
+      left: 0;
+    }
+    &:nth-child(5) {
+      top: 3.96vw;
+      right: 1.25vw;
+    }
+    &:nth-child(6) {
+      top: 15.07vw;
+      right: 15.76vw;
+    }
+    &:nth-child(7) {
+      top: 24.1vw;
+      right: 0;
+    }
   }
 }
 
-.O_testsSection {
+.O_aboutMedia {
+  width: 62.93vw;
+  height: 21.94vw;
   display: flex;
   flex-direction: column;
-  gap: 2.08vw;
-  margin-top: 11.696vw;
+  margin: 0 auto;
+}
 
-  > h2 {
-    color: var(--white);
-  }
-
-  .W_testImageWrapper {
-    > img {
-      height: 12.5vw;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+.O_articlesPage {
+  display: flex;
+  flex-direction: column;
+  gap: 3.47vw;
+  margin: 10.9vw auto 10.42vw auto;
 }
 
 .O_riskMapPage {
-  margin-top: 6.94vw;
+  margin: 10.97vw auto 9.1vw auto;
+  height: 55vw;
   display: flex;
-  gap: 4.79vw;
+  width: 100%;
+  gap: 1.39vw;
 }
 
-.O_riskMapSidebar {
+.О_recomendedMapScreen {
+  display: flex;
+  flex-direction: column;
+  width: 45.83vw;
+  gap: 1.39vw;
+  border-radius: 1.74vw;
+  background: var(--Carbon-Black);
+
+  .С_tagsList {
+    display: flex;
+    padding: 1.39vw 2.08vw 2.08vw 1.39vw;
+    align-items: center;
+    align-content: center;
+    gap: 0.69vw;
+    border-radius: 1.74vw 1.74vw 0 0;
+    background: var(--Carbon-Black);
+
+    .A_tag--active {
+      background: var(--Wild-Strawberry);
+    }
+  }
+}
+
+.O_testsPage {
+  margin: 10.42vw auto 5vw auto;
   display: flex;
   flex-direction: column;
   gap: 3.47vw;
 }
 
-.O_learningPage {
-  margin-top: 6.94vw;
-}
-
 .O_articleView {
-  margin: 6.94vw 0;
+  margin: 10.42vw auto 10.42vw auto;
   display: flex;
-  justify-content: space-between;
-}
-
-.O_Logo {
-  width: 3.47vw;
-
-  > img {
-    width: 100%;
-  }
-}
-
-.O_mobileMenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  flex-direction: column;
-  gap: 2.27vw;
-  padding: 2.27vw;
-  background: var(--darkGray);
-  border-radius: 4.55vw;
-  margin-top: 4.55vw;
-  z-index: 1000;
-}
-
-.O_mobileMenuOpen {
-  display: flex;
-}
-
-.O_menuOverlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(26, 25, 25, 0.15);
-  backdrop-filter: blur(3px);
-  z-index: 900;
-}
-
-.O_menuOverlayActive {
-  display: block;
-}
-
-.O_swipeCardsSection {
-  margin-top: 15.97vw;
-}
-
-@media screen and (max-width: 767px) {
-  .O_riskMapPage {
-    margin-top: 11.36vw;
-    flex-direction: column;
-    gap: 11.36vw;
-  }
-
-  .O_Logo {
-    width: 11.36vw;
-    > img {
-      width: 100%;
-    }
-  }
-
-  .O_navigationLinks {
-    display: none;
-  }
-
-  .O_learningPage {
-    margin-top: 13.64vw;
-  }
-
-  .O_articleView {
-    margin: 13.52vw 0;
-    flex-direction: column;
-    gap: 8.64vw;
-  }
-
-  .O_mainSection {
-    padding-top: 65.34vw;
-    gap: 43.18vw;
-
-    > h1 {
-      width: 100%;
-    }
-  }
-
-  .O_aboutSection {
-    margin: 34.09vw 0 0 0;
-
-    > div {
-      display: none;
-    }
-  }
-
-  .O_statisticArea {
-    flex-direction: column;
-    margin-top: 29.09vw;
-    gap: 22.73vw;
-  }
-
-  .O_testsSection {
-    margin-top: 22.73vw;
-
-    > h2 {
-      display: none;
-    }
-  }
-
-  .O_cardsMedia {
-    margin: 50.68vw 0 25.68vw;
-    gap: 2.27vw;
-  }
-
-  .O_searchSection {
-    margin: 39.32vw 0 0 0;
-  }
-
-  .O_articleSlider {
-    margin-top: 22.73vw;
-  }
-
-  .O_swipeCardsSection {
-    margin-top: 22.73vw;
-  }
-
-  .O_info404 {
-    gap: 5vw;
-    width: 63.18vw;
-
-    > a {
-      height: auto;
-      padding: 2.27vw 4.55vw;
-      gap: 2.73vw;
-      width: auto;
-      border-radius: 9.09vw;
-      font-size: var(--p);
-    }
-
-    > h1 {
-      text-align: center;
-    }
-  }
+  gap: 3.47vw;
+  align-items: flex-start;
 }
 
 /* Модалка теста (квиз) */

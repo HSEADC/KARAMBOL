@@ -17,7 +17,7 @@ const TAGS = [
   { label: 'Мероприятия', value: 'Мероприятия' },
   { label: 'Life-стайл', value: 'Life-стайл' },
   { label: 'Питание', value: 'Питание' },
-  { label: 'Зоомагазин', value: 'Зоомагазин' },
+  { label: 'Зоомагазин', value: 'Зоомагазин' }
 ]
 
 const TestCard = ({ test, onSelect }) => (

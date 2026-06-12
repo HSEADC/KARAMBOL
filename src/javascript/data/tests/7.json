@@ -1,7 +1,7 @@
 {
   "id": 7,
   "card": {
-    "image": "../../images/tests/test7.jpg",
+    "image": "images/tests/test7.jpg",
     "readTime": "6 минут",
     "tags": ["Кошки", "Про растения"],
     "title": "Эти растения могут медленно убивать кошку у тебя дома",
@@ -10,7 +10,7 @@
   "questions": [
     {
       "id": 1,
-      "image": "../../images/tests/test_process/test7/1.png",
+      "image": "images/tests/test_process/test7/1.png",
       "question": "Самое опасное растение для кошек:",
       "options": [
         { "id": "a", "text": "Фикус", "isCorrect": false },
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "image": "../../images/tests/test_process/test7/2.png",
+      "image": "images/tests/test_process/test7/2.png",
       "question": "Чем опасна диффенбахия?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },
@@ -32,7 +32,7 @@
     },
     {
       "id": 3,
-      "image": "../../images/tests/test_process/test7/3.png",
+      "image": "images/tests/test_process/test7/3.png",
       "question": "Чем опасен спатифиллум?",
       "options": [
         { "id": "a", "text": "Пыльца", "isCorrect": false },
@@ -43,7 +43,7 @@
     },
     {
       "id": 4,
-      "image": "../../images/tests/test_process/test7/4.png",
+      "image": "images/tests/test_process/test7/4.png",
       "question": "Почему опасен алоэ?",
       "options": [
         { "id": "a", "text": "Колючки", "isCorrect": false },
@@ -54,7 +54,7 @@
     },
     {
       "id": 5,
-      "image": "../../images/tests/test_process/test7/5.png",
+      "image": "images/tests/test_process/test7/5.png",
       "question": "Чем опасен фикус?",
       "options": [
         { "id": "a", "text": "Пыль", "isCorrect": false },
@@ -65,7 +65,7 @@
     },
     {
       "id": 6,
-      "image": "../../images/tests/test_process/test7/6.png",
+      "image": "images/tests/test_process/test7/6.png",
       "question": "Почему опасны тюльпаны?",
       "options": [
         { "id": "a", "text": "Листья", "isCorrect": false },
@@ -76,7 +76,7 @@
     },
     {
       "id": 7,
-      "image": "../../images/tests/test_process/test7/7.png",
+      "image": "images/tests/test_process/test7/7.png",
       "question": "Чем опасен плющ?",
       "options": [
         { "id": "a", "text": "Запах", "isCorrect": false },
@@ -87,7 +87,7 @@
     },
     {
       "id": 8,
-      "image": "../../images/tests/test_process/test7/8.png",
+      "image": "images/tests/test_process/test7/8.png",
       "question": "Почему опасен олеандр?",
       "options": [
         { "id": "a", "text": "Пыльца", "isCorrect": false },
@@ -98,7 +98,7 @@
     },
     {
       "id": 9,
-      "image": "../../images/tests/test_process/test7/9.png",
+      "image": "images/tests/test_process/test7/9.png",
       "question": "Чем опасен каланхоэ?",
       "options": [
         { "id": "a", "text": "Листья", "isCorrect": false },
@@ -109,7 +109,7 @@
     },
     {
       "id": 10,
-      "image": "../../images/tests/test_process/test7/10.png",
+      "image": "images/tests/test_process/test7/10.png",
       "question": "Почему даже вода из вазы с лилиями опасна?",
       "options": [
         { "id": "a", "text": "Грязная", "isCorrect": false },
