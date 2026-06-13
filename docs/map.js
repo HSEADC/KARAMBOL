@@ -17303,17 +17303,7 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
-;// ./src/javascript/components/map/RiskMapSidebar.jsx
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+;// ./src/javascript/components/map/RecommendedCard.jsx
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -17321,210 +17311,140 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
-var RiskMapSidebar = function RiskMapSidebar(_ref) {
-  var onFilterChange = _ref.onFilterChange;
-  var _useState = (0,react.useState)({
-      toxic: false,
-      contact: false,
-      seasonal: false,
-      poisonous: false,
-      catDanger: false,
-      dogDanger: false
-    }),
+var RecommendedCard = function RecommendedCard(_ref) {
+  var image = _ref.image,
+    title = _ref.title,
+    location = _ref.location,
+    date = _ref.date,
+    isLarge = _ref.isLarge;
+  var _useState = (0,react.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
-    riskTypes = _useState2[0],
-    setRiskTypes = _useState2[1];
-  var _useState3 = (0,react.useState)({
-      flowering: false,
-      fruiting: false,
-      springActive: false,
-      summerActive: false,
-      fallActive: false
-    }),
-    _useState4 = _slicedToArray(_useState3, 2),
-    phases = _useState4[0],
-    setPhases = _useState4[1];
-  var _useState5 = (0,react.useState)({
-      home: false,
-      yard: false,
-      city: false,
-      forest: false
-    }),
-    _useState6 = _slicedToArray(_useState5, 2),
-    zones = _useState6[0],
-    setZones = _useState6[1];
-  var _useState7 = (0,react.useState)({
-      riskTypes: false,
-      phases: false,
-      zones: false
-    }),
-    _useState8 = _slicedToArray(_useState7, 2),
-    expandedSections = _useState8[0],
-    setExpandedSections = _useState8[1];
-  var toggleSection = function toggleSection(section) {
-    setExpandedSections(_objectSpread(_objectSpread({}, expandedSections), {}, _defineProperty({}, section, !expandedSections[section])));
-  };
-  var toggleRiskType = function toggleRiskType(type) {
-    setRiskTypes(_objectSpread(_objectSpread({}, riskTypes), {}, _defineProperty({}, type, !riskTypes[type])));
-  };
-  var togglePhase = function togglePhase(phase) {
-    setPhases(_objectSpread(_objectSpread({}, phases), {}, _defineProperty({}, phase, !phases[phase])));
-  };
-  var toggleZone = function toggleZone(zone) {
-    setZones(_objectSpread(_objectSpread({}, zones), {}, _defineProperty({}, zone, !zones[zone])));
-  };
-  (0,react.useEffect)(function () {
-    var activeFilters = [].concat(_toConsumableArray(Object.keys(riskTypes).filter(function (key) {
-      return riskTypes[key];
-    })), _toConsumableArray(Object.keys(phases).filter(function (key) {
-      return phases[key];
-    })), _toConsumableArray(Object.keys(zones).filter(function (key) {
-      return zones[key];
-    })));
-    if (onFilterChange) {
-      onFilterChange(activeFilters);
-    }
-  }, [riskTypes, phases, zones]);
+    liked = _useState2[0],
+    setLiked = _useState2[1];
   return /*#__PURE__*/react.createElement("div", {
-    className: "O_riskMapSidebar"
+    className: "M_reccomendedCard ".concat(isLarge ? 'M_reccomendedCard--large' : 'M_reccomendedCard--small')
   }, /*#__PURE__*/react.createElement("div", {
-    className: "W_sidebarHeader"
-  }, /*#__PURE__*/react.createElement("h1", null, "\u041A\u0430\u0440\u0442\u0430 \u0440\u0438\u0441\u043A\u043E\u0432"), /*#__PURE__*/react.createElement("p", {
-    className: "A_cityName"
-  }, "\u0433. \u041C\u043E\u0441\u043A\u0432\u0430")), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSection"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSectionHeader",
+    className: "W_headOfRecommeded"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: image,
+    alt: title
+  }), /*#__PURE__*/react.createElement("button", {
+    className: "Q_Like ".concat(liked ? 'Q_Like--active' : ''),
     onClick: function onClick() {
-      return toggleSection('riskTypes');
+      return setLiked(!liked);
     }
-  }, /*#__PURE__*/react.createElement("p", null, "\u0422\u0438\u043F \u0440\u0438\u0441\u043A\u0430"), /*#__PURE__*/react.createElement("span", {
-    className: "A_toggleIcon"
-  }, expandedSections.riskTypes ? '−' : '+')), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterButtons ".concat(expandedSections.riskTypes ? 'W_filterButtonsExpanded' : '')
-  }, /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.toxic ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('toxic');
-    }
-  }, "#\u0422\u043E\u043A\u0441\u0438\u0447\u043D\u044B\u0435 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.contact ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('contact');
-    }
-  }, "#\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u043E-\u043E\u043F\u0430\u0441\u043D\u044B\u0435 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.seasonal ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('seasonal');
-    }
-  }, "#\u0421\u0435\u0437\u043E\u043D\u043D\u044B\u0435 \u0430\u043B\u043B\u0435\u0440\u0433\u0435\u043D\u044B"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.poisonous ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('poisonous');
-    }
-  }, "#\u042F\u0434\u043E\u0432\u0438\u0442\u044B\u0435 \u0434\u0438\u043A\u0438\u0435 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.catDanger ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('catDanger');
-    }
-  }, "#\u041E\u043F\u0430\u0441\u043D\u044B\u0435 \u0434\u043B\u044F \u043A\u043E\u0448\u0435\u043A"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(riskTypes.dogDanger ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleRiskType('dogDanger');
-    }
-  }, "#\u041E\u043F\u0430\u0441\u043D\u044B\u0435 \u0434\u043B\u044F \u0441\u043E\u0431\u0430\u043A"))), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSection"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSectionHeader",
-    onClick: function onClick() {
-      return toggleSection('phases');
-    }
-  }, /*#__PURE__*/react.createElement("p", null, "\u0424\u0430\u0437\u0430 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u0438"), /*#__PURE__*/react.createElement("span", {
-    className: "A_toggleIcon"
-  }, expandedSections.phases ? '−' : '+')), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterButtons ".concat(expandedSections.phases ? 'W_filterButtonsExpanded' : '')
-  }, /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(phases.flowering ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return togglePhase('flowering');
-    }
-  }, "#\u0421\u0435\u0439\u0447\u0430\u0441 \u0446\u0432\u0435\u0442\u0451\u0442"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(phases.fruiting ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return togglePhase('fruiting');
-    }
-  }, "#\u041F\u0435\u0440\u0438\u043E\u0434 \u043F\u043B\u043E\u0434\u043E\u043D\u043E\u0448\u0435\u043D\u0438\u044F"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(phases.springActive ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return togglePhase('springActive');
-    }
-  }, "#\u0410\u043A\u0442\u0438\u0432\u043D\u043E \u0432\u0435\u0441\u043D\u043E\u0439"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(phases.summerActive ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return togglePhase('summerActive');
-    }
-  }, "#\u0410\u043A\u0442\u0438\u0432\u043D\u043E \u043B\u0435\u0442\u043E\u043C"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(phases.fallActive ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return togglePhase('fallActive');
-    }
-  }, "#\u0410\u043A\u0442\u0438\u0432\u043D\u043E \u043E\u0441\u0435\u043D\u044C\u044E"))), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSection"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_filterSectionHeader",
-    onClick: function onClick() {
-      return toggleSection('zones');
-    }
-  }, /*#__PURE__*/react.createElement("p", null, "\u0417\u043E\u043D\u0430 \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u0438"), /*#__PURE__*/react.createElement("span", {
-    className: "A_toggleIcon"
-  }, expandedSections.zones ? '−' : '+')), /*#__PURE__*/react.createElement("div", {
-    className: "W_filterButtons ".concat(expandedSections.zones ? 'W_filterButtonsExpanded' : '')
-  }, /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(zones.home ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleZone('home');
-    }
-  }, "#\u041A\u043E\u043C\u043D\u0430\u0442\u0430/\u0434\u043E\u043C"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(zones.yard ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleZone('yard');
-    }
-  }, "#\u0412\u043E \u0434\u0432\u043E\u0440\u0435"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(zones.city ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleZone('city');
-    }
-  }, "#\u0413\u043E\u0440\u043E\u0434"), /*#__PURE__*/react.createElement("button", {
-    className: "A_filterButton ".concat(zones.forest ? 'A_filterButtonActive' : ''),
-    onClick: function onClick() {
-      return toggleZone('forest');
-    }
-  }, "#\u041B\u0435\u0441"))), /*#__PURE__*/react.createElement("p", {
-    className: "A_disclaimer"
-  }, "\u041A\u0430\u0440\u0442\u0430 \u0430\u043B\u043B\u0435\u0440\u0433\u0435\u043D\u043D\u044B\u0445 \u0437\u043E\u043D \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043D\u0435\u0442\u043E\u0447\u043D\u043E\u0439 \u2014 \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0434\u0430\u0442\u0443 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u0438; \u043F\u0440\u0438 \u0441\u043E\u043C\u043D\u0435\u043D\u0438\u044F\u0445 \u0438\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u0437\u043E\u043D\u044B \u0438 \u0441\u043E\u043E\u0431\u0449\u0438\u0442\u0435 \u043E \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0435, \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0432 \u0444\u043E\u0442\u043E \u0438\u043B\u0438 \u043E\u0442\u0447\u0451\u0442."));
+  }, /*#__PURE__*/react.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "16",
+    height: "16",
+    viewBox: "0 0 24 24",
+    fill: liked ? 'white' : 'none',
+    stroke: "white",
+    strokeWidth: "2"
+  }, /*#__PURE__*/react.createElement("path", {
+    d: "M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+  })))), /*#__PURE__*/react.createElement("div", {
+    className: "W_reccomendedInfo"
+  }, /*#__PURE__*/react.createElement("h3", null, title), /*#__PURE__*/react.createElement("p", {
+    className: "tag"
+  }, location, " \xB7 ", date)));
 };
-/* harmony default export */ const map_RiskMapSidebar = (RiskMapSidebar);
+/* harmony default export */ const map_RecommendedCard = (RecommendedCard);
 ;// ./src/javascript/data/riskPoints.json
-const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"Парк Горького","coordinates":[55.731386,37.60304],"types":["toxic","seasonal","flowering","summerActive","city"]},{"id":2,"name":"ВДНХ","coordinates":[55.82815,37.6304],"types":["contact","dogDanger","fruiting","springActive","city"]},{"id":3,"name":"Нескучный сад","coordinates":[55.71974,37.58596],"types":["poisonous","catDanger","flowering","fallActive","yard"]},{"id":4,"name":"Коломенское","coordinates":[55.66752,37.6717],"types":["seasonal","poisonous","summerActive","fruiting","forest"]},{"id":5,"name":"Царицыно","coordinates":[55.61556,37.6804],"types":["toxic","contact","flowering","springActive","city"]},{"id":6,"name":"Сокольники","coordinates":[55.79449,37.6714],"types":["seasonal","dogDanger","fallActive","fruiting","forest"]},{"id":7,"name":"Измайловский парк","coordinates":[55.79058,37.7955],"types":["contact","catDanger","summerActive","flowering","city"]},{"id":8,"name":"Битцевский лес","coordinates":[55.62587,37.55064],"types":["poisonous","dogDanger","springActive","fruiting","forest"]},{"id":9,"name":"Воробьёвы горы","coordinates":[55.70966,37.54296],"types":["toxic","seasonal","flowering","fallActive","yard"]},{"id":10,"name":"Кузьминки","coordinates":[55.69287,37.7673],"types":["contact","catDanger","summerActive","fruiting","city"]},{"id":11,"name":"Фили","coordinates":[55.7463,37.4977],"types":["seasonal","poisonous","springActive","flowering","forest"]},{"id":12,"name":"Тропарёво","coordinates":[55.64655,37.472],"types":["toxic","dogDanger","fallActive","fruiting","yard"]},{"id":13,"name":"Лосиный остров","coordinates":[55.8642,37.7366],"types":["poisonous","contact","summerActive","flowering","forest"]},{"id":14,"name":"Покровское-Стрешнево","coordinates":[55.8204,37.4708],"types":["seasonal","catDanger","springActive","fruiting","city"]},{"id":15,"name":"Красная Пресня","coordinates":[55.7627,37.5621],"types":["toxic","dogDanger","flowering","fallActive","city"]},{"id":16,"name":"Парк Победы","coordinates":[55.73305,37.5121],"types":["seasonal","toxic","summerActive","flowering","city"]},{"id":17,"name":"Ботанический сад МГУ","coordinates":[55.7057,37.5273],"types":["poisonous","catDanger","springActive","fruiting","yard"]},{"id":18,"name":"Парк Фили","coordinates":[55.7502,37.4895],"types":["contact","dogDanger","fallActive","flowering","forest"]},{"id":19,"name":"Серебряный бор","coordinates":[55.7826,37.4237],"types":["seasonal","poisonous","summerActive","fruiting","forest"]},{"id":20,"name":"Парк Кусково","coordinates":[55.7361,37.8094],"types":["toxic","contact","springActive","flowering","city"]},{"id":21,"name":"Главный ботанический сад","coordinates":[55.8419,37.6001],"types":["poisonous","catDanger","flowering","fallActive","yard"]},{"id":22,"name":"Парк Северное Тушино","coordinates":[55.8592,37.4359],"types":["seasonal","dogDanger","summerActive","fruiting","city"]},{"id":23,"name":"Таганский парк","coordinates":[55.7416,37.6615],"types":["toxic","contact","springActive","flowering","city"]},{"id":24,"name":"Парк Дружбы","coordinates":[55.8398,37.4928],"types":["seasonal","catDanger","fallActive","fruiting","yard"]},{"id":25,"name":"Бульвар Дмитрия Донского","coordinates":[55.5689,37.5747],"types":["poisonous","dogDanger","summerActive","flowering","city"]},{"id":26,"name":"Парк Ангарские пруды","coordinates":[55.6145,37.5843],"types":["contact","toxic","springActive","fruiting","yard"]},{"id":27,"name":"Терлецкий парк","coordinates":[55.7539,37.8312],"types":["seasonal","poisonous","fallActive","flowering","forest"]},{"id":28,"name":"Парк Братеево","coordinates":[55.6334,37.7447],"types":["catDanger","contact","summerActive","fruiting","city"]},{"id":29,"name":"Парк 850-летия Москвы","coordinates":[55.8761,37.5319],"types":["dogDanger","toxic","springActive","flowering","city"]},{"id":30,"name":"Парк Левобережный","coordinates":[55.8573,37.481],"types":["seasonal","poisonous","fallActive","fruiting","yard"]},{"id":31,"name":"Бабушкинский парк","coordinates":[55.8686,37.6621],"types":["contact","catDanger","summerActive","flowering","forest"]},{"id":32,"name":"Парк Олимпийская деревня","coordinates":[55.8118,37.4852],"types":["toxic","dogDanger","springActive","fruiting","city"]},{"id":33,"name":"Митинский парк","coordinates":[55.8395,37.3568],"types":["seasonal","contact","fallActive","flowering","yard"]},{"id":34,"name":"Парк Кузьминки-Люблино","coordinates":[55.6904,37.7806],"types":["poisonous","catDanger","summerActive","fruiting","forest"]},{"id":35,"name":"Александровский сад","coordinates":[55.752,37.6115],"types":["seasonal","toxic","springActive","flowering","city"]},{"id":36,"name":"Парк Красногвардейские пруды","coordinates":[55.7625,37.7438],"types":["contact","dogDanger","fallActive","fruiting","yard"]},{"id":37,"name":"Парк Перовский","coordinates":[55.7498,37.7914],"types":["poisonous","seasonal","summerActive","flowering","city"]},{"id":38,"name":"Парк Красная Пахра","coordinates":[55.5582,37.5283],"types":["toxic","catDanger","springActive","fruiting","forest"]},{"id":39,"name":"Парк Дубки","coordinates":[55.8317,37.4042],"types":["seasonal","contact","fallActive","flowering","yard"]},{"id":40,"name":"Лианозовский парк","coordinates":[55.8969,37.5703],"types":["dogDanger","poisonous","summerActive","fruiting","forest"]}]');
-;// ./src/javascript/components/map/RiskMapPage.jsx
-function RiskMapPage_slicedToArray(r, e) { return RiskMapPage_arrayWithHoles(r) || RiskMapPage_iterableToArrayLimit(r, e) || RiskMapPage_unsupportedIterableToArray(r, e) || RiskMapPage_nonIterableRest(); }
-function RiskMapPage_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function RiskMapPage_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return RiskMapPage_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? RiskMapPage_arrayLikeToArray(r, a) : void 0; } }
-function RiskMapPage_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function RiskMapPage_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function RiskMapPage_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"Парк Горького","coordinates":[55.731386,37.60304],"types":["events","summer","cafe"]},{"id":2,"name":"ВДНХ","coordinates":[55.82815,37.6304],"types":["events","summer2026","petshop"]},{"id":3,"name":"Нескучный сад","coordinates":[55.71974,37.58596],"types":["summer","cynology"]},{"id":4,"name":"Коломенское","coordinates":[55.66752,37.6717],"types":["summer","events"]},{"id":5,"name":"Царицыно","coordinates":[55.61556,37.6804],"types":["summer2026","cafe"]},{"id":6,"name":"Сокольники","coordinates":[55.79449,37.6714],"types":["events","cynology","grooming"]},{"id":7,"name":"Измайловский парк","coordinates":[55.79058,37.7955],"types":["summer","petshop"]},{"id":8,"name":"Битцевский лес","coordinates":[55.62587,37.55064],"types":["cynology","summer"]},{"id":9,"name":"Воробьёвы горы","coordinates":[55.70966,37.54296],"types":["summer","events"]},{"id":10,"name":"Кузьминки","coordinates":[55.69287,37.7673],"types":["summer2026","cafe","grooming"]},{"id":11,"name":"Фили","coordinates":[55.7463,37.4977],"types":["summer","cynology"]},{"id":12,"name":"Тропарёво","coordinates":[55.64655,37.472],"types":["summer","vet"]},{"id":13,"name":"Лосиный остров","coordinates":[55.8642,37.7366],"types":["cynology","events"]},{"id":14,"name":"Покровское-Стрешнево","coordinates":[55.8204,37.4708],"types":["summer2026","grooming"]},{"id":15,"name":"Красная Пресня","coordinates":[55.7627,37.5621],"types":["cafe","petshop"]},{"id":16,"name":"Парк Победы","coordinates":[55.73305,37.5121],"types":["events","summer2026"]},{"id":17,"name":"Ботанический сад МГУ","coordinates":[55.7057,37.5273],"types":["summer","vet"]},{"id":18,"name":"Парк Фили","coordinates":[55.7502,37.4895],"types":["cynology","summer"]},{"id":19,"name":"Серебряный бор","coordinates":[55.7826,37.4237],"types":["summer","events"]},{"id":20,"name":"Парк Кусково","coordinates":[55.7361,37.8094],"types":["summer2026","cafe"]},{"id":21,"name":"Главный ботанический сад","coordinates":[55.8419,37.6001],"types":["summer","grooming"]},{"id":22,"name":"Парк Северное Тушино","coordinates":[55.8592,37.4359],"types":["events","petshop"]},{"id":23,"name":"Таганский парк","coordinates":[55.7416,37.6615],"types":["cafe","summer2026"]},{"id":24,"name":"Парк Дружбы","coordinates":[55.8398,37.4928],"types":["summer","cynology"]},{"id":25,"name":"Бульвар Дмитрия Донского","coordinates":[55.5689,37.5747],"types":["vet","petshop"]},{"id":26,"name":"Парк Ангарские пруды","coordinates":[55.6145,37.5843],"types":["summer","grooming"]},{"id":27,"name":"Терлецкий парк","coordinates":[55.7539,37.8312],"types":["cynology","events"]},{"id":28,"name":"Парк Братеево","coordinates":[55.6334,37.7447],"types":["summer2026","cafe"]},{"id":29,"name":"Парк 850-летия Москвы","coordinates":[55.8761,37.5319],"types":["events","summer"]},{"id":30,"name":"Парк Левобережный","coordinates":[55.8573,37.481],"types":["summer","grooming"]},{"id":31,"name":"Бабушкинский парк","coordinates":[55.8686,37.6621],"types":["cynology","petshop"]},{"id":32,"name":"Парк Олимпийская деревня","coordinates":[55.8118,37.4852],"types":["summer2026","vet"]},{"id":33,"name":"Митинский парк","coordinates":[55.8395,37.3568],"types":["summer","cafe"]},{"id":34,"name":"Парк Кузьминки-Люблино","coordinates":[55.6904,37.7806],"types":["cynology","grooming"]},{"id":35,"name":"Александровский сад","coordinates":[55.752,37.6115],"types":["events","summer2026"]},{"id":36,"name":"Парк Красногвардейские пруды","coordinates":[55.7625,37.7438],"types":["summer","petshop"]},{"id":37,"name":"Парк Перовский","coordinates":[55.7498,37.7914],"types":["cafe","cynology"]},{"id":38,"name":"Парк Красная Пахра","coordinates":[55.5582,37.5283],"types":["vet","summer"]},{"id":39,"name":"Парк Дубки","coordinates":[55.8317,37.4042],"types":["grooming","summer2026"]},{"id":40,"name":"Лианозовский парк","coordinates":[55.8969,37.5703],"types":["events","cynology"]}]');
+;// ./src/javascript/components/map/RiskMapSidebar.jsx
+function RiskMapSidebar_slicedToArray(r, e) { return RiskMapSidebar_arrayWithHoles(r) || RiskMapSidebar_iterableToArrayLimit(r, e) || RiskMapSidebar_unsupportedIterableToArray(r, e) || RiskMapSidebar_nonIterableRest(); }
+function RiskMapSidebar_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function RiskMapSidebar_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return RiskMapSidebar_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? RiskMapSidebar_arrayLikeToArray(r, a) : void 0; } }
+function RiskMapSidebar_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function RiskMapSidebar_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function RiskMapSidebar_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-var RiskMapPage = function RiskMapPage() {
-  var _useState = (0,react.useState)(true),
-    _useState2 = RiskMapPage_slicedToArray(_useState, 2),
-    showTooltip = _useState2[0],
-    setShowTooltip = _useState2[1];
-  var _useState3 = (0,react.useState)([]),
-    _useState4 = RiskMapPage_slicedToArray(_useState3, 2),
-    activeFilters = _useState4[0],
-    setActiveFilters = _useState4[1];
+var TAGS = [{
+  label: 'Все',
+  value: ''
+}, {
+  label: 'Мероприятия',
+  value: 'events'
+}, {
+  label: 'Лето 2026',
+  value: 'summer2026'
+}, {
+  label: 'Кинологические центры',
+  value: 'cynology'
+}, {
+  label: 'Лето',
+  value: 'summer'
+}, {
+  label: 'Ветеринарные клиники',
+  value: 'vet'
+}, {
+  label: 'Зоомагазины',
+  value: 'petshop'
+}, {
+  label: 'Кафе, рестораны',
+  value: 'cafe'
+}, {
+  label: 'Груминг',
+  value: 'grooming'
+}];
+var CARDS = [{
+  id: 1,
+  image: 'images/map/photo1.png',
+  title: 'Друг – Спасатель – Защитник',
+  location: 'По всей Москве',
+  date: '24 мая – 14 сентября',
+  isLarge: true
+}, {
+  id: 2,
+  image: 'images/map/photo2.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}, {
+  id: 3,
+  image: 'images/map/photo3.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}, {
+  id: 4,
+  image: 'images/map/photo3.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}, {
+  id: 5,
+  image: 'images/map/photo3.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}, {
+  id: 6,
+  image: 'images/map/photo3.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}, {
+  id: 7,
+  image: 'images/map/photo3.png',
+  title: 'Паддел с таксами',
+  location: 'м. Павелецкая',
+  date: '14 мая 18:00',
+  isLarge: false
+}];
+var RiskMapSidebar = function RiskMapSidebar() {
+  var _useState = (0,react.useState)(''),
+    _useState2 = RiskMapSidebar_slicedToArray(_useState, 2),
+    activeTag = _useState2[0],
+    setActiveTag = _useState2[1];
   var mapRef = (0,react.useRef)(null);
   var placemarks = (0,react.useRef)([]);
   (0,react.useEffect)(function () {
@@ -17537,109 +17457,81 @@ var RiskMapPage = function RiskMapPage() {
             controls: []
           });
           mapRef.current = map;
-          createPlacemarks(map, riskPoints_namespaceObject);
+          riskPoints_namespaceObject.forEach(function (point) {
+            var placemark = new window.ymaps.Placemark(point.coordinates, {
+              balloonContent: point.name
+            }, {
+              preset: 'islands#orangeDotIcon'
+            });
+            placemark.properties.set('types', point.types);
+            map.geoObjects.add(placemark);
+            placemarks.current.push(placemark);
+          });
         });
       }
     };
     if (window.ymaps) {
       initMap();
     } else {
-      var checkYmaps = setInterval(function () {
+      var check = setInterval(function () {
         if (window.ymaps) {
-          clearInterval(checkYmaps);
+          clearInterval(check);
           initMap();
         }
       }, 100);
       return function () {
-        return clearInterval(checkYmaps);
+        return clearInterval(check);
       };
     }
   }, []);
   (0,react.useEffect)(function () {
-    if (mapRef.current && placemarks.current.length > 0) {
-      filterPlacemarks();
-    }
-  }, [activeFilters]);
-  var createPlacemarks = function createPlacemarks(map, points) {
-    points.forEach(function (point) {
-      var placemark = new window.ymaps.Placemark(point.coordinates, {
-        balloonContent: point.name
-      }, {
-        preset: 'islands#orangeDotIcon'
-      });
-      placemark.properties.set('types', point.types);
-      map.geoObjects.add(placemark);
-      placemarks.current.push(placemark);
+    if (!mapRef.current || placemarks.current.length === 0) return;
+    placemarks.current.forEach(function (p) {
+      var types = p.properties.get('types');
+      var visible = !activeTag || types.includes(activeTag);
+      p.options.set('visible', visible);
     });
-  };
-  var filterPlacemarks = function filterPlacemarks() {
-    placemarks.current.forEach(function (placemark) {
-      var types = placemark.properties.get('types');
-      if (activeFilters.length === 0) {
-        placemark.options.set('visible', true);
-      } else {
-        var isVisible = activeFilters.some(function (filter) {
-          return types.includes(filter);
-        });
-        placemark.options.set('visible', isVisible);
-      }
-    });
-  };
-  var handleFilterChange = function handleFilterChange(filters) {
-    setActiveFilters(filters);
-  };
+  }, [activeTag]);
   return /*#__PURE__*/react.createElement("div", {
     className: "O_riskMapPage"
-  }, /*#__PURE__*/react.createElement(map_RiskMapSidebar, {
-    onFilterChange: handleFilterChange
-  }), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "\u041E_recomendedMapScreen"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "\u0421_tagsList"
+  }, TAGS.map(function (tag) {
+    return /*#__PURE__*/react.createElement("button", {
+      key: tag.value,
+      className: "A_tag ".concat(activeTag === tag.value ? 'A_tag--active' : ''),
+      onClick: function onClick() {
+        return setActiveTag(tag.value);
+      }
+    }, tag.label);
+  })), /*#__PURE__*/react.createElement("div", {
+    className: "W_eventList"
+  }, /*#__PURE__*/react.createElement("h2", null, "\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u043C"), /*#__PURE__*/react.createElement("div", {
+    className: "C_eventList"
+  }, CARDS.map(function (card) {
+    return /*#__PURE__*/react.createElement(map_RecommendedCard, {
+      key: card.id,
+      image: card.image,
+      title: card.title,
+      location: card.location,
+      date: card.date,
+      isLarge: card.isLarge
+    });
+  })))), /*#__PURE__*/react.createElement("div", {
     className: "W_mapContainer"
   }, /*#__PURE__*/react.createElement("div", {
     className: "W_mapWrapper",
     id: "yandex-map"
-  }), showTooltip && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "W_tooltipOverlay",
-    onClick: function onClick() {
-      return setShowTooltip(false);
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "W_shareTooltip"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_tooltipContent"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "A_shareIcon"
-  }, /*#__PURE__*/react.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "55",
-    height: "70",
-    viewBox: "0 0 55 70",
-    fill: "none"
-  }, /*#__PURE__*/react.createElement("path", {
-    d: "M27.5 45.5363C29.2112 45.5363 30.5622 44.1436 30.5622 42.5087V12.4438L30.3221 7.9628L32.0633 10.2336L35.9962 14.4723C36.5366 15.0779 37.2871 15.3806 38.0377 15.3806C39.5087 15.3806 40.7396 14.2907 40.7396 12.7465C40.7396 11.9593 40.4394 11.3538 39.899 10.8088L29.8717 1.08997C29.0611 0.302768 28.3106 0 27.5 0C26.6894 0 25.9088 0.302768 25.1283 1.08997L15.101 10.8088C14.5306 11.3538 14.2303 11.9593 14.2303 12.7465C14.2303 14.2907 15.4612 15.3806 16.9323 15.3806C17.6829 15.3806 18.4634 15.0779 18.9738 14.4723L22.9367 10.2336L24.6779 7.9628L24.4078 12.4438V42.5087C24.4078 44.1436 25.7888 45.5363 27.5 45.5363ZM10.1774 70H44.8226C51.4874 70 55 66.4576 55 59.827V30.3374C55 23.7067 51.4874 20.1644 44.8226 20.1644H36.8668V26.9161H44.2522C46.8641 26.9161 48.3051 28.2785 48.3051 31.0337V59.1306C48.3051 61.9161 46.8641 63.2483 44.2522 63.2483H10.7478C8.1059 63.2483 6.69487 61.9161 6.69487 59.1306V31.0337C6.69487 28.2785 8.1059 26.9161 10.7478 26.9161H18.2233V20.1644H10.1774C3.54258 20.1644 0 23.7067 0 30.3374V59.827C0 66.4879 3.54258 70 10.1774 70Z",
-    fill: "white"
-  }))), /*#__PURE__*/react.createElement("p", {
-    className: "A_tooltipText"
-  }, "\u041D\u0430 \u044D\u0442\u043E\u0439 \u043A\u0430\u0440\u0442\u0435 \u0442\u044B \u043C\u043E\u0436\u0435\u0448\u044C \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C \u0430\u043B\u043B\u0435\u0440\u0433\u0435\u043D\u043E\u0432 \u0438 \u043E\u043F\u0430\u0441\u043D\u044B\u0445 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u0439 \u0438 \u043F\u043E\u0434\u0435\u043B\u0438\u0442\u044C\u0441\u044F \u0438\u0445 \u043B\u043E\u043A\u0430\u0446\u0438\u0435\u0439 \u0441 \u0434\u0440\u0443\u0437\u044C\u044F\u043C\u0438"), /*#__PURE__*/react.createElement("div", {
-    className: "W_tooltipHeader"
-  }, /*#__PURE__*/react.createElement("button", {
-    className: "A_closeTooltip",
-    onClick: function onClick() {
-      return setShowTooltip(false);
-    }
-  }, /*#__PURE__*/react.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "25",
-    height: "25",
-    viewBox: "0 0 25 25",
-    fill: "none"
-  }, /*#__PURE__*/react.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M12.5 25C19.4036 25 25 19.4034 25 12.5C25 5.59656 19.4036 0 12.5 0C5.59643 0 0 5.59656 0 12.5C0 19.4034 5.59643 25 12.5 25ZM18.0378 6.96232C18.4972 7.42152 18.4972 8.1665 18.0378 8.62606L14.1638 12.5L18.0378 16.3739C18.4972 16.8335 18.4972 17.5785 18.0378 18.0377C17.5783 18.4972 16.8335 18.4972 16.374 18.0377L12.5 14.1637L8.62602 18.0377C8.16659 18.4972 7.4217 18.4972 6.96223 18.0377C6.5028 17.5785 6.5028 16.8335 6.96223 16.3739L10.8362 12.5L6.96223 8.62606C6.5028 8.1665 6.5028 7.42152 6.96223 6.96232C7.42165 6.50276 8.16655 6.50276 8.62602 6.96232L12.5 10.8363L16.374 6.96232C16.8335 6.50276 17.5783 6.50276 18.0378 6.96232Z",
-    fill: "white"
-  })))))))), /*#__PURE__*/react.createElement("p", {
-    className: "A_disclaimer A_disclaimerMobile"
-  }, "\u041A\u0430\u0440\u0442\u0430 \u0430\u043B\u043B\u0435\u0440\u0433\u0435\u043D\u043D\u044B\u0445 \u0437\u043E\u043D \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043D\u0435\u0442\u043E\u0447\u043D\u043E\u0439 \u2014 \u043F\u0440\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u0434\u0430\u0442\u0443 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F \u0438 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u0438; \u043F\u0440\u0438 \u0441\u043E\u043C\u043D\u0435\u043D\u0438\u044F\u0445 \u0438\u0437\u0431\u0435\u0433\u0430\u0439\u0442\u0435 \u0437\u043E\u043D\u044B \u0438 \u0441\u043E\u043E\u0431\u0449\u0438\u0442\u0435 \u043E \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u0435, \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0432 \u0444\u043E\u0442\u043E \u0438\u043B\u0438 \u043E\u0442\u0447\u0451\u0442."));
+  })));
+};
+/* harmony default export */ const map_RiskMapSidebar = (RiskMapSidebar);
+;// ./src/javascript/components/map/RiskMapPage.jsx
+
+
+var RiskMapPage = function RiskMapPage() {
+  return /*#__PURE__*/react.createElement(map_RiskMapSidebar, null);
 };
 /* harmony default export */ const map_RiskMapPage = (RiskMapPage);
 ;// ./src/javascript/mapApp.jsx

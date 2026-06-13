@@ -17450,440 +17450,8 @@ var __webpack_exports__ = {};
 // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
 (() => {
 "use strict";
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(540);
-// EXTERNAL MODULE: ./node_modules/react-dom/client.js
-var client = __webpack_require__(338);
-;// ./src/javascript/components/TestCard.jsx
-
-var TestCard = function TestCard(_ref) {
-  var image = _ref.image,
-    readTime = _ref.readTime,
-    tags = _ref.tags,
-    title = _ref.title,
-    date = _ref.date,
-    onClick = _ref.onClick;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "M_testCard",
-    onClick: onClick,
-    style: {
-      cursor: 'pointer'
-    }
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_testImageWrapper"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: image,
-    alt: title,
-    className: "A_testImage"
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "A_readTime"
-  }, /*#__PURE__*/react.createElement("svg", {
-    width: "20",
-    height: "20",
-    viewBox: "0 0 20 20",
-    fill: "none"
-  }, /*#__PURE__*/react.createElement("circle", {
-    cx: "10",
-    cy: "10",
-    r: "9",
-    stroke: "currentColor",
-    strokeWidth: "2"
-  }), /*#__PURE__*/react.createElement("path", {
-    d: "M10 5V10L13 13",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round"
-  })), /*#__PURE__*/react.createElement("span", null, readTime))), /*#__PURE__*/react.createElement("div", {
-    className: "W_testContent"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_headerTags"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "C_testTags"
-  }, tags.map(function (tag, index) {
-    return /*#__PURE__*/react.createElement("span", {
-      key: index,
-      className: "A_testTag"
-    }, tag);
-  })), /*#__PURE__*/react.createElement("h3", {
-    className: "A_testTitle"
-  }, title)), /*#__PURE__*/react.createElement("span", {
-    className: "A_testDate"
-  }, date)));
-};
-/* harmony default export */ const components_TestCard = (TestCard);
-;// ./src/javascript/components/atoms/TestProgress.jsx
-
-var TestProgress = function TestProgress(_ref) {
-  var current = _ref.current,
-    total = _ref.total;
-  return /*#__PURE__*/react.createElement("h2", {
-    className: "A_testProgress"
-  }, current, "/", total);
-};
-/* harmony default export */ const atoms_TestProgress = (TestProgress);
-;// ./src/javascript/components/atoms/TestImage.jsx
-
-var TestImage = function TestImage(_ref) {
-  var src = _ref.src,
-    alt = _ref.alt;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "A_testImageContainer"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: src,
-    alt: alt,
-    className: "A_testQuestionImage"
-  }));
-};
-/* harmony default export */ const atoms_TestImage = (TestImage);
-;// ./src/javascript/components/atoms/TestOptionButton.jsx
-
-var TestOptionButton = function TestOptionButton(_ref) {
-  var text = _ref.text,
-    onClick = _ref.onClick,
-    isSelected = _ref.isSelected,
-    isCorrect = _ref.isCorrect,
-    isWrong = _ref.isWrong,
-    showResult = _ref.showResult;
-  var className = 'A_testOption';
-  if (showResult) {
-    if (isCorrect) {
-      className += ' A_testOptionCorrect';
-    } else if (isWrong) {
-      className += ' A_testOptionWrong';
-    } else if (!isSelected) {
-      className += ' A_testOptionDisabled';
-    }
-  } else if (isSelected) {
-    className += ' selected';
-  }
-  return /*#__PURE__*/react.createElement("button", {
-    className: className,
-    onClick: onClick,
-    disabled: showResult
-  }, text);
-};
-/* harmony default export */ const atoms_TestOptionButton = (TestOptionButton);
-;// ./src/javascript/components/molecules/QuestionCard.jsx
-
-
-
-
-var QuestionCard = function QuestionCard(_ref) {
-  var question = _ref.question,
-    currentQuestion = _ref.currentQuestion,
-    totalQuestions = _ref.totalQuestions,
-    onAnswerSelect = _ref.onAnswerSelect,
-    selectedAnswer = _ref.selectedAnswer,
-    showResult = _ref.showResult,
-    correctAnswer = _ref.correctAnswer;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "M_questionCard"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_progressContainer"
-  }, /*#__PURE__*/react.createElement(atoms_TestProgress, {
-    current: currentQuestion,
-    total: totalQuestions
-  }), /*#__PURE__*/react.createElement("h3", {
-    className: "A_questionText"
-  }, question.question)), /*#__PURE__*/react.createElement("div", {
-    className: "W_questionContent"
-  }, question.image && /*#__PURE__*/react.createElement(atoms_TestImage, {
-    src: question.image,
-    alt: question.question
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "W_optionsGrid"
-  }, question.options.map(function (option) {
-    return /*#__PURE__*/react.createElement(atoms_TestOptionButton, {
-      key: option.id,
-      text: option.text,
-      onClick: function onClick() {
-        return !showResult && onAnswerSelect(option.id);
-      },
-      isSelected: selectedAnswer === option.id,
-      isCorrect: showResult && option.isCorrect,
-      isWrong: showResult && selectedAnswer === option.id && !option.isCorrect,
-      showResult: showResult
-    });
-  }))));
-};
-/* harmony default export */ const molecules_QuestionCard = (QuestionCard);
-;// ./src/javascript/components/molecules/ResultCard.jsx
-
-var ResultCard = function ResultCard(_ref) {
-  var result = _ref.result,
-    score = _ref.score,
-    totalQuestions = _ref.totalQuestions;
-  if (!result) return null;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "M_resultCard"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_resultContent"
-  }, /*#__PURE__*/react.createElement("h3", {
-    className: "A_resultTitle"
-  }, result.title), result.image && /*#__PURE__*/react.createElement("img", {
-    src: result.image,
-    alt: result.title,
-    className: "A_testQuestionImage",
-    style: {
-      marginBottom: '2.08vw'
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "W_resultScore"
-  }, /*#__PURE__*/react.createElement("h2", {
-    className: "A_resultScore"
-  }, score, "/", totalQuestions), /*#__PURE__*/react.createElement("p", {
-    className: "A_resultDescription"
-  }, result.description))));
-};
-/* harmony default export */ const molecules_ResultCard = (ResultCard);
-;// ./src/javascript/components/organisms/QuizModal.jsx
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-var QuizModal = function QuizModal(_ref) {
-  var isOpen = _ref.isOpen,
-    onClose = _ref.onClose,
-    testData = _ref.testData;
-  var _useState = (0,react.useState)(0),
-    _useState2 = _slicedToArray(_useState, 2),
-    currentQuestionIndex = _useState2[0],
-    setCurrentQuestionIndex = _useState2[1];
-  var _useState3 = (0,react.useState)(null),
-    _useState4 = _slicedToArray(_useState3, 2),
-    selectedAnswer = _useState4[0],
-    setSelectedAnswer = _useState4[1];
-  var _useState5 = (0,react.useState)(false),
-    _useState6 = _slicedToArray(_useState5, 2),
-    showResult = _useState6[0],
-    setShowResult = _useState6[1];
-  var _useState7 = (0,react.useState)(0),
-    _useState8 = _slicedToArray(_useState7, 2),
-    score = _useState8[0],
-    setScore = _useState8[1];
-  var _useState9 = (0,react.useState)(false),
-    _useState0 = _slicedToArray(_useState9, 2),
-    isFinished = _useState0[0],
-    setIsFinished = _useState0[1];
-  (0,react.useEffect)(function () {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-      // Сброс состояния при закрытии модалки
-      setCurrentQuestionIndex(0);
-      setSelectedAnswer(null);
-      setShowResult(false);
-      setScore(0);
-      setIsFinished(false);
-    }
-    return function () {
-      document.body.style.overflow = '';
-    };
-  }, [isOpen]);
-  if (!isOpen || !testData) return null;
-  var questions = testData.questions || [];
-  var results = testData.results || [];
-  var currentQuestion = questions[currentQuestionIndex];
-  var isLastQuestion = currentQuestionIndex === questions.length - 1;
-  var handleAnswerSelect = function handleAnswerSelect(answerId) {
-    if (showResult) return;
-    setSelectedAnswer(answerId);
-    setShowResult(true);
-    var selectedOption = currentQuestion.options.find(function (opt) {
-      return opt.id === answerId;
-    });
-    if (selectedOption !== null && selectedOption !== void 0 && selectedOption.isCorrect) {
-      setScore(score + 1);
-    }
-    setTimeout(function () {
-      if (isLastQuestion) {
-        setIsFinished(true);
-      } else {
-        setCurrentQuestionIndex(currentQuestionIndex + 1);
-        setSelectedAnswer(null);
-        setShowResult(false);
-      }
-    }, 1500);
-  };
-  var getResult = function getResult() {
-    var totalScore = score;
-    var result = results.find(function (result) {
-      return totalScore >= result.minScore && totalScore <= result.maxScore;
-    });
-
-    // Добавляем случайное изображение из вопросов теста
-    if (result && questions.length > 0) {
-      var randomIndex = Math.floor(Math.random() * questions.length);
-      result.image = questions[randomIndex].image;
-    }
-    return result;
-  };
-  var handleClose = function handleClose() {
-    onClose();
-  };
-  return /*#__PURE__*/react.createElement("div", {
-    className: "O_quizModal",
-    onClick: handleClose
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_quizModalContent",
-    onClick: function onClick(e) {
-      return e.stopPropagation();
-    }
-  }, !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
-    question: currentQuestion,
-    currentQuestion: currentQuestionIndex + 1,
-    totalQuestions: questions.length,
-    onAnswerSelect: handleAnswerSelect,
-    selectedAnswer: selectedAnswer,
-    showResult: showResult
-  }) : /*#__PURE__*/react.createElement(molecules_ResultCard, {
-    result: getResult(),
-    score: score,
-    totalQuestions: questions.length
-  })));
-};
-/* harmony default export */ const organisms_QuizModal = (QuizModal);
-;// ./src/javascript/components/TestSlider.jsx
-function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
-function TestSlider_slicedToArray(r, e) { return TestSlider_arrayWithHoles(r) || TestSlider_iterableToArrayLimit(r, e) || TestSlider_unsupportedIterableToArray(r, e) || TestSlider_nonIterableRest(); }
-function TestSlider_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function TestSlider_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return TestSlider_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? TestSlider_arrayLikeToArray(r, a) : void 0; } }
-function TestSlider_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function TestSlider_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function TestSlider_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-var TestSlider = function TestSlider(_ref) {
-  var tests = _ref.tests;
-  var _useState = (0,react.useState)(0),
-    _useState2 = TestSlider_slicedToArray(_useState, 2),
-    currentIndex = _useState2[0],
-    setCurrentIndex = _useState2[1];
-  var _useState3 = (0,react.useState)(false),
-    _useState4 = TestSlider_slicedToArray(_useState3, 2),
-    isQuizOpen = _useState4[0],
-    setIsQuizOpen = _useState4[1];
-  var _useState5 = (0,react.useState)(null),
-    _useState6 = TestSlider_slicedToArray(_useState5, 2),
-    selectedTest = _useState6[0],
-    setSelectedTest = _useState6[1];
-  var _useState7 = (0,react.useState)(window.innerWidth <= 767),
-    _useState8 = TestSlider_slicedToArray(_useState7, 2),
-    isMobile = _useState8[0],
-    setIsMobile = _useState8[1];
-  (0,react.useEffect)(function () {
-    var handleResize = function handleResize() {
-      setIsMobile(window.innerWidth <= 767);
-    };
-    window.addEventListener('resize', handleResize);
-    return function () {
-      return window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  var itemsPerSlide = isMobile ? 1 : 2;
-  var totalSlides = Math.ceil(tests.length / itemsPerSlide);
-  var gap = isMobile ? 1.67 : 0.835;
-  var slidePercent = isMobile ? 100 : 50;
-  var goToSlide = function goToSlide(index) {
-    setCurrentIndex(index);
-  };
-  var goToPrev = function goToPrev() {
-    setCurrentIndex(function (prev) {
-      return prev > 0 ? prev - 1 : totalSlides - 1;
-    });
-  };
-  var goToNext = function goToNext() {
-    setCurrentIndex(function (prev) {
-      return prev < totalSlides - 1 ? prev + 1 : 0;
-    });
-  };
-  var openQuiz = function openQuiz(testData) {
-    setSelectedTest(testData);
-    setIsQuizOpen(true);
-  };
-  var closeQuiz = function closeQuiz() {
-    setIsQuizOpen(false);
-    setSelectedTest(null);
-  };
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "O_testSlider"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_sliderContainer"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_sliderTrack",
-    style: {
-      transform: "translateX(calc(-".concat(currentIndex * slidePercent, "% - ").concat(currentIndex * gap, "vw))")
-    }
-  }, tests.map(function (test, index) {
-    return /*#__PURE__*/react.createElement(components_TestCard, _extends({
-      key: index
-    }, test, {
-      onClick: function onClick() {
-        return openQuiz(test.testData);
-      }
-    }));
-  }))), isMobile ? /*#__PURE__*/react.createElement("div", {
-    className: "W_sliderArrows"
-  }, /*#__PURE__*/react.createElement("button", {
-    className: "A_sliderArrow",
-    onClick: goToPrev,
-    "aria-label": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u0441\u043B\u0430\u0439\u0434"
-  }, /*#__PURE__*/react.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "8",
-    height: "15",
-    viewBox: "0 0 8 15",
-    fill: "none"
-  }, /*#__PURE__*/react.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M7.83216 0.169473C7.7791 0.115753 7.71606 0.0731311 7.64665 0.0440502C7.57725 0.0149692 7.50284 0 7.4277 0C7.35255 0 7.27815 0.0149692 7.20874 0.0440502C7.13934 0.0731311 7.0763 0.115753 7.02323 0.169473L0.167835 7.09174C0.114634 7.14532 0.0724244 7.20898 0.0436244 7.27906C0.0148244 7.34914 0 7.42427 0 7.50015C0 7.57603 0.0148244 7.65116 0.0436244 7.72124C0.0724244 7.79132 0.114634 7.85498 0.167835 7.90857L7.02323 14.8308C7.1305 14.9391 7.27599 15 7.4277 15C7.5794 15 7.72489 14.9391 7.83216 14.8308C7.93944 14.7225 7.9997 14.5756 7.9997 14.4224C7.9997 14.2692 7.93944 14.1223 7.83216 14.014L1.3801 7.50015L7.83216 0.9863C7.88537 0.932715 7.92758 0.869059 7.95638 0.798977C7.98518 0.728894 8 0.653763 8 0.577887C8 0.50201 7.98518 0.426879 7.95638 0.356797C7.92758 0.286715 7.88537 0.223058 7.83216 0.169473Z",
-    fill: "white"
-  }))), /*#__PURE__*/react.createElement("button", {
-    className: "A_sliderArrow",
-    onClick: goToNext,
-    "aria-label": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u0441\u043B\u0430\u0439\u0434"
-  }, /*#__PURE__*/react.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    width: "8",
-    height: "15",
-    viewBox: "0 0 8 15",
-    fill: "none"
-  }, /*#__PURE__*/react.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M0.167835 0.169473C0.220903 0.115753 0.283944 0.0731311 0.35335 0.0440502C0.422755 0.0149692 0.49716 0 0.572304 0C0.647447 0 0.721852 0.0149692 0.791258 0.0440502C0.860663 0.0731311 0.923705 0.115753 0.976772 0.169473L7.83216 7.09174C7.88537 7.14532 7.92758 7.20898 7.95638 7.27906C7.98518 7.34914 8 7.42427 8 7.50015C8 7.57603 7.98518 7.65116 7.95638 7.72124C7.92758 7.79132 7.88537 7.85498 7.83216 7.90857L0.976772 14.8308C0.8695 14.9391 0.724009 15 0.572304 15C0.420599 15 0.275107 14.9391 0.167835 14.8308C0.0605638 14.7225 0.000299105 14.5756 0.000299105 14.4224C0.000299105 14.2692 0.0605638 14.1223 0.167835 14.014L6.6199 7.50015L0.167835 0.9863C0.114634 0.932715 0.0724241 0.869059 0.0436241 0.798977C0.0148241 0.728894 0 0.653763 0 0.577887C0 0.50201 0.0148241 0.426879 0.0436241 0.356797C0.0724241 0.286715 0.114634 0.223058 0.167835 0.169473Z",
-    fill: "white"
-  })))) : /*#__PURE__*/react.createElement("div", {
-    className: "W_sliderControls"
-  }, Array.from({
-    length: totalSlides
-  }).map(function (_, index) {
-    return /*#__PURE__*/react.createElement("button", {
-      key: index,
-      className: "A_sliderDot ".concat(index === currentIndex ? 'active' : ''),
-      onClick: function onClick() {
-        return goToSlide(index);
-      },
-      "aria-label": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A \u0441\u043B\u0430\u0439\u0434\u0443 ".concat(index + 1)
-    });
-  }))), /*#__PURE__*/react.createElement(organisms_QuizModal, {
-    isOpen: isQuizOpen,
-    onClose: closeQuiz,
-    testData: selectedTest
-  }));
-};
-/* harmony default export */ const components_TestSlider = (TestSlider);
-;// ./src/javascript/testsApp.jsx
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(540);
+/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(338);
 
 
 
@@ -17892,26 +17460,52 @@ var testsContext = __webpack_require__(519);
 var testsData = testsContext.keys().map(function (key) {
   var test = testsContext(key);
   var cardData = test.card || {};
-  // Используем изображение из первого вопроса, если нет изображения карточки
-  var firstQuestionImage = test.questions && test.questions[0] ? test.questions[0].image : '';
   return {
     id: test.id,
-    image: firstQuestionImage || cardData.image || '',
-    readTime: cardData.readTime || '',
-    tags: cardData.tags || [],
     title: cardData.title || '',
-    date: cardData.date || '',
-    link: "/test/".concat(test.id, ".html"),
-    // Передаем полные данные теста
+    readTime: cardData.readTime || '',
+    questionsCount: test.questions ? test.questions.length : 0,
+    factsCount: cardData.facts || test.questions ? test.questions.length : 0,
+    link: "test/".concat(test.id, ".html"),
     testData: test
   };
-});
-var container = document.getElementById('tests-root');
-if (container) {
-  var root = (0,client.createRoot)(container);
-  root.render(/*#__PURE__*/react.createElement(components_TestSlider, {
-    tests: testsData
+}).sort(function (a, b) {
+  return a.id - b.id;
+}).slice(0, 2);
+var HomeTestCard = function HomeTestCard(_ref) {
+  var test = _ref.test;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: test.link,
+    className: "M_homeTestCard"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "W_testContent"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "A_testFacts tag"
+  }, test.factsCount, " \u043F\u043E\u043B\u0435\u0437\u043D\u044B\u0445 \u0444\u0430\u043A\u0442\u043E\u0432 \u0432\u043D\u0443\u0442\u0440\u0438"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+    className: "A_testTitle"
+  }, test.title)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "W_testFooter"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "A_testMeta tag"
+  }, test.questionsCount, " \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \xB7 ", test.readTime), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "A_button"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: "./images/arrowRight.svg",
+    alt: ""
+  }))));
+};
+var HomeTests = function HomeTests() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, testsData.map(function (test) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HomeTestCard, {
+      key: test.id,
+      test: test
+    });
   }));
+};
+var container = document.querySelector('.С_Tests');
+if (container) {
+  var root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container);
+  root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HomeTests, null));
 }
 })();
 
