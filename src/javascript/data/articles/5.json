@@ -6,7 +6,7 @@
       "type": "hero",
       "title": "Городская собака — это особая профессия",
       "description": "8 стрессоров мегаполиса, о которых вы не думаете, но собака думает всегда",
-      "image": "images/articles/article_5.jpg",
+      "image": "/images/articles/article_5.jpg",
       "readTime": "5 мин",
       "date": "1 декабря 2025"
     },

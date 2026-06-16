@@ -6,7 +6,7 @@
       "type": "hero",
       "title": "Dog-friendly Москва",
       "description": "12 мест, где вашу собаку действительно ждут — и как это проверить",
-      "image": "images/articles/article_2.jpg",
+      "image": "/images/articles/article_2.jpg",
       "readTime": "4 мин",
       "date": "1 декабря 2025"
     },

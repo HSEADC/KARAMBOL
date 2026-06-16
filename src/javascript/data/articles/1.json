@@ -6,7 +6,7 @@
       "type": "hero",
       "title": "Эх ландыши - ландыши",
       "description": "Опасные растения в парках Москвы",
-      "image": "images/articles/article_1.jpg",
+      "image": "/images/articles/article_1.jpg",
       "readTime": "5 мин",
       "date": "1 декабря 2025"
     },

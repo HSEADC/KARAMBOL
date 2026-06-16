@@ -6,7 +6,7 @@
       "type": "hero",
       "title": "Читаем состав корма",
       "description": "Инструкция для тех, кто не хочет кормить собаку маркетингом",
-      "image": "images/articles/article_3.jpg",
+      "image": "/images/articles/article_3.jpg",
       "readTime": "5 мин",
       "date": "1 декабря 2025"
     },
