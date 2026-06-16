@@ -60,7 +60,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    publicPath: '/KARAMBOL/'
+    publicPath: '/'
     // clean: true
   },
   module: {
