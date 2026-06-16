@@ -167,7 +167,7 @@ const SearchBar = () => {
     >
       <div className="W_inputSearch">
         <img
-          src="./images/Q_searchIcon.svg"
+          src="/images/Q_searchIcon.svg"
           alt="Поиск"
           className="Q_searchIcon"
         />
@@ -200,7 +200,7 @@ const SearchBar = () => {
         aria-label="Поиск"
         onClick={openMobile}
       >
-        <img src="./images/Q_searchIcon.svg" alt="" />
+        <img src="/images/Q_searchIcon.svg" alt="" />
       </button>
 
       {open && q && (

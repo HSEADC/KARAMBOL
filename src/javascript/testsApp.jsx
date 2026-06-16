@@ -43,7 +43,7 @@ const HomeTestCard = ({ test, onSelect }) => (
       </p>
       <span className="A_button">
         <p>Начать</p>
-        <img src="./images/arrowRight.svg" alt="" />
+        <img src="/images/arrowRight.svg" alt="" />
       </span>
     </div>
   </a>

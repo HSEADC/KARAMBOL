@@ -369,6 +369,13 @@
     flex-direction: column-reverse;
     gap: 4.09vw;
     background: transparent;
+
+    .С_tagsList {
+      background: var(--Carbon-Black, #1a1919);
+      border-radius: 5.68vw;
+      gap: 1.82vw;
+      padding: 4.55vw;
+    }
   }
 
   .O_articlesPage {

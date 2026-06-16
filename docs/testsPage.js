@@ -17761,7 +17761,7 @@ var TestCard = function TestCard(_ref) {
   }, /*#__PURE__*/react.createElement("span", {
     className: "A_button"
   }, /*#__PURE__*/react.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C"), /*#__PURE__*/react.createElement("img", {
-    src: "./images/arrowRight.svg",
+    src: "/images/arrowRight.svg",
     alt: ""
   }))));
 };

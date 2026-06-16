@@ -17587,7 +17587,7 @@ var SearchBar = function SearchBar() {
   }, /*#__PURE__*/react.createElement("div", {
     className: "W_inputSearch"
   }, /*#__PURE__*/react.createElement("img", {
-    src: "./images/Q_searchIcon.svg",
+    src: "/images/Q_searchIcon.svg",
     alt: "\u041F\u043E\u0438\u0441\u043A",
     className: "Q_searchIcon"
   }), /*#__PURE__*/react.createElement("input", {
@@ -17618,7 +17618,7 @@ var SearchBar = function SearchBar() {
     "aria-label": "\u041F\u043E\u0438\u0441\u043A",
     onClick: openMobile
   }, /*#__PURE__*/react.createElement("img", {
-    src: "./images/Q_searchIcon.svg",
+    src: "/images/Q_searchIcon.svg",
     alt: ""
   })), open && q && /*#__PURE__*/react.createElement("div", {
     className: "W_searchResults",

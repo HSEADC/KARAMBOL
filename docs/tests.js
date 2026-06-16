@@ -17744,7 +17744,7 @@ var HomeTestCard = function HomeTestCard(_ref) {
   }, test.questionsCount, " \u0432\u043E\u043F\u0440\u043E\u0441\u043E\u0432 \xB7 ", test.readTime), /*#__PURE__*/react.createElement("span", {
     className: "A_button"
   }, /*#__PURE__*/react.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C"), /*#__PURE__*/react.createElement("img", {
-    src: "./images/arrowRight.svg",
+    src: "/images/arrowRight.svg",
     alt: ""
   }))));
 };
