@@ -17433,6 +17433,9 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+var toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
 var articlesContext = __webpack_require__(385);
 var articlesData = articlesContext.keys().map(function (key) {
   var _article$blocks;
@@ -17452,12 +17455,12 @@ var ResultCard = function ResultCard(_ref) {
     title = _ref.title,
     link = _ref.link;
   return /*#__PURE__*/react.createElement("a", {
-    href: link,
+    href: toRoot(link),
     className: "M_searchResultCard"
   }, /*#__PURE__*/react.createElement("div", {
     className: "W_searchResultImage"
   }, image && /*#__PURE__*/react.createElement("img", {
-    src: image,
+    src: toRoot(image),
     alt: title
   })), /*#__PURE__*/react.createElement("p", null, title));
 };
@@ -17533,7 +17536,7 @@ var SearchBar = function SearchBar() {
   };
   var goToSearchPage = function goToSearchPage() {
     if (query.trim()) {
-      window.location.href = "./search.html?q=".concat(encodeURIComponent(query.trim()));
+      window.location.href = "/search.html?q=".concat(encodeURIComponent(query.trim()));
     }
   };
   var handleKeyDown = function handleKeyDown(e) {

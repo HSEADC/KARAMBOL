@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import riskPoints from '../data/riskPoints.json'
 import testsData from '../data/testsIndex.json'
 
+const toRoot = (p) =>
+  !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '')
+
 const articlesContext = require.context('../data/articles', false, /\.json$/)
 const articlesData = articlesContext.keys().map((key) => {
   const article = articlesContext(key)
@@ -15,9 +18,9 @@ const articlesData = articlesContext.keys().map((key) => {
 })
 
 const ResultCard = ({ image, title, link }) => (
-  <a href={link} className="M_searchResultCard">
+  <a href={toRoot(link)} className="M_searchResultCard">
     <div className="W_searchResultImage">
-      {image && <img src={image} alt={title} />}
+      {image && <img src={toRoot(image)} alt={title} />}
     </div>
     <p>{title}</p>
   </a>
@@ -94,7 +97,7 @@ const SearchBar = () => {
 
   const goToSearchPage = () => {
     if (query.trim()) {
-      window.location.href = `./search.html?q=${encodeURIComponent(query.trim())}`
+      window.location.href = `/search.html?q=${encodeURIComponent(query.trim())}`
     }
   }
 
