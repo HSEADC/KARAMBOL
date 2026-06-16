@@ -40,6 +40,10 @@
     width: calc(100% + 3.47vw * 2);
     margin-left: -3.47vw;
     height: auto;
+
+    &:nth-child(3) {
+      display: none;
+    }
   }
 }
 
@@ -426,5 +430,23 @@
     gap: 12.73vw;
     width: 86.59vw;
     height: 190.91vw;
+  }
+
+  .O_mainScreenSection {
+    position: relative;
+    height: 192.64vw;
+
+    > img {
+      position: absolute;
+      margin-top: 0;
+      top: 0;
+
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        display: block;
+      }
+    }
   }
 }

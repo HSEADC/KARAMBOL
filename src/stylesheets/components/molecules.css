@@ -97,6 +97,7 @@
 
 .M_folder {
   position: relative;
+  display: block;
 
   .A_tag {
     position: absolute;
@@ -222,7 +223,57 @@
   }
 }
 
+.M_specialHead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.08vw;
+  text-align: center;
+
+  > h1 {
+    color: var(--White);
+  }
+
+  .A_tag--year {
+    min-width: auto;
+    position: absolute;
+    right: 14.72vw;
+    top: -1.78vw;
+    color: var(--White);
+    padding: 0.42vw 1.39vw 0.35vw 1.39vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    height: 1.74vw;
+    font-size: 0.97vw;
+  }
+
+  > p {
+    color: var(--White);
+    font-size: 0.97vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .M_specialHead {
+    gap: 7.95vw;
+
+    .A_tag--year {
+      right: 7.72vw;
+      top: -1.78vw;
+      font-size: 3.18vw;
+      height: 5.68vw;
+      transform: rotate(34.278deg);
+      padding: 1.36vw 4.55vw 1.14vw 4.55vw;
+    }
+
+    > p:nth-child(2) {
+      width: 55vw;
+      font-size: 2.95vw;
+    }
+  }
+
   .M_aboutInfo {
     height: auto;
     padding: 0 2.27vw 3.41vw 3.41vw;

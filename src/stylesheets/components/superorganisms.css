@@ -16,7 +16,21 @@
   gap: 10.42vw;
 }
 
+.SO_specialPage {
+  min-height: 100vh;
+  padding: 12.43vw 0;
+  background: var(--Onyx);
+  display: flex;
+  flex-direction: column;
+  gap: 3.47vw;
+}
+
 @media screen and (max-width: 767px) {
+  .SO_specialPage {
+    padding: 27.27vw 0;
+    gap: 11.36vw;
+  }
+
   .SO_Footer {
     gap: 16.36vw;
     width: 100%;

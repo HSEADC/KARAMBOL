@@ -54,7 +54,8 @@ module.exports = {
     articlesPage: './src/javascript/articlesPageApp.jsx',
     article: './src/javascript/articleApp.jsx',
     search: './src/javascript/searchApp.jsx',
-    searchPage: './src/javascript/searchPageApp.jsx'
+    searchPage: './src/javascript/searchPageApp.jsx',
+    special: './src/javascript/specialDrag.js'
   },
   output: {
     filename: '[name].js',
@@ -174,6 +175,16 @@ module.exports = {
     }),
 
     ...articlePages,
+
+    // Special page — «Счастливые собакены»
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/special.html',
+      filename: './special.html',
+      chunks: ['index', 'mobileMenu', 'special', 'search'],
+      templateParameters: makeTemplateParams
+    }),
 
     // Styleguide
     new HtmlWebpackPlugin({

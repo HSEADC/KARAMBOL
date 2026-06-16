@@ -497,7 +497,60 @@
   gap: 6.94vw;
 }
 
+/* Карточки коллажа «Счастливые собакены»: обычная и широкая. */
+.W_happyContent,
+.W_happyContentWidth {
+  position: absolute;
+  padding: 0.69vw 0.76vw;
+  background: var(--White);
+  transform: rotate(var(--r, 0deg));
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transition: box-shadow 0.2s ease;
+
+  > p {
+    margin-top: 0.69vw;
+    color: var(--Carbon-Black);
+    font-size: 1.25vw;
+  }
+
+  &.is-dragging {
+    cursor: grabbing;
+  }
+}
+
+.W_happyContent {
+  width: 15.69vw;
+}
+
+.W_happyContentWidth {
+  width: 31.46vw;
+}
+
 @media screen and (max-width: 767px) {
+  .W_happyContent,
+  .W_happyContentWidth {
+    padding: 1.33vw 1.47vw;
+
+    > p {
+      margin-top: 1.33vw;
+      font-size: 3.64vw;
+    }
+
+    &.is-dragging {
+      transform: rotate(var(--r, 0deg)) scale(1.04);
+    }
+  }
+
+  .W_happyContent {
+    width: 36vw;
+  }
+
+  .W_happyContentWidth {
+    width: 60.45vw;
+  }
+
   .W_headerActions {
     flex: 1;
     justify-content: flex-end;
@@ -836,5 +889,10 @@
 
   .W_namingPromo {
     gap: 2.27vw;
+  }
+
+  .W_infoMainScreen {
+    margin-top: 72.95vw;
+    gap: 6.7vw;
   }
 }

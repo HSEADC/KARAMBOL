@@ -28,8 +28,17 @@
   justify-content: center;
   gap: 1.18vw 2.08vw;
 
+  .C_tagsBreak {
+    flex-basis: 100%;
+    height: 0;
+  }
+
   .A_tag {
     width: fit-content;
+
+    &:last-child {
+      margin-top: -1.18vw;
+    }
 
     &:nth-child(1) {
       background: var(--Indigo);
@@ -49,7 +58,7 @@
     &:nth-child(6) {
       background: #328f6e;
     }
-    &:nth-child(7) {
+    &:nth-child(8) {
       background: var(--Vibrant-Coral);
     }
   }
@@ -201,7 +210,110 @@
   gap: 7.29vw;
 }
 
+.C_polaroidCollage {
+  position: relative;
+  width: 100%;
+  height: 66vw;
+  margin: 0 auto;
+}
+
+.C_polaroidCollage > :nth-child(1) {
+  left: 2%;
+  top: 7%;
+}
+.C_polaroidCollage > :nth-child(2) {
+  left: 27%;
+  top: 11%;
+}
+.C_polaroidCollage > :nth-child(3) {
+  left: 53%;
+  top: 6%;
+}
+.C_polaroidCollage > :nth-child(4) {
+  left: 82%;
+  top: 10%;
+}
+.C_polaroidCollage > :nth-child(5) {
+  left: 5%;
+  top: 23%;
+}
+.C_polaroidCollage > :nth-child(6) {
+  left: 42%;
+  top: 33%;
+}
+.C_polaroidCollage > :nth-child(7) {
+  left: 58%;
+  top: 20%;
+}
+.C_polaroidCollage > :nth-child(8) {
+  left: 2%;
+  top: 48%;
+}
+.C_polaroidCollage > :nth-child(9) {
+  left: 26%;
+  top: 66%;
+}
+.C_polaroidCollage > :nth-child(10) {
+  left: 60%;
+  top: 64%;
+}
+.C_polaroidCollage > :nth-child(11) {
+  left: 81%;
+  top: 58%;
+}
+
 @media screen and (max-width: 767px) {
+  .C_polaroidCollage {
+    height: 230vw;
+  }
+
+  /* Мобильная раскладка: карточки крупные, поэтому раскидываем их в две
+     неровные колонки сверху вниз, не выходя за ширину арены. */
+  .C_polaroidCollage > :nth-child(1) {
+    left: 3%;
+    top: 1%;
+  }
+  .C_polaroidCollage > :nth-child(2) {
+    left: 50%;
+    top: 7%;
+  }
+  .C_polaroidCollage > :nth-child(3) {
+    left: 6%;
+    top: 15%;
+  }
+  .C_polaroidCollage > :nth-child(4) {
+    left: 52%;
+    top: 21%;
+  }
+  .C_polaroidCollage > :nth-child(5) {
+    left: 4%;
+    top: 31%;
+  }
+  .C_polaroidCollage > :nth-child(6) {
+    left: 26%;
+    top: 41%;
+  }
+  .C_polaroidCollage > :nth-child(7) {
+    left: 2%;
+    top: 52%;
+  }
+  .C_polaroidCollage > :nth-child(8) {
+    left: 52%;
+    top: 50%;
+  }
+  .C_polaroidCollage > :nth-child(9) {
+    left: 5%;
+    top: 63%;
+  }
+  .C_polaroidCollage > :nth-child(10) {
+    left: 50%;
+    top: 67%;
+  }
+  .C_polaroidCollage > :nth-child(11) {
+    left: 22%;
+    top: 79%;
+  }
+
   .C_Chips {
     display: none;
   }
@@ -379,6 +491,19 @@
       &:nth-child(7) {
         display: none;
       }
+    }
+  }
+
+  .C_tagsMainScreen {
+    width: 75vw;
+    gap: 2.27vw;
+
+    .A_tag:last-child {
+      margin-top: -2.27vw;
+    }
+
+    p {
+      font-size: 2.95vw;
     }
   }
 }
