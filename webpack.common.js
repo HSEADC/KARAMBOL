@@ -110,7 +110,14 @@ module.exports = {
       scriptLoading: 'blocking',
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'mobileMenu', 'swipeCards', 'articles', 'tests', 'search'],
+      chunks: [
+        'index',
+        'mobileMenu',
+        'swipeCards',
+        'articles',
+        'tests',
+        'search'
+      ],
       templateParameters: makeTemplateParams
     }),
 
@@ -235,6 +242,15 @@ module.exports = {
           from: 'src/fonts',
           to: 'fonts',
           noErrorOnMissing: true
+        }
+      ]
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, './src/share/CNAME'),
+          to: path.resolve(__dirname, './docs')
         }
       ]
     })
