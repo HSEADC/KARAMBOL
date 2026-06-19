@@ -1,29 +1,16 @@
 import React from 'react'
-import TestProgress from '../atoms/TestProgress'
-import TestImage from '../atoms/TestImage'
 import TestOptionButton from '../atoms/TestOptionButton'
 
 const QuestionCard = ({
   question,
-  currentQuestion,
-  totalQuestions,
   onAnswerSelect,
   selectedAnswer,
-  showResult,
-  correctAnswer
+  showResult
 }) => {
   return (
     <div className="M_questionCard">
-      <div className="W_progressContainer">
-        <TestProgress current={currentQuestion} total={totalQuestions} />
-
-        <h3 className="A_questionText">{question.question}</h3>
-      </div>
-
       <div className="W_questionContent">
-        {question.image && (
-          <TestImage src={question.image} alt={question.question} />
-        )}
+        <h3 className="A_questionText">{question.question}</h3>
 
         <div className="W_optionsGrid">
           {question.options.map((option) => (

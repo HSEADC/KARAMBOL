@@ -17457,30 +17457,6 @@ var react = __webpack_require__(540);
 var client = __webpack_require__(338);
 ;// ./src/javascript/data/testsIndex.json
 const testsIndex_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"slug":"mozno-a-zachem","title":"Можно, а зачем?","description":"Оцени каждое решение в жизни с собакой","image":"./images/tests/test1.png","categories":["Life-стайл","Ветеринария"]},{"id":2,"slug":"yura-borisov-vajb","title":"Юра Борисов вайб","description":"Какой ты дядя/тётя на прогулке с собакой","image":"./images/tests/test2.png","categories":["Life-стайл","Мероприятия"]},{"id":3,"slug":"umnyj-v-ochkah","title":"Умный в очках","description":"Насколько ты реально разбираешься в собаках","image":"./images/tests/test3.png","categories":["Ветеринария"]},{"id":4,"slug":"vryad-li-skoree-net","title":"Вряд ли. Скорее нет","description":"Что из этого ваша пара точно никогда не сделает","image":"./images/tests/test4.png","categories":["Life-стайл"]},{"id":5,"slug":"musya-eto-ty","title":"Муся, это ты?","description":"Узнаёт ли твоя собака себя в неожиданных ситуациях","image":"./images/tests/test5.png","categories":["Life-стайл","Ветеринария"]},{"id":6,"slug":"okak-ponyal","title":"Окак. Понял","description":"Как ты реагируешь на неожиданное от собаки","image":"./images/tests/test6.png","categories":["Life-стайл"]},{"id":7,"slug":"sobaka-shaman","title":"Собака — Шаман","description":"Что твоя собака облизала из самого неожиданного","image":"./images/tests/test7.png","categories":["Life-стайл","Питание"]},{"id":8,"slug":"ne-hotel-a-polyubil","title":"Не хотел, а полюбил","description":"Классический путь: от «зачем собака» до «жизни без неё нет»","image":"./images/tests/test8.png","categories":["Life-стайл"]},{"id":9,"slug":"filyaj-filyaj-uroven","title":"Филяй-филяй уровень","description":"Насколько твоя собака танцует под жизнь в мегаполисе","image":"./images/tests/test9.png","categories":["Life-стайл","Мероприятия"]},{"id":10,"slug":"danil-kolbasenko","title":"Данил Колбасенко","description":"Твоя собака — будущий интернет-герой или нет","image":"./images/tests/test10.png","categories":["Life-стайл","Мероприятия"]}]');
-;// ./src/javascript/components/atoms/TestProgress.jsx
-
-var TestProgress = function TestProgress(_ref) {
-  var current = _ref.current,
-    total = _ref.total;
-  return /*#__PURE__*/react.createElement("h2", {
-    className: "A_testProgress"
-  }, current, "/", total);
-};
-/* harmony default export */ const atoms_TestProgress = (TestProgress);
-;// ./src/javascript/components/atoms/TestImage.jsx
-
-var TestImage = function TestImage(_ref) {
-  var src = _ref.src,
-    alt = _ref.alt;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "A_testImageContainer"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: src,
-    alt: alt,
-    className: "A_testQuestionImage"
-  }));
-};
-/* harmony default export */ const atoms_TestImage = (TestImage);
 ;// ./src/javascript/components/atoms/TestOptionButton.jsx
 
 var TestOptionButton = function TestOptionButton(_ref) {
@@ -17512,31 +17488,18 @@ var TestOptionButton = function TestOptionButton(_ref) {
 ;// ./src/javascript/components/molecules/QuestionCard.jsx
 
 
-
-
 var QuestionCard = function QuestionCard(_ref) {
   var question = _ref.question,
-    currentQuestion = _ref.currentQuestion,
-    totalQuestions = _ref.totalQuestions,
     onAnswerSelect = _ref.onAnswerSelect,
     selectedAnswer = _ref.selectedAnswer,
-    showResult = _ref.showResult,
-    correctAnswer = _ref.correctAnswer;
+    showResult = _ref.showResult;
   return /*#__PURE__*/react.createElement("div", {
     className: "M_questionCard"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "W_progressContainer"
-  }, /*#__PURE__*/react.createElement(atoms_TestProgress, {
-    current: currentQuestion,
-    total: totalQuestions
-  }), /*#__PURE__*/react.createElement("h3", {
-    className: "A_questionText"
-  }, question.question)), /*#__PURE__*/react.createElement("div", {
     className: "W_questionContent"
-  }, question.image && /*#__PURE__*/react.createElement(atoms_TestImage, {
-    src: question.image,
-    alt: question.question
-  }), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h3", {
+    className: "A_questionText"
+  }, question.question), /*#__PURE__*/react.createElement("div", {
     className: "W_optionsGrid"
   }, question.options.map(function (option) {
     return /*#__PURE__*/react.createElement(atoms_TestOptionButton, {
@@ -17557,29 +17520,33 @@ var QuestionCard = function QuestionCard(_ref) {
 
 var ResultCard = function ResultCard(_ref) {
   var result = _ref.result,
-    score = _ref.score,
-    totalQuestions = _ref.totalQuestions;
+    onClose = _ref.onClose;
   if (!result) return null;
   return /*#__PURE__*/react.createElement("div", {
     className: "M_resultCard"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_resultContent"
-  }, /*#__PURE__*/react.createElement("h3", {
-    className: "A_resultTitle"
-  }, result.title), result.image && /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: onClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), result.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
     src: result.image,
     alt: result.title,
-    className: "A_testQuestionImage",
-    style: {
-      marginBottom: '2.08vw'
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "W_resultScore"
-  }, /*#__PURE__*/react.createElement("h2", {
-    className: "A_resultScore"
-  }, score, "/", totalQuestions), /*#__PURE__*/react.createElement("p", {
+    className: "A_testQuestionImage"
+  })), /*#__PURE__*/react.createElement("h3", {
+    className: "A_resultTitle"
+  }, result.title), /*#__PURE__*/react.createElement("p", {
     className: "A_resultDescription"
-  }, result.description))));
+  }, result.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroFinish",
+    type: "button",
+    onClick: onClose
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0443\u043F\u0435\u0440")));
 };
 /* harmony default export */ const molecules_ResultCard = (ResultCard);
 ;// ./src/javascript/components/organisms/QuizModal.jsx
@@ -17592,36 +17559,48 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
+// Внутренние пути делаем корне-абсолютными, чтобы обложка теста грузилась
+// независимо от того, с какой страницы открыт тест.
+var toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
 var QuizModal = function QuizModal(_ref) {
+  var _testData$card, _testData$card2, _testData$card3;
   var isOpen = _ref.isOpen,
     onClose = _ref.onClose,
     testData = _ref.testData;
-  var _useState = (0,react.useState)(0),
+  var _useState = (0,react.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
-    currentQuestionIndex = _useState2[0],
-    setCurrentQuestionIndex = _useState2[1];
-  var _useState3 = (0,react.useState)(null),
+    started = _useState2[0],
+    setStarted = _useState2[1];
+  var _useState3 = (0,react.useState)(0),
     _useState4 = _slicedToArray(_useState3, 2),
-    selectedAnswer = _useState4[0],
-    setSelectedAnswer = _useState4[1];
-  var _useState5 = (0,react.useState)(false),
+    currentQuestionIndex = _useState4[0],
+    setCurrentQuestionIndex = _useState4[1];
+  var _useState5 = (0,react.useState)(null),
     _useState6 = _slicedToArray(_useState5, 2),
-    showResult = _useState6[0],
-    setShowResult = _useState6[1];
-  var _useState7 = (0,react.useState)(0),
+    selectedAnswer = _useState6[0],
+    setSelectedAnswer = _useState6[1];
+  var _useState7 = (0,react.useState)(false),
     _useState8 = _slicedToArray(_useState7, 2),
-    score = _useState8[0],
-    setScore = _useState8[1];
-  var _useState9 = (0,react.useState)(false),
+    showResult = _useState8[0],
+    setShowResult = _useState8[1];
+  var _useState9 = (0,react.useState)(0),
     _useState0 = _slicedToArray(_useState9, 2),
-    isFinished = _useState0[0],
-    setIsFinished = _useState0[1];
+    score = _useState0[0],
+    setScore = _useState0[1];
+  var _useState1 = (0,react.useState)(false),
+    _useState10 = _slicedToArray(_useState1, 2),
+    isFinished = _useState10[0],
+    setIsFinished = _useState10[1];
   (0,react.useEffect)(function () {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
       // Сброс состояния при закрытии модалки
+      setStarted(false);
       setCurrentQuestionIndex(0);
       setSelectedAnswer(null);
       setShowResult(false);
@@ -17666,12 +17645,19 @@ var QuizModal = function QuizModal(_ref) {
     // Добавляем случайное изображение из вопросов теста
     if (result && questions.length > 0) {
       var randomIndex = Math.floor(Math.random() * questions.length);
-      result.image = questions[randomIndex].image;
+      result.image = toRoot(questions[randomIndex].image);
     }
     return result;
   };
   var handleClose = function handleClose() {
     onClose();
+  };
+
+  // Данные для стартового экрана: из testsIndex (meta), иначе из карточки теста.
+  var intro = testData.meta || {
+    title: (_testData$card = testData.card) === null || _testData$card === void 0 ? void 0 : _testData$card.title,
+    description: (_testData$card2 = testData.card) === null || _testData$card2 === void 0 ? void 0 : _testData$card2.description,
+    image: (_testData$card3 = testData.card) === null || _testData$card3 === void 0 ? void 0 : _testData$card3.image
   };
   return /*#__PURE__*/react.createElement("div", {
     className: "O_quizModal",
@@ -17681,21 +17667,53 @@ var QuizModal = function QuizModal(_ref) {
     onClick: function onClick(e) {
       return e.stopPropagation();
     }
-  }, !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
+  }, !started ? /*#__PURE__*/react.createElement("div", {
+    className: "M_testIntro"
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: handleClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), intro.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "A_testQuestionImage",
+    src: toRoot(intro.image),
+    alt: intro.title || ''
+  })), /*#__PURE__*/react.createElement("h1", {
+    className: "A_testIntroTitle"
+  }, intro.title), intro.description && /*#__PURE__*/react.createElement("p", {
+    className: "A_testIntroDesc"
+  }, intro.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroStart",
+    type: "button",
+    onClick: function onClick() {
+      return setStarted(true);
+    }
+  }, /*#__PURE__*/react.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C \u0442\u0435\u0441\u0442"), /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  }))) : !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
     question: currentQuestion,
-    currentQuestion: currentQuestionIndex + 1,
-    totalQuestions: questions.length,
     onAnswerSelect: handleAnswerSelect,
     selectedAnswer: selectedAnswer,
     showResult: showResult
   }) : /*#__PURE__*/react.createElement(molecules_ResultCard, {
     result: getResult(),
-    score: score,
-    totalQuestions: questions.length
+    onClose: handleClose
   })));
 };
 /* harmony default export */ const organisms_QuizModal = (QuizModal);
 ;// ./src/javascript/components/tests/TestsPage.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function TestsPage_slicedToArray(r, e) { return TestsPage_arrayWithHoles(r) || TestsPage_iterableToArrayLimit(r, e) || TestsPage_unsupportedIterableToArray(r, e) || TestsPage_nonIterableRest(); }
 function TestsPage_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function TestsPage_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return TestsPage_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? TestsPage_arrayLikeToArray(r, a) : void 0; } }
@@ -17779,7 +17797,12 @@ var TestsPage = function TestsPage() {
   }) : testsIndex_namespaceObject;
   var openTest = function openTest(id) {
     var data = testsById[id];
-    if (data) setActiveTest(data);
+    var meta = testsIndex_namespaceObject.find(function (t) {
+      return t.id === id;
+    });
+    if (data) setActiveTest(_objectSpread(_objectSpread({}, data), {}, {
+      meta: meta
+    }));
   };
   return /*#__PURE__*/react.createElement("div", {
     className: "O_testsPage"

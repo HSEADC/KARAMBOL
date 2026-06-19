@@ -255,7 +255,43 @@
   }
 }
 
+.M_questionCard {
+  display: flex;
+  flex-direction: column;
+  gap: 2.08vw;
+}
+
+.M_testIntro .A_testImageContainer {
+  display: none;
+}
+
+.M_testIntro,
+.M_resultCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.78vw;
+}
+
+.M_resultCard .A_testImageContainer {
+  width: 30.14vw;
+  height: 18vw;
+}
+
 @media screen and (max-width: 767px) {
+  .M_testIntro {
+    width: 100%;
+    gap: 3.18vw;
+  }
+
+  .M_testIntro .A_testImageContainer {
+    display: block;
+    width: 100%;
+    height: 36.36vw;
+    border-radius: 5.68vw;
+  }
+
   .M_specialHead {
     gap: 7.95vw;
 
@@ -435,10 +471,13 @@
   .M_questionCard,
   .M_resultCard {
     gap: 5.45vw;
+    width: 100%;
   }
 
-  .M_resultCard .A_testQuestionImage {
-    height: 50vw;
+  .M_resultCard .A_testImageContainer {
+    width: 100%;
+    height: 36.36vw;
+    border-radius: 5.68vw;
   }
 
   .M_centerOfPhotoArea {

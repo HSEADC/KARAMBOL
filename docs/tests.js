@@ -17455,30 +17455,6 @@ var __webpack_exports__ = {};
 var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
-;// ./src/javascript/components/atoms/TestProgress.jsx
-
-var TestProgress = function TestProgress(_ref) {
-  var current = _ref.current,
-    total = _ref.total;
-  return /*#__PURE__*/react.createElement("h2", {
-    className: "A_testProgress"
-  }, current, "/", total);
-};
-/* harmony default export */ const atoms_TestProgress = (TestProgress);
-;// ./src/javascript/components/atoms/TestImage.jsx
-
-var TestImage = function TestImage(_ref) {
-  var src = _ref.src,
-    alt = _ref.alt;
-  return /*#__PURE__*/react.createElement("div", {
-    className: "A_testImageContainer"
-  }, /*#__PURE__*/react.createElement("img", {
-    src: src,
-    alt: alt,
-    className: "A_testQuestionImage"
-  }));
-};
-/* harmony default export */ const atoms_TestImage = (TestImage);
 ;// ./src/javascript/components/atoms/TestOptionButton.jsx
 
 var TestOptionButton = function TestOptionButton(_ref) {
@@ -17510,31 +17486,18 @@ var TestOptionButton = function TestOptionButton(_ref) {
 ;// ./src/javascript/components/molecules/QuestionCard.jsx
 
 
-
-
 var QuestionCard = function QuestionCard(_ref) {
   var question = _ref.question,
-    currentQuestion = _ref.currentQuestion,
-    totalQuestions = _ref.totalQuestions,
     onAnswerSelect = _ref.onAnswerSelect,
     selectedAnswer = _ref.selectedAnswer,
-    showResult = _ref.showResult,
-    correctAnswer = _ref.correctAnswer;
+    showResult = _ref.showResult;
   return /*#__PURE__*/react.createElement("div", {
     className: "M_questionCard"
   }, /*#__PURE__*/react.createElement("div", {
-    className: "W_progressContainer"
-  }, /*#__PURE__*/react.createElement(atoms_TestProgress, {
-    current: currentQuestion,
-    total: totalQuestions
-  }), /*#__PURE__*/react.createElement("h3", {
-    className: "A_questionText"
-  }, question.question)), /*#__PURE__*/react.createElement("div", {
     className: "W_questionContent"
-  }, question.image && /*#__PURE__*/react.createElement(atoms_TestImage, {
-    src: question.image,
-    alt: question.question
-  }), /*#__PURE__*/react.createElement("div", {
+  }, /*#__PURE__*/react.createElement("h3", {
+    className: "A_questionText"
+  }, question.question), /*#__PURE__*/react.createElement("div", {
     className: "W_optionsGrid"
   }, question.options.map(function (option) {
     return /*#__PURE__*/react.createElement(atoms_TestOptionButton, {
@@ -17555,29 +17518,33 @@ var QuestionCard = function QuestionCard(_ref) {
 
 var ResultCard = function ResultCard(_ref) {
   var result = _ref.result,
-    score = _ref.score,
-    totalQuestions = _ref.totalQuestions;
+    onClose = _ref.onClose;
   if (!result) return null;
   return /*#__PURE__*/react.createElement("div", {
     className: "M_resultCard"
-  }, /*#__PURE__*/react.createElement("div", {
-    className: "W_resultContent"
-  }, /*#__PURE__*/react.createElement("h3", {
-    className: "A_resultTitle"
-  }, result.title), result.image && /*#__PURE__*/react.createElement("img", {
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: onClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), result.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
     src: result.image,
     alt: result.title,
-    className: "A_testQuestionImage",
-    style: {
-      marginBottom: '2.08vw'
-    }
-  }), /*#__PURE__*/react.createElement("div", {
-    className: "W_resultScore"
-  }, /*#__PURE__*/react.createElement("h2", {
-    className: "A_resultScore"
-  }, score, "/", totalQuestions), /*#__PURE__*/react.createElement("p", {
+    className: "A_testQuestionImage"
+  })), /*#__PURE__*/react.createElement("h3", {
+    className: "A_resultTitle"
+  }, result.title), /*#__PURE__*/react.createElement("p", {
     className: "A_resultDescription"
-  }, result.description))));
+  }, result.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroFinish",
+    type: "button",
+    onClick: onClose
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0443\u043F\u0435\u0440")));
 };
 /* harmony default export */ const molecules_ResultCard = (ResultCard);
 ;// ./src/javascript/components/organisms/QuizModal.jsx
@@ -17590,36 +17557,48 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
+// Внутренние пути делаем корне-абсолютными, чтобы обложка теста грузилась
+// независимо от того, с какой страницы открыт тест.
+var toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
 var QuizModal = function QuizModal(_ref) {
+  var _testData$card, _testData$card2, _testData$card3;
   var isOpen = _ref.isOpen,
     onClose = _ref.onClose,
     testData = _ref.testData;
-  var _useState = (0,react.useState)(0),
+  var _useState = (0,react.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
-    currentQuestionIndex = _useState2[0],
-    setCurrentQuestionIndex = _useState2[1];
-  var _useState3 = (0,react.useState)(null),
+    started = _useState2[0],
+    setStarted = _useState2[1];
+  var _useState3 = (0,react.useState)(0),
     _useState4 = _slicedToArray(_useState3, 2),
-    selectedAnswer = _useState4[0],
-    setSelectedAnswer = _useState4[1];
-  var _useState5 = (0,react.useState)(false),
+    currentQuestionIndex = _useState4[0],
+    setCurrentQuestionIndex = _useState4[1];
+  var _useState5 = (0,react.useState)(null),
     _useState6 = _slicedToArray(_useState5, 2),
-    showResult = _useState6[0],
-    setShowResult = _useState6[1];
-  var _useState7 = (0,react.useState)(0),
+    selectedAnswer = _useState6[0],
+    setSelectedAnswer = _useState6[1];
+  var _useState7 = (0,react.useState)(false),
     _useState8 = _slicedToArray(_useState7, 2),
-    score = _useState8[0],
-    setScore = _useState8[1];
-  var _useState9 = (0,react.useState)(false),
+    showResult = _useState8[0],
+    setShowResult = _useState8[1];
+  var _useState9 = (0,react.useState)(0),
     _useState0 = _slicedToArray(_useState9, 2),
-    isFinished = _useState0[0],
-    setIsFinished = _useState0[1];
+    score = _useState0[0],
+    setScore = _useState0[1];
+  var _useState1 = (0,react.useState)(false),
+    _useState10 = _slicedToArray(_useState1, 2),
+    isFinished = _useState10[0],
+    setIsFinished = _useState10[1];
   (0,react.useEffect)(function () {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
       // Сброс состояния при закрытии модалки
+      setStarted(false);
       setCurrentQuestionIndex(0);
       setSelectedAnswer(null);
       setShowResult(false);
@@ -17664,12 +17643,19 @@ var QuizModal = function QuizModal(_ref) {
     // Добавляем случайное изображение из вопросов теста
     if (result && questions.length > 0) {
       var randomIndex = Math.floor(Math.random() * questions.length);
-      result.image = questions[randomIndex].image;
+      result.image = toRoot(questions[randomIndex].image);
     }
     return result;
   };
   var handleClose = function handleClose() {
     onClose();
+  };
+
+  // Данные для стартового экрана: из testsIndex (meta), иначе из карточки теста.
+  var intro = testData.meta || {
+    title: (_testData$card = testData.card) === null || _testData$card === void 0 ? void 0 : _testData$card.title,
+    description: (_testData$card2 = testData.card) === null || _testData$card2 === void 0 ? void 0 : _testData$card2.description,
+    image: (_testData$card3 = testData.card) === null || _testData$card3 === void 0 ? void 0 : _testData$card3.image
   };
   return /*#__PURE__*/react.createElement("div", {
     className: "O_quizModal",
@@ -17679,17 +17665,43 @@ var QuizModal = function QuizModal(_ref) {
     onClick: function onClick(e) {
       return e.stopPropagation();
     }
-  }, !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
+  }, !started ? /*#__PURE__*/react.createElement("div", {
+    className: "M_testIntro"
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: handleClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), intro.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "A_testQuestionImage",
+    src: toRoot(intro.image),
+    alt: intro.title || ''
+  })), /*#__PURE__*/react.createElement("h1", {
+    className: "A_testIntroTitle"
+  }, intro.title), intro.description && /*#__PURE__*/react.createElement("p", {
+    className: "A_testIntroDesc"
+  }, intro.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroStart",
+    type: "button",
+    onClick: function onClick() {
+      return setStarted(true);
+    }
+  }, /*#__PURE__*/react.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C \u0442\u0435\u0441\u0442"), /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  }))) : !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
     question: currentQuestion,
-    currentQuestion: currentQuestionIndex + 1,
-    totalQuestions: questions.length,
     onAnswerSelect: handleAnswerSelect,
     selectedAnswer: selectedAnswer,
     showResult: showResult
   }) : /*#__PURE__*/react.createElement(molecules_ResultCard, {
     result: getResult(),
-    score: score,
-    totalQuestions: questions.length
+    onClose: handleClose
   })));
 };
 /* harmony default export */ const organisms_QuizModal = (QuizModal);

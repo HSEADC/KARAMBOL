@@ -166,9 +166,135 @@
   pointer-events: none;
 }
 
+.A_testIntroTitle {
+  width: fit-content;
+  color: var(--White);
+  font-family: 'TT Travels Bold';
+  font-size: 2.5vw;
+  background: var(--Blaze-Orange);
+  padding: 0.21vw 0.69vw;
+  border-radius: 0.35vw;
+}
+
+.A_testIntroDesc {
+  color: var(--White);
+  font-size: 1.67vw;
+  width: 29.03vw;
+  line-height: 140%;
+}
+
+.A_testImageContainer {
+  width: 100%;
+  height: 18vw;
+  border-radius: 1.04vw;
+  overflow: hidden;
+}
+
+.A_testQuestionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.04vw;
+}
+.A_testOption {
+  padding: 1.18vw 1.39vw;
+  border: 1px solid var(--Graphite);
+  border-radius: 3.13vw;
+  background: transparent;
+  color: var(--White);
+  font-family: 'TT Norms Medium';
+  font-size: 1.11vw;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--Graphite);
+  }
+
+  &.selected {
+    background: var(--Dim-Grey);
+  }
+
+  &.A_testOptionCorrect {
+    background: var(--Sea-Green);
+  }
+
+  &.A_testOptionWrong {
+    background: var(--Vibrant-Coral);
+  }
+
+  &.A_testOptionDisabled {
+    opacity: 0.5;
+  }
+}
+
+.A_questionText {
+  color: var(--White);
+  font-size: 1.67vw;
+  line-height: 130%;
+  text-align: center;
+}
+.A_resultTitle {
+  margin-top: 0.97vw;
+  width: fit-content;
+  color: var(--White);
+  font-family: 'TT Travels Bold';
+  font-size: 2.5vw;
+  line-height: 110%;
+  background: var(--Blaze-Orange);
+  padding: 0.21vw 0.69vw;
+  border-radius: 0.35vw;
+}
+
+.A_resultDescription {
+  color: var(--White);
+  font-size: 1.67vw;
+  line-height: 100%;
+}
+
+.A_quizBack {
+  display: none;
+  align-self: flex-start;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .A_happyPhoto {
     height: 33.63vw;
+  }
+
+  .A_quizBack {
+    display: block;
+    width: 4.77vw;
+    height: 4.77vw;
+  }
+
+  .A_testIntroTitle {
+    margin-top: 10.45vw;
+    font-size: 5.45vw;
+    padding: 0.91vw 2.27vw;
+    border-radius: 1.36vw;
+  }
+
+  .A_testIntroDesc {
+    width: 51.59vw;
+    font-size: 2.95vw;
+  }
+
+  .A_testIntroStart {
+    margin-top: 4.55vw;
   }
 
   .A_Logo {
@@ -385,23 +511,23 @@
 
   .A_testOption {
     padding: 3.64vw 4.09vw;
-    border-radius: 2.73vw;
+    border-radius: 7.95vw;
     font-size: 4.09vw;
-  }
-
-  .A_testProgress {
-    font-size: 4.55vw;
   }
 
   .A_resultTitle {
     font-size: 5.45vw;
-  }
-
-  .A_resultScore {
-    font-size: 9.09vw;
+    margin-top: 4.45vw;
+    padding: 0.91vw 2.27vw;
+    border-radius: 1.36vw;
   }
 
   .A_resultDescription {
-    font-size: 4.09vw;
+    width: 51.59vw;
+    font-size: 2.95vw;
+  }
+
+  .A_testIntroFinish {
+    padding: 2.95vw 11.36vw;
   }
 }

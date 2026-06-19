@@ -55,7 +55,8 @@ const TestsPage = () => {
 
   const openTest = (id) => {
     const data = testsById[id]
-    if (data) setActiveTest(data)
+    const meta = testsData.find((t) => t.id === id)
+    if (data) setActiveTest({ ...data, meta })
   }
 
   return (
