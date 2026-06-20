@@ -17494,6 +17494,9 @@ var TestOptionButton = function TestOptionButton(_ref) {
 /* unused harmony import specifier */ var QuestionCard_TestOptionButton;
 
 
+var toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
 var QuestionCard = function QuestionCard(_ref) {
   var question = _ref.question,
     onAnswerSelect = _ref.onAnswerSelect,
@@ -17503,7 +17506,13 @@ var QuestionCard = function QuestionCard(_ref) {
     className: "M_questionCard"
   }, /*#__PURE__*/QuestionCard_React.createElement("div", {
     className: "W_questionContent"
-  }, /*#__PURE__*/QuestionCard_React.createElement("h3", {
+  }, question.image && /*#__PURE__*/QuestionCard_React.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/QuestionCard_React.createElement("img", {
+    className: "A_testQuestionImage",
+    src: toRoot(question.image),
+    alt: question.question
+  })), /*#__PURE__*/QuestionCard_React.createElement("h3", {
     className: "A_questionText"
   }, question.question), /*#__PURE__*/QuestionCard_React.createElement("div", {
     className: "W_optionsGrid"
@@ -17574,7 +17583,7 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 // Внутренние пути делаем корне-абсолютными, чтобы обложка теста грузилась
 // независимо от того, с какой страницы открыт тест.
-var toRoot = function toRoot(p) {
+var QuizModal_toRoot = function toRoot(p) {
   return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
 };
 var QuizModal = function QuizModal(_ref) {
@@ -17657,7 +17666,7 @@ var QuizModal = function QuizModal(_ref) {
     // Добавляем случайное изображение из вопросов теста
     if (result && questions.length > 0) {
       var randomIndex = Math.floor(Math.random() * questions.length);
-      result.image = toRoot(questions[randomIndex].image);
+      result.image = QuizModal_toRoot(questions[randomIndex].image);
     }
     return result;
   };
@@ -17693,7 +17702,7 @@ var QuizModal = function QuizModal(_ref) {
     className: "A_testImageContainer"
   }, /*#__PURE__*/QuizModal_React.createElement("img", {
     className: "A_testQuestionImage",
-    src: toRoot(intro.image),
+    src: QuizModal_toRoot(intro.image),
     alt: intro.title || ''
   })), /*#__PURE__*/QuizModal_React.createElement("h1", {
     className: "A_testIntroTitle"
