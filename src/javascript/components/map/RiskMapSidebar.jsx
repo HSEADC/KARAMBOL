@@ -17,58 +17,50 @@ const TAGS = [
 const CARDS = [
   {
     id: 1,
-    image: 'images/map/photo1.png',
-    title: 'Друг – Спасатель – Защитник',
-    location: 'По всей Москве',
-    date: '24 мая – 14 сентября',
+    image: 'images/map/photo6.png',
+    title: 'КУСЬ Фест от Ozon Fresh',
+    location: 'Дизайн-завод',
+    date: '27 июня',
     isLarge: true
   },
   {
     id: 2,
-    image: 'images/map/photo2.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
+    image: 'images/map/photo1.png',
+    title: 'Друг – Спасатель – Защитник',
+    location: 'По всей Москве',
+    date: '24 мая – 14 сентября',
     isLarge: false
   },
   {
     id: 3,
-    image: 'images/map/photo3.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
+    image: 'images/map/photo2.png',
+    title: 'Европейский ветеринарный центр',
+    location: 'Мукомольный проезд, д.2 с.1',
+    date: 'Круглосуточно',
     isLarge: false
   },
   {
     id: 4,
     image: 'images/map/photo3.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
+    title: 'Юна-Фест',
+    location: 'ArtPlay, Нижняя Сыромятническая, 10 стр. 7',
+    date: '20 июня',
     isLarge: false
   },
   {
     id: 5,
-    image: 'images/map/photo3.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
+    image: 'images/map/photo4.png',
+    title: 'Завтрак в Ritmo',
+    location: 'Малая Никитская, 12, стр. 12',
+    date: '27 — 28 июня',
     isLarge: false
   },
   {
     id: 6,
-    image: 'images/map/photo3.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
-    isLarge: false
-  },
-  {
-    id: 7,
-    image: 'images/map/photo3.png',
-    title: 'Паддел с таксами',
-    location: 'м. Павелецкая',
-    date: '14 мая 18:00',
+    image: 'images/map/photo5.png',
+    title: 'МосПитомец',
+    location: 'Разные точки по МСК',
+    date: 'Круглосуточно',
     isLarge: false
   }
 ]
@@ -83,8 +75,8 @@ const RiskMapSidebar = () => {
       if (window.ymaps && !mapRef.current) {
         window.ymaps.ready(() => {
           const map = new window.ymaps.Map('yandex-map', {
-            center: [55.751574, 37.573856],
-            zoom: 10,
+            center: [55.759, 37.62],
+            zoom: 13,
             controls: []
           })
           mapRef.current = map

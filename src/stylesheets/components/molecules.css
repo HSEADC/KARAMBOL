@@ -172,9 +172,11 @@
   display: flex;
   flex-direction: column;
   gap: 0.69vw;
+  min-width: 0;
 }
 
 .M_reccomendedCard--large {
+  grid-column: 1 / -1;
   width: 100%;
 }
 

@@ -352,9 +352,13 @@
 .W_testPageImage {
   width: 19.58vw;
   height: 12.01vw;
+  overflow: hidden;
+  border-radius: 1.04vw;
 
   > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 

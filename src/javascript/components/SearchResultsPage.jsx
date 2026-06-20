@@ -2,6 +2,15 @@ import React, { useMemo, useState, useEffect } from 'react'
 import riskPoints from '../data/riskPoints.json'
 import testsData from '../data/testsIndex.json'
 import ArticleCard from './articles/ArticleCard'
+import QuizModal from './organisms/QuizModal'
+
+// Полные данные тестов (вопросы + результаты) по id — для открытия теста модалкой
+const testsContext = require.context('../data/tests', false, /\.json$/)
+const testsById = {}
+testsContext.keys().forEach((key) => {
+  const data = testsContext(key)
+  testsById[data.id] = data
+})
 
 const articlesContext = require.context('../data/articles', false, /\.json$/)
 const articlesData = articlesContext.keys().map((key) => {
@@ -23,9 +32,21 @@ const SearchResultCard = ({
   description,
   meta,
   link,
-  centered
+  centered,
+  onClick
 }) => (
-  <a href={link} className="M_searchPageCard">
+  <a
+    href={link}
+    className="M_searchPageCard"
+    onClick={
+      onClick
+        ? (e) => {
+            e.preventDefault()
+            onClick()
+          }
+        : undefined
+    }
+  >
     <div className="W_searchPageCardImage">
       {image && <img src={image} alt={title} />}
     </div>
@@ -42,8 +63,15 @@ const SearchResultCard = ({
 )
 
 // Карточка теста — как на странице тестов (M_testPageCard)
-const TestPageCard = ({ test }) => (
-  <a href={`./learning.html?test=${test.id}`} className="M_testPageCard">
+const TestPageCard = ({ test, onSelect }) => (
+  <a
+    href={`./learning.html?test=${test.id}`}
+    className="M_testPageCard"
+    onClick={(e) => {
+      e.preventDefault()
+      onSelect(test.id)
+    }}
+  >
     <div className="W_testPageImage">
       <img src={test.image} alt={test.title} />
     </div>
@@ -70,6 +98,14 @@ const SearchResultsPage = () => {
       typeof window !== 'undefined' &&
       window.matchMedia('(max-width: 767px)').matches
   )
+
+  const [activeTest, setActiveTest] = useState(null)
+
+  const openTest = (id) => {
+    const data = testsById[id]
+    const meta = testsData.find((t) => t.id === id)
+    if (data) setActiveTest({ ...data, meta })
+  }
 
   useEffect(() => {
     const mq = window.matchMedia('(max-width: 767px)')
@@ -178,7 +214,7 @@ const SearchResultsPage = () => {
             <div className={isMobile ? 'C_testsGrid' : 'C_searchPageGrid'}>
               {filteredTests.map((t) =>
                 isMobile ? (
-                  <TestPageCard key={t.id} test={t} />
+                  <TestPageCard key={t.id} test={t} onSelect={openTest} />
                 ) : (
                   <SearchResultCard
                     key={t.id}
@@ -187,6 +223,7 @@ const SearchResultsPage = () => {
                     description={t.description}
                     meta="Тест"
                     link={`./tests.html`}
+                    onClick={() => openTest(t.id)}
                   />
                 )
               )}
@@ -200,6 +237,12 @@ const SearchResultsPage = () => {
       )}
 
       {!q && <p className="A_searchEmpty">Введите запрос в строку поиска</p>}
+
+      <QuizModal
+        isOpen={!!activeTest}
+        testData={activeTest}
+        onClose={() => setActiveTest(null)}
+      />
     </div>
   )
 }

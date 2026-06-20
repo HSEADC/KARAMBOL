@@ -1,9 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react'
 import riskPoints from '../data/riskPoints.json'
 import testsData from '../data/testsIndex.json'
+import QuizModal from './organisms/QuizModal'
 
 const toRoot = (p) =>
   !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '')
+
+// Полные данные тестов (вопросы + результаты) по id — для открытия теста модалкой
+const testsContext = require.context('../data/tests', false, /\.json$/)
+const testsById = {}
+testsContext.keys().forEach((key) => {
+  const data = testsContext(key)
+  testsById[data.id] = data
+})
 
 const articlesContext = require.context('../data/articles', false, /\.json$/)
 const articlesData = articlesContext.keys().map((key) => {
@@ -17,8 +26,19 @@ const articlesData = articlesContext.keys().map((key) => {
   }
 })
 
-const ResultCard = ({ image, title, link }) => (
-  <a href={toRoot(link)} className="M_searchResultCard">
+const ResultCard = ({ image, title, link, onClick }) => (
+  <a
+    href={toRoot(link)}
+    className="M_searchResultCard"
+    onClick={
+      onClick
+        ? (e) => {
+            e.preventDefault()
+            onClick()
+          }
+        : undefined
+    }
+  >
     <div className="W_searchResultImage">
       {image && <img src={toRoot(image)} alt={title} />}
     </div>
@@ -32,6 +52,7 @@ const SearchBar = () => {
   const [focused, setFocused] = useState(false)
   const [expanded, setExpanded] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [activeTest, setActiveTest] = useState(null)
   const ref = useRef(null)
   const inputRef = useRef(null)
   const expandTimer = useRef(null)
@@ -95,6 +116,12 @@ const SearchBar = () => {
     setOpen(true)
   }
 
+  const openTest = (id) => {
+    const data = testsById[id]
+    const meta = testsData.find((t) => t.id === id)
+    if (data) setActiveTest({ ...data, meta })
+  }
+
   const goToSearchPage = () => {
     if (query.trim()) {
       window.location.href = `/search.html?q=${encodeURIComponent(query.trim())}`
@@ -155,6 +182,7 @@ const SearchBar = () => {
                 image={t.image}
                 title={t.title}
                 link={`./learning.html?test=${t.id}`}
+                onClick={() => openTest(t.id)}
               />
             ))}
           </div>
@@ -216,6 +244,12 @@ const SearchBar = () => {
           {renderSections()}
         </div>
       )}
+
+      <QuizModal
+        isOpen={!!activeTest}
+        testData={activeTest}
+        onClose={() => setActiveTest(null)}
+      />
     </div>
   )
 }

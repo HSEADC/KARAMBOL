@@ -17351,7 +17351,7 @@ var RecommendedCard = function RecommendedCard(_ref) {
 };
 /* harmony default export */ const map_RecommendedCard = (RecommendedCard);
 ;// ./src/javascript/data/riskPoints.json
-const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"Парк Горького","coordinates":[55.731386,37.60304],"types":["events","summer","cafe"]},{"id":2,"name":"ВДНХ","coordinates":[55.82815,37.6304],"types":["events","summer2026","petshop"]},{"id":3,"name":"Нескучный сад","coordinates":[55.71974,37.58596],"types":["summer","cynology"]},{"id":4,"name":"Коломенское","coordinates":[55.66752,37.6717],"types":["summer","events"]},{"id":5,"name":"Царицыно","coordinates":[55.61556,37.6804],"types":["summer2026","cafe"]},{"id":6,"name":"Сокольники","coordinates":[55.79449,37.6714],"types":["events","cynology","grooming"]},{"id":7,"name":"Измайловский парк","coordinates":[55.79058,37.7955],"types":["summer","petshop"]},{"id":8,"name":"Битцевский лес","coordinates":[55.62587,37.55064],"types":["cynology","summer"]},{"id":9,"name":"Воробьёвы горы","coordinates":[55.70966,37.54296],"types":["summer","events"]},{"id":10,"name":"Кузьминки","coordinates":[55.69287,37.7673],"types":["summer2026","cafe","grooming"]},{"id":11,"name":"Фили","coordinates":[55.7463,37.4977],"types":["summer","cynology"]},{"id":12,"name":"Тропарёво","coordinates":[55.64655,37.472],"types":["summer","vet"]},{"id":13,"name":"Лосиный остров","coordinates":[55.8642,37.7366],"types":["cynology","events"]},{"id":14,"name":"Покровское-Стрешнево","coordinates":[55.8204,37.4708],"types":["summer2026","grooming"]},{"id":15,"name":"Красная Пресня","coordinates":[55.7627,37.5621],"types":["cafe","petshop"]},{"id":16,"name":"Парк Победы","coordinates":[55.73305,37.5121],"types":["events","summer2026"]},{"id":17,"name":"Ботанический сад МГУ","coordinates":[55.7057,37.5273],"types":["summer","vet"]},{"id":18,"name":"Парк Фили","coordinates":[55.7502,37.4895],"types":["cynology","summer"]},{"id":19,"name":"Серебряный бор","coordinates":[55.7826,37.4237],"types":["summer","events"]},{"id":20,"name":"Парк Кусково","coordinates":[55.7361,37.8094],"types":["summer2026","cafe"]},{"id":21,"name":"Главный ботанический сад","coordinates":[55.8419,37.6001],"types":["summer","grooming"]},{"id":22,"name":"Парк Северное Тушино","coordinates":[55.8592,37.4359],"types":["events","petshop"]},{"id":23,"name":"Таганский парк","coordinates":[55.7416,37.6615],"types":["cafe","summer2026"]},{"id":24,"name":"Парк Дружбы","coordinates":[55.8398,37.4928],"types":["summer","cynology"]},{"id":25,"name":"Бульвар Дмитрия Донского","coordinates":[55.5689,37.5747],"types":["vet","petshop"]},{"id":26,"name":"Парк Ангарские пруды","coordinates":[55.6145,37.5843],"types":["summer","grooming"]},{"id":27,"name":"Терлецкий парк","coordinates":[55.7539,37.8312],"types":["cynology","events"]},{"id":28,"name":"Парк Братеево","coordinates":[55.6334,37.7447],"types":["summer2026","cafe"]},{"id":29,"name":"Парк 850-летия Москвы","coordinates":[55.8761,37.5319],"types":["events","summer"]},{"id":30,"name":"Парк Левобережный","coordinates":[55.8573,37.481],"types":["summer","grooming"]},{"id":31,"name":"Бабушкинский парк","coordinates":[55.8686,37.6621],"types":["cynology","petshop"]},{"id":32,"name":"Парк Олимпийская деревня","coordinates":[55.8118,37.4852],"types":["summer2026","vet"]},{"id":33,"name":"Митинский парк","coordinates":[55.8395,37.3568],"types":["summer","cafe"]},{"id":34,"name":"Парк Кузьминки-Люблино","coordinates":[55.6904,37.7806],"types":["cynology","grooming"]},{"id":35,"name":"Александровский сад","coordinates":[55.752,37.6115],"types":["events","summer2026"]},{"id":36,"name":"Парк Красногвардейские пруды","coordinates":[55.7625,37.7438],"types":["summer","petshop"]},{"id":37,"name":"Парк Перовский","coordinates":[55.7498,37.7914],"types":["cafe","cynology"]},{"id":38,"name":"Парк Красная Пахра","coordinates":[55.5582,37.5283],"types":["vet","summer"]},{"id":39,"name":"Парк Дубки","coordinates":[55.8317,37.4042],"types":["grooming","summer2026"]},{"id":40,"name":"Лианозовский парк","coordinates":[55.8969,37.5703],"types":["events","cynology"]}]');
+const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"it NailSpot","coordinates":[55.766239,37.560557],"types":["events","summer"]},{"id":2,"name":"Curly\'s","coordinates":[55.768558,37.603674],"types":["summer2026","vet"]},{"id":3,"name":"Chop-Chop","coordinates":[55.761673,37.61143],"types":["cynology","petshop"]},{"id":4,"name":"LOS BROWS","coordinates":[55.743446,37.633598],"types":["summer","cafe"]},{"id":5,"name":"Москвичка на Дмитровке","coordinates":[55.762312,37.614071],"types":["vet","grooming"]},{"id":6,"name":"Milk Studio Moscow","coordinates":[55.756053,37.593746],"types":["petshop","events"]},{"id":7,"name":"Студия маникюра Nail Spot","coordinates":[55.765018,37.591251],"types":["cafe","summer2026"]},{"id":8,"name":"Москвичка на Бронной","coordinates":[55.764955,37.592416],"types":["grooming","cynology"]},{"id":9,"name":"Москвичка на Тимура Фрунзе","coordinates":[55.735054,37.588466],"types":["events","summer"]},{"id":10,"name":"Noir Moscow Покровка","coordinates":[55.763652,37.655637],"types":["summer2026","vet"]},{"id":11,"name":"Персона Новослободская","coordinates":[55.781337,37.60764],"types":["cynology","petshop"]},{"id":12,"name":"Москвичка на Лесной","coordinates":[55.789083,37.588755],"types":["summer","cafe"]},{"id":13,"name":"It-girls Улица 1905 года","coordinates":[55.761623,37.550522],"types":["vet","grooming"]},{"id":14,"name":"It-girls ЗИЛ","coordinates":[55.700078,37.635449],"types":["petshop","events"]},{"id":15,"name":"BRERA COLOR BAR","coordinates":[55.703319,37.64304],"types":["cafe","summer2026"]},{"id":16,"name":"BETONE WOMAN Войковская","coordinates":[55.822974,37.514066],"types":["grooming","cynology"]},{"id":17,"name":"GO BOXING","coordinates":[55.753816,37.588299],"types":["events","summer"]},{"id":18,"name":"SMSTRETCHING Тимура Фрунзе","coordinates":[55.734443,37.591254],"types":["summer2026","vet"]},{"id":19,"name":"VELOBEAT Долгоруковская","coordinates":[55.775096,37.60311],"types":["cynology","petshop"]},{"id":20,"name":"ROCK THE CYCLE","coordinates":[55.774463,37.589076],"types":["summer","cafe"]},{"id":21,"name":"VELOBEAT Спартаковская","coordinates":[55.77333,37.677665],"types":["vet","grooming"]},{"id":22,"name":"SMSTRETCHING Холодильный","coordinates":[55.70958,37.624863],"types":["petshop","events"]},{"id":23,"name":"Клуб для собак Class&Fit","coordinates":[55.79476,37.544564],"types":["cafe","summer2026"]},{"id":24,"name":"VELOBEAT Пресненская","coordinates":[55.747142,37.539444],"types":["grooming","cynology"]},{"id":25,"name":"VELOBEAT Ленинградский","coordinates":[55.791075,37.561182],"types":["events","summer"]},{"id":26,"name":"Self Made","coordinates":[55.787559,37.499334],"types":["summer2026","vet"]},{"id":27,"name":"Усадьба Гребнево","coordinates":[55.951703,38.079645],"types":["cynology","petshop"]},{"id":28,"name":"Aframe Happy","coordinates":[55.348281,37.915278],"types":["summer","cafe"]},{"id":29,"name":"Глэмпинг Чантриум","coordinates":[56.271261,37.540154],"types":["vet","grooming"]},{"id":30,"name":"Mini Bo","coordinates":[55.87457,36.713108],"types":["petshop","events"]},{"id":31,"name":"A-Ferma","coordinates":[55.562957,39.116333],"types":["cafe","summer2026"]},{"id":32,"name":"Глэмпинг Зеленая тропа","coordinates":[54.804472,37.294782],"types":["grooming","cynology"]},{"id":33,"name":"Глэмпинг Лесное Патио","coordinates":[54.947492,38.564006],"types":["events","summer"]},{"id":34,"name":"Хоббитленд","coordinates":[55.51369,36.264345],"types":["summer2026","vet"]},{"id":35,"name":"Гастроцентр Зарядье","coordinates":[55.751129,37.631287],"types":["cynology","petshop"]},{"id":36,"name":"Fine","coordinates":[55.747125,37.607915],"types":["summer","cafe"]},{"id":37,"name":"Белуга","coordinates":[55.75683,37.61434],"types":["vet","grooming"]},{"id":38,"name":"FRANK by БАСТА Пятницкая","coordinates":[55.738061,37.628202],"types":["petshop","events"]},{"id":39,"name":"Ресторан Северяне","coordinates":[55.75653,37.606456],"types":["cafe","summer2026"]},{"id":40,"name":"Wine & Crab","coordinates":[55.758466,37.623487],"types":["grooming","cynology"]},{"id":41,"name":"SURF COFFEE × RED OCTOBER","coordinates":[55.742318,37.610009],"types":["events","summer"]},{"id":42,"name":"Finch Красный октябрь","coordinates":[55.742318,37.610009],"types":["summer2026","vet"]},{"id":43,"name":"BRO&N Камергерский","coordinates":[55.761015,37.61213],"types":["cynology","petshop"]},{"id":44,"name":"FRANK by БАСТА Камергерский","coordinates":[55.760249,37.614837],"types":["summer","cafe"]},{"id":45,"name":"Булка","coordinates":[55.740748,37.622918],"types":["vet","grooming"]},{"id":46,"name":"SHE","coordinates":[55.756681,37.603648],"types":["petshop","events"]},{"id":47,"name":"Skuratov Coffee Калашный","coordinates":[55.756352,37.599596],"types":["cafe","summer2026"]},{"id":48,"name":"ДАБЛБИ Красный октябрь","coordinates":[55.741201,37.609081],"types":["grooming","cynology"]},{"id":49,"name":"FRANK by БАСТА Рождественка","coordinates":[55.761122,37.62324],"types":["events","summer"]},{"id":50,"name":"Zotman Солянка","coordinates":[55.754551,37.638121],"types":["summer2026","vet"]},{"id":51,"name":"Surf Coffee Солянка","coordinates":[55.754551,37.638121],"types":["cynology","petshop"]},{"id":52,"name":"KM20","coordinates":[55.761873,37.612017],"types":["summer","cafe"]},{"id":53,"name":"Пицца 22 сантиметра","coordinates":[55.75469,37.636575],"types":["vet","grooming"]},{"id":54,"name":"ABC Coffee Roasters Милютинский","coordinates":[55.760898,37.631601],"types":["petshop","events"]},{"id":55,"name":"Surf Coffee x G-SPOT","coordinates":[55.760887,37.632503],"types":["cafe","summer2026"]},{"id":56,"name":"Surf Coffee Кузнецкий Мост","coordinates":[55.760887,37.632503],"types":["grooming","cynology"]},{"id":57,"name":"Энтузиаст","coordinates":[55.763806,37.614152],"types":["events","summer"]},{"id":58,"name":"Remy Kitchen Bakery","coordinates":[55.758789,37.598592],"types":["summer2026","vet"]},{"id":59,"name":"Рихтер","coordinates":[55.737797,37.627842],"types":["cynology","petshop"]},{"id":60,"name":"Ровесник","coordinates":[55.762698,37.605481],"types":["summer","cafe"]},{"id":61,"name":"Friends Forever Малая Никитская","coordinates":[55.758036,37.596759],"types":["vet","grooming"]},{"id":62,"name":"GORILLA by БАСТА Мясницкая","coordinates":[55.761506,37.632432],"types":["petshop","events"]},{"id":63,"name":"Скворец!","coordinates":[55.759572,37.597458],"types":["cafe","summer2026"]},{"id":64,"name":"Кафетериус","coordinates":[55.757226,37.595062],"types":["grooming","cynology"]},{"id":65,"name":"Laffa Laffa","coordinates":[55.759572,37.597458],"types":["events","summer"]},{"id":66,"name":"Сюр","coordinates":[55.754913,37.64296],"types":["summer2026","vet"]},{"id":67,"name":"Skuratov coffee roasters","coordinates":[55.762218,37.633795],"types":["cynology","petshop"]},{"id":68,"name":"Скрепка","coordinates":[55.758792,37.639842],"types":["summer","cafe"]},{"id":69,"name":"FRANK by БАСТА Новый Арбат","coordinates":[55.752013,37.591102],"types":["vet","grooming"]},{"id":70,"name":"Blanc","coordinates":[55.755908,37.642924],"types":["petshop","events"]},{"id":71,"name":"ДАБЛБИ Неглинная","coordinates":[55.765598,37.620939],"types":["cafe","summer2026"]},{"id":72,"name":"Surf Coffee x Lineup","coordinates":[55.758518,37.641091],"types":["grooming","cynology"]},{"id":73,"name":"FRANK by БАСТА Мясницкая","coordinates":[55.762511,37.636448],"types":["events","summer"]},{"id":74,"name":"YCP","coordinates":[55.763206,37.633493],"types":["summer2026","vet"]},{"id":75,"name":"Хорошая девочка","coordinates":[55.76034,37.596628],"types":["cynology","petshop"]},{"id":76,"name":"Escapist","coordinates":[55.754814,37.645219],"types":["summer","cafe"]},{"id":77,"name":"Flâner Moscow","coordinates":[55.7622,37.636239],"types":["vet","grooming"]},{"id":78,"name":"Циники","coordinates":[55.763024,37.598789],"types":["petshop","events"]},{"id":79,"name":"ABC Coffee Roasters Покровка","coordinates":[55.759613,37.642176],"types":["cafe","summer2026"]},{"id":80,"name":"Mátes","coordinates":[55.761606,37.596277],"types":["grooming","cynology"]},{"id":81,"name":"Ресторан Клёво","coordinates":[55.767664,37.613116],"types":["events","summer"]},{"id":82,"name":"Subzero Петровка","coordinates":[55.768127,37.614151],"types":["summer2026","vet"]},{"id":83,"name":"Angel Cakes","coordinates":[55.763622,37.595768],"types":["cynology","petshop"]}]');
 ;// ./src/javascript/components/map/RiskMapSidebar.jsx
 function RiskMapSidebar_slicedToArray(r, e) { return RiskMapSidebar_arrayWithHoles(r) || RiskMapSidebar_iterableToArrayLimit(r, e) || RiskMapSidebar_unsupportedIterableToArray(r, e) || RiskMapSidebar_nonIterableRest(); }
 function RiskMapSidebar_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -17392,52 +17392,45 @@ var TAGS = [{
 }];
 var CARDS = [{
   id: 1,
+  image: 'images/map/photo6.png',
+  title: 'КУСЬ Фест от Ozon Fresh',
+  location: 'Дизайн-завод',
+  date: '27 июня',
+  isLarge: true
+}, {
+  id: 2,
   image: 'images/map/photo1.png',
   title: 'Друг – Спасатель – Защитник',
   location: 'По всей Москве',
   date: '24 мая – 14 сентября',
-  isLarge: true
-}, {
-  id: 2,
-  image: 'images/map/photo2.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
   isLarge: false
 }, {
   id: 3,
-  image: 'images/map/photo3.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
+  image: 'images/map/photo2.png',
+  title: 'Европейский ветеринарный центр',
+  location: 'Мукомольный проезд, д.2 с.1',
+  date: 'Круглосуточно',
   isLarge: false
 }, {
   id: 4,
   image: 'images/map/photo3.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
+  title: 'Юна-Фест',
+  location: 'ArtPlay, Нижняя Сыромятническая, 10 стр. 7',
+  date: '20 июня',
   isLarge: false
 }, {
   id: 5,
-  image: 'images/map/photo3.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
+  image: 'images/map/photo4.png',
+  title: 'Завтрак в Ritmo',
+  location: 'Малая Никитская, 12, стр. 12',
+  date: '27 — 28 июня',
   isLarge: false
 }, {
   id: 6,
-  image: 'images/map/photo3.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
-  isLarge: false
-}, {
-  id: 7,
-  image: 'images/map/photo3.png',
-  title: 'Паддел с таксами',
-  location: 'м. Павелецкая',
-  date: '14 мая 18:00',
+  image: 'images/map/photo5.png',
+  title: 'МосПитомец',
+  location: 'Разные точки по МСК',
+  date: 'Круглосуточно',
   isLarge: false
 }];
 var RiskMapSidebar = function RiskMapSidebar() {
@@ -17452,8 +17445,8 @@ var RiskMapSidebar = function RiskMapSidebar() {
       if (window.ymaps && !mapRef.current) {
         window.ymaps.ready(function () {
           var map = new window.ymaps.Map('yandex-map', {
-            center: [55.751574, 37.573856],
-            zoom: 10,
+            center: [55.759, 37.62],
+            zoom: 13,
             controls: []
           });
           mapRef.current = map;

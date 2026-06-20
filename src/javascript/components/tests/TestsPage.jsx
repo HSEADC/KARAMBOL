@@ -20,21 +20,21 @@ const TAGS = [
   { label: 'Зоомагазин', value: 'Зоомагазин' }
 ]
 
-const TestCard = ({ test, onSelect }) => (
+const TestCard = ({ id, card, onSelect }) => (
   <a
-    href={`./learning.html?test=${test.id}`}
+    href={`./learning.html?test=${id}`}
     className="M_testPageCard"
     onClick={(e) => {
       e.preventDefault()
-      onSelect(test.id)
+      onSelect(id)
     }}
   >
     <div className="W_testPageImage">
-      <img src={test.image} alt={test.title} />
+      <img src={card.image} alt={card.title} />
     </div>
     <div className="W_testPageContent">
-      <h3 className="A_testPageTitle">{test.title}</h3>
-      <p className="A_testPageDesc">{test.description}</p>
+      <h3 className="A_testPageTitle">{card.title}</h3>
+      <p className="A_testPageDesc">{card.description}</p>
     </div>
     <div className="W_testPageFooter">
       <span className="A_button">
@@ -55,8 +55,7 @@ const TestsPage = () => {
 
   const openTest = (id) => {
     const data = testsById[id]
-    const meta = testsData.find((t) => t.id === id)
-    if (data) setActiveTest({ ...data, meta })
+    if (data) setActiveTest(data)
   }
 
   return (
@@ -74,9 +73,18 @@ const TestsPage = () => {
       </div>
 
       <div className="C_testsGrid">
-        {filtered.map((test) => (
-          <TestCard key={test.id} test={test} onSelect={openTest} />
-        ))}
+        {filtered.map((test) => {
+          const data = testsById[test.id]
+          if (!data) return null
+          return (
+            <TestCard
+              key={test.id}
+              id={test.id}
+              card={data.card}
+              onSelect={openTest}
+            />
+          )
+        })}
       </div>
 
       <QuizModal

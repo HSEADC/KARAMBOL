@@ -5,7 +5,10 @@
     "title": "Можно, а зачем?",
     "description": "Оцени каждое решение в жизни с собакой",
     "image": "./images/tests/test1.png",
-    "categories": ["Life-стайл", "Ветеринария"]
+    "categories": [
+      "Life-стайл",
+      "Ветеринария"
+    ]
   },
   {
     "id": 2,
@@ -13,7 +16,10 @@
     "title": "Юра Борисов вайб",
     "description": "Какой ты дядя/тётя на прогулке с собакой",
     "image": "./images/tests/test2.png",
-    "categories": ["Life-стайл", "Мероприятия"]
+    "categories": [
+      "Life-стайл",
+      "Мероприятия"
+    ]
   },
   {
     "id": 3,
@@ -21,7 +27,9 @@
     "title": "Умный в очках",
     "description": "Насколько ты реально разбираешься в собаках",
     "image": "./images/tests/test3.png",
-    "categories": ["Ветеринария"]
+    "categories": [
+      "Ветеринария"
+    ]
   },
   {
     "id": 4,
@@ -29,7 +37,9 @@
     "title": "Вряд ли. Скорее нет",
     "description": "Что из этого ваша пара точно никогда не сделает",
     "image": "./images/tests/test4.png",
-    "categories": ["Life-стайл"]
+    "categories": [
+      "Life-стайл"
+    ]
   },
   {
     "id": 5,
@@ -37,7 +47,10 @@
     "title": "Муся, это ты?",
     "description": "Узнаёт ли твоя собака себя в неожиданных ситуациях",
     "image": "./images/tests/test5.png",
-    "categories": ["Life-стайл", "Ветеринария"]
+    "categories": [
+      "Life-стайл",
+      "Ветеринария"
+    ]
   },
   {
     "id": 6,
@@ -45,7 +58,9 @@
     "title": "Окак. Понял",
     "description": "Как ты реагируешь на неожиданное от собаки",
     "image": "./images/tests/test6.png",
-    "categories": ["Life-стайл"]
+    "categories": [
+      "Life-стайл"
+    ]
   },
   {
     "id": 7,
@@ -53,7 +68,10 @@
     "title": "Собака — Шаман",
     "description": "Что твоя собака облизала из самого неожиданного",
     "image": "./images/tests/test7.png",
-    "categories": ["Life-стайл", "Питание"]
+    "categories": [
+      "Life-стайл",
+      "Питание"
+    ]
   },
   {
     "id": 8,
@@ -61,22 +79,8 @@
     "title": "Не хотел, а полюбил",
     "description": "Классический путь: от «зачем собака» до «жизни без неё нет»",
     "image": "./images/tests/test8.png",
-    "categories": ["Life-стайл"]
-  },
-  {
-    "id": 9,
-    "slug": "filyaj-filyaj-uroven",
-    "title": "Филяй-филяй уровень",
-    "description": "Насколько твоя собака танцует под жизнь в мегаполисе",
-    "image": "./images/tests/test9.png",
-    "categories": ["Life-стайл", "Мероприятия"]
-  },
-  {
-    "id": 10,
-    "slug": "danil-kolbasenko",
-    "title": "Данил Колбасенко",
-    "description": "Твоя собака — будущий интернет-герой или нет",
-    "image": "./images/tests/test10.png",
-    "categories": ["Life-стайл", "Мероприятия"]
+    "categories": [
+      "Life-стайл"
+    ]
   }
 ]

@@ -17313,6 +17313,42 @@ webpackContext.id = 385;
 
 /***/ },
 
+/***/ 519
+(module, __unused_webpack_exports, __webpack_require__) {
+
+var map = {
+	"./1.json": 309,
+	"./2.json": 192,
+	"./3.json": 603,
+	"./4.json": 718,
+	"./5.json": 753,
+	"./6.json": 364,
+	"./7.json": 407,
+	"./8.json": 794
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 519;
+
+/***/ },
+
 /***/ 555
 (module) {
 
@@ -17375,6 +17411,70 @@ module.exports = /*#__PURE__*/JSON.parse('{"id":7,"categories":["Ветерин�
 "use strict";
 module.exports = /*#__PURE__*/JSON.parse('{"id":8,"categories":["Лето","Ветеринария","Life-стайл"],"blocks":[{"type":"hero","title":"Газонокосилка на поводке","description":"Почему собака жует траву и когда это норма, а когда сигнал тревоги","image":"/images/articles/article_8.jpg","readTime":"4 мин","date":"1 декабря 2025"},{"type":"textSplit","left":"Газонокосилка на поводке: почему «лечиться» — это миф","right":"Самое популярное объяснение на форумах — «собака чистит желудок и специально вызывает рвоту» — разбивается о данные крупных исследований. На самом деле менее 10% собак проявляют признаки недомогания перед тем, как потянуться к зелени, а рвота после этого случается лишь в 25% случаев. Это означает, что в трех ситуациях из четырех никакой чистки не происходит: рвота — это лишь побочный эффект от раздражения слизистой длинными стеблями, а вовсе не цель вашего питомца.\\n\\nЧтобы понять это поведение, нужно заглянуть в эволюцию: собаки — существа всеядные, и их дикие предки, волки, регулярно употребляют растительность. В желудках диких волков находят от 11% до 47% растительного материала в зависимости от сезона. Трава — это естественный источник клетчатки, витаминов группы B и хлорофилла, который городская собака на промышленном корме пытается найти инстинктивно, просто повинуясь древним генам."},{"type":"textSplit","left":"Три причины нормы и один повод для тревоги","right":"В большинстве случаев за поеданием травы стоят вполне безобидные причины. Первая — это банальный вкус и исследование мира: многим собакам, особенно весной, просто нравится текстура и сок молодой зелени, это их вариант свежего салата. Вторая причина — скука или потребность в ментальной стимуляции: если прогулка однообразна, жевание травы становится способом занять себя, похожим на привычку человека грызть ручку во время раздумий. Третий фактор — инстинктивная потребность в клетчатке для стимуляции работы кишечника, что часто встречается у животных на рационе с низким содержанием волокон.\\n\\nОднако стоит насторожиться, если вы видите признаки острого дискомфорта в ЖКТ. Хотя трава не является лекарством, собака может жадно поглощать её, пытаясь интуитивно облегчить неприятные ощущения в животе. Если такое поведение сопровождается апатией, отказом от воды или повторяющейся рвотой, это уже не «гастрономия», а симптом, требующий внимания ветеринара. Помните: миф о том, что животные инстинктивно не едят ядовитое, в городе не работает — собаки легко могут проглотить токсичные декоративные растения или химикаты."},{"type":"textSplit","left":"Красные флаги: когда прогулка превращается в вызов врача","right":"Критическим сигналом является резкое изменение привычек: если собака никогда не интересовалась травой и вдруг начала жадно заглатывать её огромными пучками, это повод для экстренного визита в клинику. Такое поведение может указывать на острое состояние, например, заворот желудка или наличие инородного тела. Также опасна систематическая рвота после каждого эпизода поедания зелени — это часто маскирует гастрит, панкреатит или наличие паразитов, где трава выступает лишь триггером уже существующей проблемы.\\n\\nВ московских реалиях отдельную угрозу представляет сама локация. Городские газоны часто обрабатываются гербицидами, а вдоль дорог трава накапливает тяжелые металлы и реагенты, превращаясь в «городской яд». Особую осторожность стоит проявлять в зонах, где может расти борщевик Сосновского — его сок вызывает тяжелейшие химические ожоги слизистых. Если собака пожевала что-то на декоративной клумбе в парке, действуйте по протоколу отравления, не дожидаясь первых симптомов, так как многие парковые цветы смертельно опасны для животных."},{"type":"textSplit","left":"Мнение эксперта: как отличить норму за 30 секунд","right":"Ветеринарный гастроэнтеролог Алексей Иванов подчеркивает, что само по себе поедание травы не является патологией. Главный критерий — это паттерн поведения: спокойное выбирание отдельных стебельков в глубине парка обычно безопасно. Тревогу должен вызывать именно переход к «агрессивному» поглощению травы, когда собака не жует, а пытается проглотить как можно больше зелени за минимальное время. Это явный признак того, что животное испытывает внутренний дискомфорт, который оно не может контролировать."},{"type":"list","title":"Полезные советы для спокойных прогулок:","items":["Разрешайте жевать безопасную траву: Если вы находитесь в глубине чистого парка, вдали от дорог и клумб, не запрещайте собаке это занятие — это нормальное видовое поведение, снижающее стресс.","Запретите «придорожные деликатесы»: Трава у дорог и на декоративных городских клумбах — табу из-за реагентов, гербицидов и токсичных цветов.","Наблюдайте за стилем поедания: Осторожное жевание — норма; жадное заглатывание пучками — повод для наблюдения или звонка врачу.","Обрабатывайте от паразитов по графику: Нарастающий интерес к траве часто бывает связан с наличием глистов, поэтому регулярная дегельминтизация снимает этот фактор.","Проверьте рацион на клетчатку: Если собака ест траву постоянно, обсудите с ветеринаром-диетологом добавление в рацион овощей или специальных отрубей.","Избегайте свежеобработанных газонов: В мае и июне будьте особенно внимательны к знакам об обработке территорий гербицидами.","Держите карту под рукой: Проверяйте локации с токсичными растениями (ландыш, борщевик) в вашем парке через наш сервис перед выходом.","Не наказывайте за рвоту: Если собаку вырвало после травы, просто зафиксируйте этот факт для анамнеза и предложите ей покой.","Следите за общим состоянием: Трава + вялость + отказ от воды = немедленный визит в клинику."]}]}');
 
+/***/ },
+
+/***/ 309
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":1,"card":{"image":"images/tests/test1.png","readTime":"4 минуты","tags":["Собаки","Про животных"],"title":"Свой в собачьем интернете?","date":"1 декабря 2025","description":"Зумис, догголинго — ты в теме?"},"questions":[{"id":1,"image":"images/tests/test_process/test1/1.png","question":"Что значит «зумис» (zoomies)?","options":[{"id":"a","text":"Команда «увеличить картинку»","isCorrect":false},{"id":"b","text":"Порода крошечных собак","isCorrect":false},{"id":"c","text":"Внезапный приступ бешеной беготни по кругу","isCorrect":true},{"id":"d","text":"Когда пёс залипает в видеозвонок","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test1/2.png","question":"«Флафф» (floof) это:","options":[{"id":"a","text":"Очень пушистая собака, состоящая в основном из шерсти","isCorrect":true},{"id":"b","text":"Звук, который пёс издаёт во сне","isCorrect":false},{"id":"c","text":"Имя знаменитого корги","isCorrect":false},{"id":"d","text":"Лёгкий пинок по мячику","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test1/3.png","question":"Что делает собака, когда делает «блеп» (blep)?","options":[{"id":"a","text":"Роет яму на грядке","isCorrect":false},{"id":"b","text":"Лает на холодильник","isCorrect":false},{"id":"c","text":"Чихает ровно три раза","isCorrect":false},{"id":"d","text":"Слегка высовывает кончик языка и забывает его убрать","isCorrect":true}]},{"id":4,"image":"images/tests/test_process/test1/4.png","question":"«Буп» (boop) означает:","options":[{"id":"a","text":"Накормить пса до отвала","isCorrect":false},{"id":"b","text":"Нежно тыкнуть собаку в нос пальцем","isCorrect":true},{"id":"c","text":"Напугать собаку","isCorrect":false},{"id":"d","text":"Помыть лапы после улицы","isCorrect":false}]},{"id":5,"image":"images/tests/test_process/test1/5.png","question":"Кто такой «догго»?","options":[{"id":"a","text":"Робот-пылесос для шерсти","isCorrect":false},{"id":"b","text":"Пёс строго с родословной","isCorrect":false},{"id":"c","text":"Универсальное ласковое слово для любой собаки","isCorrect":true},{"id":"d","text":"Персонаж мультфильма","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test1/6.png","question":"«Пуппер» (pupper) это:","options":[{"id":"a","text":"Маленький пёсик или щенок","isCorrect":true},{"id":"b","text":"Очень пожилой пёс","isCorrect":false},{"id":"c","text":"Собака, вышедшая на пенсию","isCorrect":false},{"id":"d","text":"Гладкая кличка","isCorrect":false}]},{"id":7,"image":"images/tests/test_process/test1/7.png","question":"Что значит «млем» (mlem)?","options":[{"id":"a","text":"Пёс рычит на гостей","isCorrect":false},{"id":"b","text":"Пёс демонстративно облизывается, работая языком","isCorrect":true},{"id":"c","text":"Пёс просит добавку","isCorrect":false},{"id":"d","text":"Пёс чувствует вину","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test1/8.png","question":"Если про пса говорят «doing me a confusion», он:","options":[{"id":"a","text":"Сильно устал","isCorrect":false},{"id":"b","text":"Очень голоден","isCorrect":false},{"id":"c","text":"Просится гулять","isCorrect":false},{"id":"d","text":"В полном замешательстве, наклонил голову набок","isCorrect":true}]},{"id":9,"image":"images/tests/test_process/test1/9.png","question":"«Хекин гуд бой» (heckin good boy) это:","options":[{"id":"a","text":"Способ сказать «чертовски хороший мальчик» без мата","isCorrect":true},{"id":"b","text":"Название премиум-корма","isCorrect":false},{"id":"c","text":"Команда «сидеть»","isCorrect":false},{"id":"d","text":"Очень плохой пёс","isCorrect":false}]},{"id":10,"image":"images/tests/test_process/test1/10.png","question":"Когда пишут, что пёс «борк» (bork), имеется в виду:","options":[{"id":"a","text":"Он сломался и завис","isCorrect":false},{"id":"b","text":"Он крепко спит","isCorrect":false},{"id":"c","text":"Он лает","isCorrect":true},{"id":"d","text":"Он что-то ест","isCorrect":false}]}],"results":[{"minScore":0,"maxScore":3,"title":"Чайник собачьего интернета","description":"Догголинго для тебя пока тёмный лес — но ты на верном пути!"},{"minScore":4,"maxScore":7,"title":"Свой в собачьих пабликах","description":"Ты неплохо ориентируешься в языке собачьего интернета!"},{"minScore":8,"maxScore":10,"title":"Магистр догголинго","description":"Ты говоришь на собачьем интернете как родной — хекин гуд бой!"}]}');
+
+/***/ },
+
+/***/ 192
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":2,"card":{"image":"images/tests/test2.png","readTime":"4 минуты","tags":["Собаки","Про животных"],"title":"Угадай мем по описанию","date":"1 декабря 2025","description":"Угадаешь по одному описанию?"},"questions":[{"id":1,"image":"images/tests/test_process/test2/1.png","question":"Жёлто-рыжая сиба, вокруг разноцветный текст «такой wow», «много удивлений». Это:","options":[{"id":"a","text":"Шлёпа","isCorrect":false},{"id":"b","text":"Doge","isCorrect":true},{"id":"c","text":"Гена","isCorrect":false},{"id":"d","text":"Бонк","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test2/2.png","question":"Грустноватая сиба с маленькими глазками и кривой улыбкой, говорит с ошибками «no» и «yes». Это:","options":[{"id":"a","text":"Cheems","isCorrect":true},{"id":"b","text":"Doge","isCorrect":false},{"id":"c","text":"Просто кот","isCorrect":false},{"id":"d","text":"Бонк","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test2/3.png","question":"Пёс в шляпе сидит в горящей комнате и говорит «This is fine». Мем про:","options":[{"id":"a","text":"Любовь к камину","isCorrect":false},{"id":"b","text":"Готовку барбекю","isCorrect":false},{"id":"c","text":"Принятие катастрофы с улыбкой","isCorrect":true},{"id":"d","text":"Пожарных","isCorrect":false}]},{"id":4,"image":"images/tests/test_process/test2/4.png","question":"Собака косится в сторону с подозрительным выражением, будто услышала чушь. Это:","options":[{"id":"a","text":"Спящий пёс","isCorrect":false},{"id":"b","text":"Виноватый пёс","isCorrect":false},{"id":"c","text":"Doge","isCorrect":false},{"id":"d","text":"Side-eye dog, косящийся пёс","isCorrect":true}]},{"id":5,"image":"images/tests/test_process/test2/5.png","question":"Аккаунт, который оценивает собак и почти всегда ставит больше десяти из десяти со словами «они хорошие собаки». Это:","options":[{"id":"a","text":"WeRateDogs","isCorrect":true},{"id":"b","text":"Dog Shaming","isCorrect":false},{"id":"c","text":"Cute Emergency","isCorrect":false},{"id":"d","text":"Thoughts of Dog","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test2/6.png","question":"Формат, где пса фотографируют с виноватой мордой рядом с табличкой о его «преступлении» (например «съел диван»):","options":[{"id":"a","text":"Dog rating","isCorrect":false},{"id":"b","text":"Zoomies","isCorrect":false},{"id":"c","text":"Dog shaming","isCorrect":true},{"id":"d","text":"Doggo lingo","isCorrect":false}]},{"id":7,"image":"images/tests/test_process/test2/7.png","question":"Маленькая собака грозно скалится, но выглядит скорее мило, чем страшно. Интернет зовёт это:","options":[{"id":"a","text":"Doge","isCorrect":false},{"id":"b","text":"«Он защищает, он нападает», smol angry doggo","isCorrect":true},{"id":"c","text":"Cheems","isCorrect":false},{"id":"d","text":"This is fine","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test2/8.png","question":"Пёс лежит, вытянув задние лапы плашмя назад, как лягушка. Поза называется:","options":[{"id":"a","text":"Лоаф","isCorrect":false},{"id":"b","text":"Зумис","isCorrect":false},{"id":"c","text":"Сплут (sploot)","isCorrect":true},{"id":"d","text":"Блеп","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test2/9.png","question":"Когда пса фотографируют так, что он похож на хлеб с лапками, спрятанными под себя, это:","options":[{"id":"a","text":"Лоаф (loaf), собака-булочка","isCorrect":true},{"id":"b","text":"Сплут","isCorrect":false},{"id":"c","text":"Млем","isCorrect":false},{"id":"d","text":"Борк","isCorrect":false}]},{"id":10,"image":"images/tests/test_process/test2/10.png","question":"Аккаунт, который пишет от лица пса трогательные мысли вроде «ты лучший человек». Это:","options":[{"id":"a","text":"Dog Shaming","isCorrect":false},{"id":"b","text":"WeRateDogs","isCorrect":false},{"id":"c","text":"Doge","isCorrect":false},{"id":"d","text":"Thoughts of Dog","isCorrect":true}]}],"results":[{"minScore":0,"maxScore":3,"title":"Случайный прохожий","description":"Легендарные мемы пока проходят мимо тебя — пора залипнуть в ленту!"},{"minScore":4,"maxScore":7,"title":"Любитель мемов","description":"Ты неплохо разбираешься в собачьих мемах!"},{"minScore":8,"maxScore":10,"title":"Хранитель мемов","description":"Ты знаешь каждый легендарный собачий мем в лицо. Such wow!"}]}');
+
+/***/ },
+
+/***/ 603
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":3,"card":{"image":"images/tests/test3.png","readTime":"5 минут","tags":["Собаки","Про животных"],"title":"Догмама ты или догпапа?","date":"1 декабря 2025","description":"Сколько в тебе догмамы?"},"questions":[{"id":1,"image":"images/tests/test_process/test3/1.png","question":"Сколько фотографий собаки у тебя в телефоне?","options":[{"id":"a","text":"Больше, чем фоток людей, и мне ни капли не стыдно","isCorrect":true},{"id":"b","text":"Штук пять, я нормальный человек","isCorrect":false},{"id":"c","text":"Пара сотен, всё под контролем","isCorrect":false},{"id":"d","text":"У меня нет собаки (тогда зачем ты тут)","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test3/2.png","question":"Что ты говоришь собаке, уходя из дома?","options":[{"id":"a","text":"«Пока» и всё","isCorrect":false},{"id":"b","text":"Ничего, это же собака","isCorrect":false},{"id":"c","text":"Целый монолог про то, когда вернёшься и чтобы вела себя хорошо","isCorrect":true},{"id":"d","text":"Оставляю записку на холодильнике","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test3/3.png","question":"Как ты на самом деле зовёшь свою собаку дома?","options":[{"id":"a","text":"Строго по имени","isCorrect":false},{"id":"b","text":"По имени плюс сорок прозвищ, которые родились сами собой","isCorrect":true},{"id":"c","text":"По паспорту","isCorrect":false},{"id":"d","text":"«Эй, ты»","isCorrect":false}]},{"id":4,"image":"images/tests/test_process/test3/4.png","question":"Собака смотрит, как ты ешь. Что происходит дальше?","options":[{"id":"a","text":"Спокойно игнорирую","isCorrect":false},{"id":"b","text":"Игнорирую, но дрожащей рукой","isCorrect":false},{"id":"c","text":"Ухожу есть в другую комнату","isCorrect":false},{"id":"d","text":"Сдаюсь на третьей секунде зрительного контакта","isCorrect":true}]},{"id":5,"image":"images/tests/test_process/test3/5.png","question":"Кто по факту спит на кровати?","options":[{"id":"a","text":"Только я","isCorrect":false},{"id":"b","text":"Я и партнёр, всё цивилизованно","isCorrect":false},{"id":"c","text":"Я на самом краю, пёс по центру, удобно всем кроме меня","isCorrect":true},{"id":"d","text":"Собака на своём лежаке (наглая ложь)","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test3/6.png","question":"Реакция, когда кто-то говорит «это же просто собака»:","options":[{"id":"a","text":"Спокойно соглашаюсь","isCorrect":false},{"id":"b","text":"Вежливо молчу","isCorrect":false},{"id":"c","text":"Меняю тему","isCorrect":false},{"id":"d","text":"Внутри медленно стираю этого человека из друзей","isCorrect":true}]},{"id":7,"image":"images/tests/test_process/test3/7.png","question":"Собака приболела. Твои действия:","options":[{"id":"a","text":"Жду, само пройдёт","isCorrect":false},{"id":"b","text":"Гуглю симптомы, впадаю в панику, отменяю все планы и мчу к ветеринару","isCorrect":true},{"id":"c","text":"Звоню маме","isCorrect":false},{"id":"d","text":"Жду до утра","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test3/8.png","question":"Сколько на деле стоит «недорогая собака»?","options":[{"id":"a","text":"Корм, игрушки, ветеринар, груминг, и ты уже без денег, но абсолютно счастлив","isCorrect":true},{"id":"b","text":"Совсем недорого","isCorrect":false},{"id":"c","text":"Вполне терпимо","isCorrect":false},{"id":"d","text":"Бесплатно, мне её подарили","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test3/9.png","question":"Проходишь мимо другой собаки на улице. Что делаешь?","options":[{"id":"a","text":"Просто иду дальше","isCorrect":false},{"id":"b","text":"Мельком смотрю","isCorrect":false},{"id":"c","text":"Перехожу на другую сторону","isCorrect":false},{"id":"d","text":"Здороваюсь с чужой собакой раньше, чем с её хозяином","isCorrect":true}]},{"id":10,"image":"images/tests/test_process/test3/10.png","question":"Главный признак, что ты настоящий догродитель:","options":[{"id":"a","text":"У тебя есть собака","isCorrect":false},{"id":"b","text":"Ты её кормишь по часам","isCorrect":false},{"id":"c","text":"Ты уже прочитал весь этот тест голосом своей собаки","isCorrect":true},{"id":"d","text":"Ты ходишь на работу ради неё","isCorrect":false}]}],"results":[{"minScore":0,"maxScore":3,"title":"Догродитель в зачатке","description":"Связь с собакой ещё крепнет — но всё впереди!"},{"minScore":4,"maxScore":7,"title":"Уверенный догмама/догпапа","description":"Ты любишь свою собаку всем сердцем, и это видно!"},{"minScore":8,"maxScore":10,"title":"Догмама/догпапа года","description":"Поздравляем: собака для тебя — полноценный член семьи. И она это знает!"}]}');
+
+/***/ },
+
+/***/ 718
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":4,"card":{"image":"images/tests/test4.png","readTime":"4 минуты","tags":["Собаки","Про животных"],"title":"Запрещёнка для собак","date":"1 декабря 2025","description":"Что собаке точно нельзя"},"questions":[{"id":1,"image":"images/tests/test_process/test4/1.png","question":"Шоколад для собаки это:","options":[{"id":"a","text":"Полезный десерт","isCorrect":false},{"id":"b","text":"Можно, но совсем чуть-чуть","isCorrect":false},{"id":"c","text":"Настоящий яд, особенно горький и тёмный","isCorrect":true},{"id":"d","text":"Зависит от породы","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test4/2.png","question":"Виноград и изюм собакам:","options":[{"id":"a","text":"Опасны, могут ударить по почкам","isCorrect":true},{"id":"b","text":"Отличный сладкий перекус","isCorrect":false},{"id":"c","text":"Можно, если без косточек","isCorrect":false},{"id":"d","text":"Только зелёный сорт","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test4/3.png","question":"Ксилит (подсластитель из жвачки и выпечки) для собаки это:","options":[{"id":"a","text":"Безобидная сладость","isCorrect":false},{"id":"b","text":"Витаминка","isCorrect":false},{"id":"c","text":"Лёгкое лакомство","isCorrect":false},{"id":"d","text":"Очень опасное вещество даже в малой дозе","isCorrect":true}]},{"id":4,"image":"images/tests/test_process/test4/4.png","question":"Лук и чеснок для пса:","options":[{"id":"a","text":"Полезны для иммунитета","isCorrect":false},{"id":"b","text":"Токсичны, бьют по крови","isCorrect":true},{"id":"c","text":"Можно в составе супа","isCorrect":false},{"id":"d","text":"Безопасны, если варёные","isCorrect":false}]},{"id":5,"image":"images/tests/test_process/test4/5.png","question":"Куриные трубчатые кости можно?","options":[{"id":"a","text":"Лучше нет, они колются и крошатся осколками","isCorrect":true},{"id":"b","text":"Конечно, это же собака","isCorrect":false},{"id":"c","text":"Только варёные","isCorrect":false},{"id":"d","text":"Сколько угодно","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test4/6.png","question":"Сырое дрожжевое тесто это:","options":[{"id":"a","text":"Безопасная еда","isCorrect":false},{"id":"b","text":"Полезные углеводы","isCorrect":false},{"id":"c","text":"Можно небольшой кусочек","isCorrect":false},{"id":"d","text":"Опасно, бродит и раздувает живот изнутри","isCorrect":true}]},{"id":7,"image":"images/tests/test_process/test4/7.png","question":"Авокадо собакам:","options":[{"id":"a","text":"Суперфуд на каждый день","isCorrect":false},{"id":"b","text":"Лучше избегать","isCorrect":true},{"id":"c","text":"Можно только мякоть без ограничений","isCorrect":false},{"id":"d","text":"Обязательно для шерсти","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test4/8.png","question":"Кофе и энергетики для пса:","options":[{"id":"a","text":"Бодрят его так же мило, как нас","isCorrect":false},{"id":"b","text":"Можно один глоток","isCorrect":false},{"id":"c","text":"Опасны, кофеин им сильно вредит","isCorrect":true},{"id":"d","text":"Можно, если без сахара","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test4/9.png","question":"Собака стащила со стола вашу шаурму. Что плохого?","options":[{"id":"a","text":"Ничего, шаурма это любовь","isCorrect":false},{"id":"b","text":"Острое, жирное и лук внутри легко посадят ей живот","isCorrect":true},{"id":"c","text":"Станет сильнее и быстрее","isCorrect":false},{"id":"d","text":"Подобреет характером","isCorrect":false}]},{"id":10,"image":"images/tests/test_process/test4/10.png","question":"Главное правило обращения с «запрещёнкой»:","options":[{"id":"a","text":"Если жалобно просит глазами, значит можно","isCorrect":false},{"id":"b","text":"Что вкусно нам, то полезно и ей","isCorrect":false},{"id":"c","text":"Можно всё, только по чуть-чуть","isCorrect":false},{"id":"d","text":"Сомневаешься, не давай и спроси ветеринара","isCorrect":true}]}],"results":[{"minScore":0,"maxScore":3,"title":"Опасный кормилец","description":"Тут стоит срочно подтянуть знания — от этого зависит здоровье пса!"},{"minScore":4,"maxScore":7,"title":"Внимательный хозяин","description":"Ты неплохо знаешь, что собакам нельзя, но есть куда расти!"},{"minScore":8,"maxScore":10,"title":"Защитник собачьей миски","description":"Ты отлично знаешь все запрещёнки и бережёшь своего пса!"}]}');
+
+/***/ },
+
+/***/ 753
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":5,"card":{"image":"images/tests/test5.png","readTime":"5 минут","tags":["Собаки","Про животных"],"title":"Породы как они есть","date":"1 декабря 2025","description":"Разбираешься в породах?"},"questions":[{"id":1,"image":"images/tests/test_process/test5/1.png","question":"Хаски в интернете это собака, которая:","options":[{"id":"a","text":"Молчит и беспрекословно слушается","isCorrect":false},{"id":"b","text":"Орёт человеческим голосом и спорит с хозяином","isCorrect":true},{"id":"c","text":"Обожает сидеть на одном месте","isCorrect":false},{"id":"d","text":"Терпеть не может снег","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test5/2.png","question":"Корги знаменит тем, что:","options":[{"id":"a","text":"Огромный и грозный охранник","isCorrect":false},{"id":"b","text":"Не любит фотографироваться","isCorrect":false},{"id":"c","text":"Маленькие лапки, большая попа, режим «булочка»","isCorrect":true},{"id":"d","text":"Молчун без эмоций","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test5/3.png","question":"Французский бульдог в мемах в основном:","options":[{"id":"a","text":"Спортсмен-марафонец","isCorrect":false},{"id":"b","text":"Сторожевой гигант","isCorrect":false},{"id":"c","text":"Любитель долгих пробежек","isCorrect":false},{"id":"d","text":"Храпит, пукает и выглядит вечно недовольным","isCorrect":true}]},{"id":4,"image":"images/tests/test_process/test5/4.png","question":"Чихуахуа по характеру это:","options":[{"id":"a","text":"Маленькое тело, гигантская самоуверенность, готов драться со всеми","isCorrect":true},{"id":"b","text":"Спокойный молчаливый философ","isCorrect":false},{"id":"c","text":"Ленивый соня","isCorrect":false},{"id":"d","text":"Тихоня в углу","isCorrect":false}]},{"id":5,"image":"images/tests/test_process/test5/5.png","question":"Золотистый ретривер в интернете это:","options":[{"id":"a","text":"Злой неприступный охранник","isCorrect":false},{"id":"b","text":"Нелюдимый одиночка","isCorrect":false},{"id":"c","text":"Воплощение доброты, всех любит, лучший мальчик планеты","isCorrect":true},{"id":"d","text":"Кот, случайно родившийся собакой","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test5/6.png","question":"Шиба-ину прославилась тем, что:","options":[{"id":"a","text":"Стала лицом мема Doge","isCorrect":true},{"id":"b","text":"Ненавидит любые камеры","isCorrect":false},{"id":"c","text":"Совсем не умеет улыбаться","isCorrect":false},{"id":"d","text":"Очень крупная и тяжёлая","isCorrect":false}]},{"id":7,"image":"images/tests/test_process/test5/7.png","question":"Такса в представлении интернета:","options":[{"id":"a","text":"Высокая и стройная","isCorrect":false},{"id":"b","text":"Молчаливая скромница","isCorrect":false},{"id":"c","text":"Совершенно не любит копать","isCorrect":false},{"id":"d","text":"Сосиска на коротких лапках с замашками начальника","isCorrect":true}]},{"id":8,"image":"images/tests/test_process/test5/8.png","question":"Немецкая овчарка чаще всего:","options":[{"id":"a","text":"Глупенькая и ленивая","isCorrect":false},{"id":"b","text":"Умница и служака, смотрит на тебя как эйчар на собеседовании","isCorrect":true},{"id":"c","text":"Боится буквально всего","isCorrect":false},{"id":"d","text":"Не поддаётся дрессировке","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test5/9.png","question":"Мопс это собака, которая:","options":[{"id":"a","text":"Бегает быстрее всех во дворе","isCorrect":false},{"id":"b","text":"Худая и поджарая, как борзая","isCorrect":false},{"id":"c","text":"Совсем не любит спать","isCorrect":false},{"id":"d","text":"Дышит как старенький компьютер и живёт ради еды","isCorrect":true}]},{"id":10,"image":"images/tests/test_process/test5/10.png","question":"Бордер-колли в мемах:","options":[{"id":"a","text":"Самый глупый пёс на районе","isCorrect":false},{"id":"b","text":"Вечный лежебока","isCorrect":false},{"id":"c","text":"Гений, которому скучно, и он явно умнее тебя","isCorrect":true},{"id":"d","text":"Не умеет ловить фрисби","isCorrect":false}]}],"results":[{"minScore":0,"maxScore":3,"title":"Новичок в породах","description":"Интернет-образы пород для тебя пока загадка — но это легко исправить!"},{"minScore":4,"maxScore":7,"title":"Знаток пород","description":"Ты неплохо знаешь, как интернет видит каждую породу!"},{"minScore":8,"maxScore":10,"title":"Гуру собачьих мемов","description":"Ты насквозь видишь каждую породу глазами интернета. Бордер-колли одобряет!"}]}');
+
+/***/ },
+
+/***/ 364
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":6,"card":{"image":"images/tests/test6.png","readTime":"5 минут","tags":["Собаки","Про животных"],"title":"Что хочет сказать собака?","date":"1 декабря 2025","description":"Понимаешь язык тела пса?"},"questions":[{"id":1,"image":"images/tests/test_process/test6/1.png","question":"Собака приносит тебе свою игрушку. Это значит:","options":[{"id":"a","text":"Она дарит тебе самое дорогое и зовёт играть","isCorrect":true},{"id":"b","text":"Игрушка сломалась","isCorrect":false},{"id":"c","text":"Она на тебя злится","isCorrect":false},{"id":"d","text":"Ей стало жарко","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test6/2.png","question":"Пёс наклоняет голову набок, когда ты говоришь. Перевод:","options":[{"id":"a","text":"«Мне совершенно всё равно»","isCorrect":false},{"id":"b","text":"«Я устал, отстань»","isCorrect":false},{"id":"c","text":"«Я внимательно делаю вид, что тебя понимаю»","isCorrect":true},{"id":"d","text":"«Срочно покорми»","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test6/3.png","question":"Собака внезапно носится по квартире кругами как ошпаренная. Это:","options":[{"id":"a","text":"Признак болезни","isCorrect":false},{"id":"b","text":"Голод","isCorrect":false},{"id":"c","text":"Обида на хозяина","isCorrect":false},{"id":"d","text":"Зумис, выброс энергии и чистого счастья","isCorrect":true}]},{"id":4,"image":"images/tests/test_process/test6/4.png","question":"Пёс трётся об тебя и заваливается всем телом. Это:","options":[{"id":"a","text":"Агрессия","isCorrect":false},{"id":"b","text":"«Ты мой, я тебя официально присвоил»","isCorrect":true},{"id":"c","text":"Просьба немедленно уйти","isCorrect":false},{"id":"d","text":"Сильная усталость","isCorrect":false}]},{"id":5,"image":"images/tests/test_process/test6/5.png","question":"Виноватая морда, прижатые уши, отведённый взгляд. Скорее всего:","options":[{"id":"a","text":"Он медитирует","isCorrect":false},{"id":"b","text":"Он абсолютно счастлив","isCorrect":false},{"id":"c","text":"Он уже что-то натворил и прекрасно это знает","isCorrect":true},{"id":"d","text":"Он крепко спит","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test6/6.png","question":"Собака валится на спину и показывает живот. Это значит:","options":[{"id":"a","text":"Ей плохо и больно","isCorrect":false},{"id":"b","text":"Она злится","isCorrect":false},{"id":"c","text":"Она собралась уходить","isCorrect":false},{"id":"d","text":"Доверие и «чеши пузо немедленно»","isCorrect":true}]},{"id":7,"image":"images/tests/test_process/test6/7.png","question":"Пёс ходит за тобой из комнаты в комнату, даже в туалет. Это:","options":[{"id":"a","text":"Режим «собака-липучка», ты её целая вселенная","isCorrect":true},{"id":"b","text":"Слежка с подозрением","isCorrect":false},{"id":"c","text":"Он заблудился в квартире","isCorrect":false},{"id":"d","text":"Он голоден","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test6/8.png","question":"Собака зевает, хотя спать явно не собирается. Часто это:","options":[{"id":"a","text":"Обычная усталость","isCorrect":false},{"id":"b","text":"Голод","isCorrect":false},{"id":"c","text":"Способ снять напряжение, сигнал «мне неуютно»","isCorrect":true},{"id":"d","text":"Чистая радость","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test6/9.png","question":"Хвост виляет низко и неуверенно. Это значит:","options":[{"id":"a","text":"Безудержная радость","isCorrect":false},{"id":"b","text":"Злость и угроза","isCorrect":false},{"id":"c","text":"Сонливость","isCorrect":false},{"id":"d","text":"Сомнение и лёгкая тревога, «я не уверен»","isCorrect":true}]},{"id":10,"image":"images/tests/test_process/test6/10.png","question":"Пёс приносит поводок и роняет его тебе на ноги. Перевод очевиден:","options":[{"id":"a","text":"«Поводок мешает, убери»","isCorrect":false},{"id":"b","text":"«Гулять. Сейчас. Без обсуждений»","isCorrect":true},{"id":"c","text":"«Я слишком устал»","isCorrect":false},{"id":"d","text":"«Мне это надоело»","isCorrect":false}]}],"results":[{"minScore":0,"maxScore":3,"title":"Переводчик-новичок","description":"Язык тела собаки пока ставит тебя в тупик — но вы научитесь понимать друг друга!"},{"minScore":4,"maxScore":7,"title":"Понимающий хозяин","description":"Ты неплохо считываешь сигналы своей собаки!"},{"minScore":8,"maxScore":10,"title":"Собачий телепат","description":"Ты понимаешь пса без слов — он явно выбрал правильного человека!"}]}');
+
+/***/ },
+
+/***/ 407
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":7,"card":{"image":"images/tests/test7.png","readTime":"6 минут","tags":["Собаки","Про животных"],"title":"Собака — городской выживальщик","date":"1 декабря 2025","description":"Выживет ли пёс в городе?"},"questions":[{"id":1,"image":"images/tests/test_process/test7/1.png","question":"Главный сезонный враг собачьих лап в Москве зимой:","options":[{"id":"a","text":"Снег","isCorrect":false},{"id":"b","text":"Голуби","isCorrect":false},{"id":"c","text":"Реагенты, которыми засыпают тротуары","isCorrect":true},{"id":"d","text":"Лёд на пруду","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test7/2.png","question":"Как по правилам должна ехать собака в московском метро?","options":[{"id":"a","text":"В наморднике и на коротком поводке, мелкая в переноске","isCorrect":true},{"id":"b","text":"Любая и без ограничений","isCorrect":false},{"id":"c","text":"Только крупная","isCorrect":false},{"id":"d","text":"Только полностью без поводка","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test7/3.png","question":"Любимое место сбора собачников в спальном районе:","options":[{"id":"a","text":"Подъезд","isCorrect":false},{"id":"b","text":"Площадка для выгула или «тот самый газон»","isCorrect":true},{"id":"c","text":"Парковка у дома","isCorrect":false},{"id":"d","text":"Ближайший магазин","isCorrect":false}]},{"id":4,"image":"images/tests/test_process/test7/4.png","question":"Что делает почти каждый московский пёс при виде самоката или курьера?","options":[{"id":"a","text":"Полностью игнорирует","isCorrect":false},{"id":"b","text":"Радостно бежит навстречу","isCorrect":false},{"id":"c","text":"Прячется за хозяина","isCorrect":false},{"id":"d","text":"Провожает яростным взглядом, иногда с лаем","isCorrect":true}]},{"id":5,"image":"images/tests/test_process/test7/5.png","question":"Что пёс чаще всего пытается слизать прямо с московского асфальта?","options":[{"id":"a","text":"Ничего, мой пёс идеально воспитан","isCorrect":false},{"id":"b","text":"Чистый снег","isCorrect":false},{"id":"c","text":"Кусок шаурмы или непонятную находку у метро","isCorrect":true},{"id":"d","text":"Опавшие листья","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test7/6.png","question":"Что нужно московской собаке для прогулки в межсезонье?","options":[{"id":"a","text":"Вообще ничего","isCorrect":false},{"id":"b","text":"Дождевик или комбинезон, иначе будет грязевая ванна","isCorrect":true},{"id":"c","text":"Только поводок","isCorrect":false},{"id":"d","text":"Зонтик","isCorrect":false}]},{"id":7,"image":"images/tests/test_process/test7/7.png","question":"Какие парки собачники Москвы чаще всего хвалят для долгих прогулок?","options":[{"id":"a","text":"Любой свой двор","isCorrect":false},{"id":"b","text":"Торговый центр","isCorrect":false},{"id":"c","text":"Большие парки вроде Битцы, Лосиного Острова, Коломенского","isCorrect":true},{"id":"d","text":"Набережная в Сити","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test7/8.png","question":"Как выглядит типичная встреча двух собак на узком тротуаре?","options":[{"id":"a","text":"Запутывают хозяев поводками в один общий клубок","isCorrect":true},{"id":"b","text":"Спокойно и культурно расходятся","isCorrect":false},{"id":"c","text":"Вообще не замечают друг друга","isCorrect":false},{"id":"d","text":"Дружно убегают","isCorrect":false}]},{"id":9,"image":"images/tests/test_process/test7/9.png","question":"Что обязательно носит с собой ответственный московский собачник?","options":[{"id":"a","text":"Зонт на всякий случай","isCorrect":false},{"id":"b","text":"Термос с чаем","isCorrect":false},{"id":"c","text":"Зеркальце","isCorrect":false},{"id":"d","text":"Пакетики, чтобы убрать за питомцем","isCorrect":true}]},{"id":10,"image":"images/tests/test_process/test7/10.png","question":"Главный признак того, что собака настоящая москвичка:","options":[{"id":"a","text":"Любит исключительно тишину","isCorrect":false},{"id":"b","text":"Гуляет только за городом","isCorrect":false},{"id":"c","text":"Боится проезжающих машин","isCorrect":false},{"id":"d","text":"Не боится ни метро, ни толпы, ни вечной стройки за окном","isCorrect":true}]}],"results":[{"minScore":0,"maxScore":3,"title":"Приезжий щенок","description":"Городские джунгли пока в новинку — но Москва быстро всему учит!"},{"minScore":4,"maxScore":7,"title":"Бывалый горожанин","description":"Ты неплохо знаешь правила собачьей жизни в большом городе!"},{"minScore":8,"maxScore":10,"title":"Коренной москвич на четырёх лапах","description":"Метро, реагенты, курьеры — тебя и твоего пса ничем не удивить!"}]}');
+
+/***/ },
+
+/***/ 794
+(module) {
+
+"use strict";
+module.exports = /*#__PURE__*/JSON.parse('{"id":8,"card":{"image":"images/tests/test8.png","readTime":"5 минут","tags":["Собаки","Про животных"],"title":"Собачий интернет: тренды и тиктоки","date":"1 декабря 2025","description":"В курсе собачьих трендов?"},"questions":[{"id":1,"image":"images/tests/test_process/test8/1.png","question":"«Tax» в собачьих пабликах это:","options":[{"id":"a","text":"Налог на содержание собаки","isCorrect":false},{"id":"b","text":"Шутка, что за вход надо «заплатить» фоткой своего пса","isCorrect":true},{"id":"c","text":"Название корма","isCorrect":false},{"id":"d","text":"Редкая порода","isCorrect":false}]},{"id":2,"image":"images/tests/test_process/test8/2.png","question":"Что значит коммент «он довёл меня до слёз» под видео с собакой?","options":[{"id":"a","text":"Видео слишком грустное","isCorrect":false},{"id":"b","text":"Пёс кого-то укусил","isCorrect":false},{"id":"c","text":"Собака сделала что-то настолько милое, что зритель растрогался","isCorrect":true},{"id":"d","text":"Видео скучное","isCorrect":false}]},{"id":3,"image":"images/tests/test_process/test8/3.png","question":"Один из самых популярных форматов тиктока с собаками это:","options":[{"id":"a","text":"Собака «отвечает» на вопросы хозяина прямо в камеру","isCorrect":true},{"id":"b","text":"Лекции о породах","isCorrect":false},{"id":"c","text":"Вечерние новости","isCorrect":false},{"id":"d","text":"Прогноз погоды","isCorrect":false}]},{"id":4,"image":"images/tests/test_process/test8/4.png","question":"«POV: ты собака» означает, что видео снято:","options":[{"id":"a","text":"С точки зрения хозяина","isCorrect":false},{"id":"b","text":"С дрона сверху","isCorrect":false},{"id":"c","text":"Вообще без камеры","isCorrect":false},{"id":"d","text":"От лица пса, будто мы смотрим его глазами","isCorrect":true}]},{"id":5,"image":"images/tests/test_process/test8/5.png","question":"Тренд, где хозяин притворяется, что упал, чтобы проверить реакцию пса, это:","options":[{"id":"a","text":"Тест на любовь и заботу собаки","isCorrect":true},{"id":"b","text":"Тест на скорость бега","isCorrect":false},{"id":"c","text":"Тест на голод","isCorrect":false},{"id":"d","text":"Тест на качество сна","isCorrect":false}]},{"id":6,"image":"images/tests/test_process/test8/6.png","question":"В чём суть тренда «What the dog doin»?","options":[{"id":"a","text":"Дрессируют собаку по команде","isCorrect":false},{"id":"b","text":"Купают собаку","isCorrect":false},{"id":"c","text":"Подмечают, как пёс делает что-то странное и уморительное","isCorrect":true},{"id":"d","text":"Кормят собаку с руки","isCorrect":false}]},{"id":7,"image":"images/tests/test_process/test8/7.png","question":"Зачем блогеры озвучивают питомцев человеческим голосом?","options":[{"id":"a","text":"Так требуют правила площадки","isCorrect":false},{"id":"b","text":"Чтобы было смешнее, будто пёс реально разговаривает","isCorrect":true},{"id":"c","text":"Потому что собаки и правда говорят","isCorrect":false},{"id":"d","text":"Так положено по традиции","isCorrect":false}]},{"id":8,"image":"images/tests/test_process/test8/8.png","question":"«Кнопки для общения» в роликах с собаками это:","options":[{"id":"a","text":"Кнопки на пульте от телевизора","isCorrect":false},{"id":"b","text":"Обычные игрушки-пищалки","isCorrect":false},{"id":"c","text":"Лакомства в форме кнопок","isCorrect":false},{"id":"d","text":"Звуковые кнопки, на которые пёс жмёт лапой, чтобы «сказать» слово","isCorrect":true}]},{"id":9,"image":"images/tests/test_process/test8/9.png","question":"«Puppy dog eyes» как приём в видео это:","options":[{"id":"a","text":"Болезнь глаз у щенков","isCorrect":false},{"id":"b","text":"Название породы","isCorrect":false},{"id":"c","text":"Тот самый умоляющий взгляд, против которого никто не устоит","isCorrect":true},{"id":"d","text":"Специальный фильтр","isCorrect":false}]},{"id":10,"image":"images/tests/test_process/test8/10.png","question":"Главная причина, почему собачий контент так залетает в интернете:","options":[{"id":"a","text":"Он сложный и заставляет думать","isCorrect":false},{"id":"b","text":"Алгоритмы специально настроены против кошек","isCorrect":false},{"id":"c","text":"Этого никто не знает","isCorrect":false},{"id":"d","text":"Собаки искренние и делают людей чуточку счастливее","isCorrect":true}]}],"results":[{"minScore":0,"maxScore":3,"title":"Случайный зритель","description":"Собачьи тренды пролетают мимо тебя — пора подписаться на пару аккаунтов!"},{"minScore":4,"maxScore":7,"title":"Подписчик со стажем","description":"Ты неплохо ориентируешься в собачьих трендах и тиктоках!"},{"minScore":8,"maxScore":10,"title":"Алгоритм тебя любит","description":"Ты знаешь все собачьи тренды и аккаунты наизусть. Tax с тебя!"}]}');
+
 /***/ }
 
 /******/ 	});
@@ -17420,10 +17520,111 @@ var react = __webpack_require__(540);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(338);
 ;// ./src/javascript/data/riskPoints.json
-const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"Парк Горького","coordinates":[55.731386,37.60304],"types":["events","summer","cafe"]},{"id":2,"name":"ВДНХ","coordinates":[55.82815,37.6304],"types":["events","summer2026","petshop"]},{"id":3,"name":"Нескучный сад","coordinates":[55.71974,37.58596],"types":["summer","cynology"]},{"id":4,"name":"Коломенское","coordinates":[55.66752,37.6717],"types":["summer","events"]},{"id":5,"name":"Царицыно","coordinates":[55.61556,37.6804],"types":["summer2026","cafe"]},{"id":6,"name":"Сокольники","coordinates":[55.79449,37.6714],"types":["events","cynology","grooming"]},{"id":7,"name":"Измайловский парк","coordinates":[55.79058,37.7955],"types":["summer","petshop"]},{"id":8,"name":"Битцевский лес","coordinates":[55.62587,37.55064],"types":["cynology","summer"]},{"id":9,"name":"Воробьёвы горы","coordinates":[55.70966,37.54296],"types":["summer","events"]},{"id":10,"name":"Кузьминки","coordinates":[55.69287,37.7673],"types":["summer2026","cafe","grooming"]},{"id":11,"name":"Фили","coordinates":[55.7463,37.4977],"types":["summer","cynology"]},{"id":12,"name":"Тропарёво","coordinates":[55.64655,37.472],"types":["summer","vet"]},{"id":13,"name":"Лосиный остров","coordinates":[55.8642,37.7366],"types":["cynology","events"]},{"id":14,"name":"Покровское-Стрешнево","coordinates":[55.8204,37.4708],"types":["summer2026","grooming"]},{"id":15,"name":"Красная Пресня","coordinates":[55.7627,37.5621],"types":["cafe","petshop"]},{"id":16,"name":"Парк Победы","coordinates":[55.73305,37.5121],"types":["events","summer2026"]},{"id":17,"name":"Ботанический сад МГУ","coordinates":[55.7057,37.5273],"types":["summer","vet"]},{"id":18,"name":"Парк Фили","coordinates":[55.7502,37.4895],"types":["cynology","summer"]},{"id":19,"name":"Серебряный бор","coordinates":[55.7826,37.4237],"types":["summer","events"]},{"id":20,"name":"Парк Кусково","coordinates":[55.7361,37.8094],"types":["summer2026","cafe"]},{"id":21,"name":"Главный ботанический сад","coordinates":[55.8419,37.6001],"types":["summer","grooming"]},{"id":22,"name":"Парк Северное Тушино","coordinates":[55.8592,37.4359],"types":["events","petshop"]},{"id":23,"name":"Таганский парк","coordinates":[55.7416,37.6615],"types":["cafe","summer2026"]},{"id":24,"name":"Парк Дружбы","coordinates":[55.8398,37.4928],"types":["summer","cynology"]},{"id":25,"name":"Бульвар Дмитрия Донского","coordinates":[55.5689,37.5747],"types":["vet","petshop"]},{"id":26,"name":"Парк Ангарские пруды","coordinates":[55.6145,37.5843],"types":["summer","grooming"]},{"id":27,"name":"Терлецкий парк","coordinates":[55.7539,37.8312],"types":["cynology","events"]},{"id":28,"name":"Парк Братеево","coordinates":[55.6334,37.7447],"types":["summer2026","cafe"]},{"id":29,"name":"Парк 850-летия Москвы","coordinates":[55.8761,37.5319],"types":["events","summer"]},{"id":30,"name":"Парк Левобережный","coordinates":[55.8573,37.481],"types":["summer","grooming"]},{"id":31,"name":"Бабушкинский парк","coordinates":[55.8686,37.6621],"types":["cynology","petshop"]},{"id":32,"name":"Парк Олимпийская деревня","coordinates":[55.8118,37.4852],"types":["summer2026","vet"]},{"id":33,"name":"Митинский парк","coordinates":[55.8395,37.3568],"types":["summer","cafe"]},{"id":34,"name":"Парк Кузьминки-Люблино","coordinates":[55.6904,37.7806],"types":["cynology","grooming"]},{"id":35,"name":"Александровский сад","coordinates":[55.752,37.6115],"types":["events","summer2026"]},{"id":36,"name":"Парк Красногвардейские пруды","coordinates":[55.7625,37.7438],"types":["summer","petshop"]},{"id":37,"name":"Парк Перовский","coordinates":[55.7498,37.7914],"types":["cafe","cynology"]},{"id":38,"name":"Парк Красная Пахра","coordinates":[55.5582,37.5283],"types":["vet","summer"]},{"id":39,"name":"Парк Дубки","coordinates":[55.8317,37.4042],"types":["grooming","summer2026"]},{"id":40,"name":"Лианозовский парк","coordinates":[55.8969,37.5703],"types":["events","cynology"]}]');
+const riskPoints_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"name":"it NailSpot","coordinates":[55.766239,37.560557],"types":["events","summer"]},{"id":2,"name":"Curly\'s","coordinates":[55.768558,37.603674],"types":["summer2026","vet"]},{"id":3,"name":"Chop-Chop","coordinates":[55.761673,37.61143],"types":["cynology","petshop"]},{"id":4,"name":"LOS BROWS","coordinates":[55.743446,37.633598],"types":["summer","cafe"]},{"id":5,"name":"Москвичка на Дмитровке","coordinates":[55.762312,37.614071],"types":["vet","grooming"]},{"id":6,"name":"Milk Studio Moscow","coordinates":[55.756053,37.593746],"types":["petshop","events"]},{"id":7,"name":"Студия маникюра Nail Spot","coordinates":[55.765018,37.591251],"types":["cafe","summer2026"]},{"id":8,"name":"Москвичка на Бронной","coordinates":[55.764955,37.592416],"types":["grooming","cynology"]},{"id":9,"name":"Москвичка на Тимура Фрунзе","coordinates":[55.735054,37.588466],"types":["events","summer"]},{"id":10,"name":"Noir Moscow Покровка","coordinates":[55.763652,37.655637],"types":["summer2026","vet"]},{"id":11,"name":"Персона Новослободская","coordinates":[55.781337,37.60764],"types":["cynology","petshop"]},{"id":12,"name":"Москвичка на Лесной","coordinates":[55.789083,37.588755],"types":["summer","cafe"]},{"id":13,"name":"It-girls Улица 1905 года","coordinates":[55.761623,37.550522],"types":["vet","grooming"]},{"id":14,"name":"It-girls ЗИЛ","coordinates":[55.700078,37.635449],"types":["petshop","events"]},{"id":15,"name":"BRERA COLOR BAR","coordinates":[55.703319,37.64304],"types":["cafe","summer2026"]},{"id":16,"name":"BETONE WOMAN Войковская","coordinates":[55.822974,37.514066],"types":["grooming","cynology"]},{"id":17,"name":"GO BOXING","coordinates":[55.753816,37.588299],"types":["events","summer"]},{"id":18,"name":"SMSTRETCHING Тимура Фрунзе","coordinates":[55.734443,37.591254],"types":["summer2026","vet"]},{"id":19,"name":"VELOBEAT Долгоруковская","coordinates":[55.775096,37.60311],"types":["cynology","petshop"]},{"id":20,"name":"ROCK THE CYCLE","coordinates":[55.774463,37.589076],"types":["summer","cafe"]},{"id":21,"name":"VELOBEAT Спартаковская","coordinates":[55.77333,37.677665],"types":["vet","grooming"]},{"id":22,"name":"SMSTRETCHING Холодильный","coordinates":[55.70958,37.624863],"types":["petshop","events"]},{"id":23,"name":"Клуб для собак Class&Fit","coordinates":[55.79476,37.544564],"types":["cafe","summer2026"]},{"id":24,"name":"VELOBEAT Пресненская","coordinates":[55.747142,37.539444],"types":["grooming","cynology"]},{"id":25,"name":"VELOBEAT Ленинградский","coordinates":[55.791075,37.561182],"types":["events","summer"]},{"id":26,"name":"Self Made","coordinates":[55.787559,37.499334],"types":["summer2026","vet"]},{"id":27,"name":"Усадьба Гребнево","coordinates":[55.951703,38.079645],"types":["cynology","petshop"]},{"id":28,"name":"Aframe Happy","coordinates":[55.348281,37.915278],"types":["summer","cafe"]},{"id":29,"name":"Глэмпинг Чантриум","coordinates":[56.271261,37.540154],"types":["vet","grooming"]},{"id":30,"name":"Mini Bo","coordinates":[55.87457,36.713108],"types":["petshop","events"]},{"id":31,"name":"A-Ferma","coordinates":[55.562957,39.116333],"types":["cafe","summer2026"]},{"id":32,"name":"Глэмпинг Зеленая тропа","coordinates":[54.804472,37.294782],"types":["grooming","cynology"]},{"id":33,"name":"Глэмпинг Лесное Патио","coordinates":[54.947492,38.564006],"types":["events","summer"]},{"id":34,"name":"Хоббитленд","coordinates":[55.51369,36.264345],"types":["summer2026","vet"]},{"id":35,"name":"Гастроцентр Зарядье","coordinates":[55.751129,37.631287],"types":["cynology","petshop"]},{"id":36,"name":"Fine","coordinates":[55.747125,37.607915],"types":["summer","cafe"]},{"id":37,"name":"Белуга","coordinates":[55.75683,37.61434],"types":["vet","grooming"]},{"id":38,"name":"FRANK by БАСТА Пятницкая","coordinates":[55.738061,37.628202],"types":["petshop","events"]},{"id":39,"name":"Ресторан Северяне","coordinates":[55.75653,37.606456],"types":["cafe","summer2026"]},{"id":40,"name":"Wine & Crab","coordinates":[55.758466,37.623487],"types":["grooming","cynology"]},{"id":41,"name":"SURF COFFEE × RED OCTOBER","coordinates":[55.742318,37.610009],"types":["events","summer"]},{"id":42,"name":"Finch Красный октябрь","coordinates":[55.742318,37.610009],"types":["summer2026","vet"]},{"id":43,"name":"BRO&N Камергерский","coordinates":[55.761015,37.61213],"types":["cynology","petshop"]},{"id":44,"name":"FRANK by БАСТА Камергерский","coordinates":[55.760249,37.614837],"types":["summer","cafe"]},{"id":45,"name":"Булка","coordinates":[55.740748,37.622918],"types":["vet","grooming"]},{"id":46,"name":"SHE","coordinates":[55.756681,37.603648],"types":["petshop","events"]},{"id":47,"name":"Skuratov Coffee Калашный","coordinates":[55.756352,37.599596],"types":["cafe","summer2026"]},{"id":48,"name":"ДАБЛБИ Красный октябрь","coordinates":[55.741201,37.609081],"types":["grooming","cynology"]},{"id":49,"name":"FRANK by БАСТА Рождественка","coordinates":[55.761122,37.62324],"types":["events","summer"]},{"id":50,"name":"Zotman Солянка","coordinates":[55.754551,37.638121],"types":["summer2026","vet"]},{"id":51,"name":"Surf Coffee Солянка","coordinates":[55.754551,37.638121],"types":["cynology","petshop"]},{"id":52,"name":"KM20","coordinates":[55.761873,37.612017],"types":["summer","cafe"]},{"id":53,"name":"Пицца 22 сантиметра","coordinates":[55.75469,37.636575],"types":["vet","grooming"]},{"id":54,"name":"ABC Coffee Roasters Милютинский","coordinates":[55.760898,37.631601],"types":["petshop","events"]},{"id":55,"name":"Surf Coffee x G-SPOT","coordinates":[55.760887,37.632503],"types":["cafe","summer2026"]},{"id":56,"name":"Surf Coffee Кузнецкий Мост","coordinates":[55.760887,37.632503],"types":["grooming","cynology"]},{"id":57,"name":"Энтузиаст","coordinates":[55.763806,37.614152],"types":["events","summer"]},{"id":58,"name":"Remy Kitchen Bakery","coordinates":[55.758789,37.598592],"types":["summer2026","vet"]},{"id":59,"name":"Рихтер","coordinates":[55.737797,37.627842],"types":["cynology","petshop"]},{"id":60,"name":"Ровесник","coordinates":[55.762698,37.605481],"types":["summer","cafe"]},{"id":61,"name":"Friends Forever Малая Никитская","coordinates":[55.758036,37.596759],"types":["vet","grooming"]},{"id":62,"name":"GORILLA by БАСТА Мясницкая","coordinates":[55.761506,37.632432],"types":["petshop","events"]},{"id":63,"name":"Скворец!","coordinates":[55.759572,37.597458],"types":["cafe","summer2026"]},{"id":64,"name":"Кафетериус","coordinates":[55.757226,37.595062],"types":["grooming","cynology"]},{"id":65,"name":"Laffa Laffa","coordinates":[55.759572,37.597458],"types":["events","summer"]},{"id":66,"name":"Сюр","coordinates":[55.754913,37.64296],"types":["summer2026","vet"]},{"id":67,"name":"Skuratov coffee roasters","coordinates":[55.762218,37.633795],"types":["cynology","petshop"]},{"id":68,"name":"Скрепка","coordinates":[55.758792,37.639842],"types":["summer","cafe"]},{"id":69,"name":"FRANK by БАСТА Новый Арбат","coordinates":[55.752013,37.591102],"types":["vet","grooming"]},{"id":70,"name":"Blanc","coordinates":[55.755908,37.642924],"types":["petshop","events"]},{"id":71,"name":"ДАБЛБИ Неглинная","coordinates":[55.765598,37.620939],"types":["cafe","summer2026"]},{"id":72,"name":"Surf Coffee x Lineup","coordinates":[55.758518,37.641091],"types":["grooming","cynology"]},{"id":73,"name":"FRANK by БАСТА Мясницкая","coordinates":[55.762511,37.636448],"types":["events","summer"]},{"id":74,"name":"YCP","coordinates":[55.763206,37.633493],"types":["summer2026","vet"]},{"id":75,"name":"Хорошая девочка","coordinates":[55.76034,37.596628],"types":["cynology","petshop"]},{"id":76,"name":"Escapist","coordinates":[55.754814,37.645219],"types":["summer","cafe"]},{"id":77,"name":"Flâner Moscow","coordinates":[55.7622,37.636239],"types":["vet","grooming"]},{"id":78,"name":"Циники","coordinates":[55.763024,37.598789],"types":["petshop","events"]},{"id":79,"name":"ABC Coffee Roasters Покровка","coordinates":[55.759613,37.642176],"types":["cafe","summer2026"]},{"id":80,"name":"Mátes","coordinates":[55.761606,37.596277],"types":["grooming","cynology"]},{"id":81,"name":"Ресторан Клёво","coordinates":[55.767664,37.613116],"types":["events","summer"]},{"id":82,"name":"Subzero Петровка","coordinates":[55.768127,37.614151],"types":["summer2026","vet"]},{"id":83,"name":"Angel Cakes","coordinates":[55.763622,37.595768],"types":["cynology","petshop"]}]');
 ;// ./src/javascript/data/testsIndex.json
-const testsIndex_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"slug":"mozno-a-zachem","title":"Можно, а зачем?","description":"Оцени каждое решение в жизни с собакой","image":"./images/tests/test1.png","categories":["Life-стайл","Ветеринария"]},{"id":2,"slug":"yura-borisov-vajb","title":"Юра Борисов вайб","description":"Какой ты дядя/тётя на прогулке с собакой","image":"./images/tests/test2.png","categories":["Life-стайл","Мероприятия"]},{"id":3,"slug":"umnyj-v-ochkah","title":"Умный в очках","description":"Насколько ты реально разбираешься в собаках","image":"./images/tests/test3.png","categories":["Ветеринария"]},{"id":4,"slug":"vryad-li-skoree-net","title":"Вряд ли. Скорее нет","description":"Что из этого ваша пара точно никогда не сделает","image":"./images/tests/test4.png","categories":["Life-стайл"]},{"id":5,"slug":"musya-eto-ty","title":"Муся, это ты?","description":"Узнаёт ли твоя собака себя в неожиданных ситуациях","image":"./images/tests/test5.png","categories":["Life-стайл","Ветеринария"]},{"id":6,"slug":"okak-ponyal","title":"Окак. Понял","description":"Как ты реагируешь на неожиданное от собаки","image":"./images/tests/test6.png","categories":["Life-стайл"]},{"id":7,"slug":"sobaka-shaman","title":"Собака — Шаман","description":"Что твоя собака облизала из самого неожиданного","image":"./images/tests/test7.png","categories":["Life-стайл","Питание"]},{"id":8,"slug":"ne-hotel-a-polyubil","title":"Не хотел, а полюбил","description":"Классический путь: от «зачем собака» до «жизни без неё нет»","image":"./images/tests/test8.png","categories":["Life-стайл"]},{"id":9,"slug":"filyaj-filyaj-uroven","title":"Филяй-филяй уровень","description":"Насколько твоя собака танцует под жизнь в мегаполисе","image":"./images/tests/test9.png","categories":["Life-стайл","Мероприятия"]},{"id":10,"slug":"danil-kolbasenko","title":"Данил Колбасенко","description":"Твоя собака — будущий интернет-герой или нет","image":"./images/tests/test10.png","categories":["Life-стайл","Мероприятия"]}]');
-;// ./src/javascript/components/SearchBar.jsx
+const testsIndex_namespaceObject = /*#__PURE__*/JSON.parse('[{"id":1,"slug":"mozno-a-zachem","title":"Можно, а зачем?","description":"Оцени каждое решение в жизни с собакой","image":"./images/tests/test1.png","categories":["Life-стайл","Ветеринария"]},{"id":2,"slug":"yura-borisov-vajb","title":"Юра Борисов вайб","description":"Какой ты дядя/тётя на прогулке с собакой","image":"./images/tests/test2.png","categories":["Life-стайл","Мероприятия"]},{"id":3,"slug":"umnyj-v-ochkah","title":"Умный в очках","description":"Насколько ты реально разбираешься в собаках","image":"./images/tests/test3.png","categories":["Ветеринария"]},{"id":4,"slug":"vryad-li-skoree-net","title":"Вряд ли. Скорее нет","description":"Что из этого ваша пара точно никогда не сделает","image":"./images/tests/test4.png","categories":["Life-стайл"]},{"id":5,"slug":"musya-eto-ty","title":"Муся, это ты?","description":"Узнаёт ли твоя собака себя в неожиданных ситуациях","image":"./images/tests/test5.png","categories":["Life-стайл","Ветеринария"]},{"id":6,"slug":"okak-ponyal","title":"Окак. Понял","description":"Как ты реагируешь на неожиданное от собаки","image":"./images/tests/test6.png","categories":["Life-стайл"]},{"id":7,"slug":"sobaka-shaman","title":"Собака — Шаман","description":"Что твоя собака облизала из самого неожиданного","image":"./images/tests/test7.png","categories":["Life-стайл","Питание"]},{"id":8,"slug":"ne-hotel-a-polyubil","title":"Не хотел, а полюбил","description":"Классический путь: от «зачем собака» до «жизни без неё нет»","image":"./images/tests/test8.png","categories":["Life-стайл"]}]');
+;// ./src/javascript/components/atoms/TestOptionButton.jsx
+
+var TestOptionButton = function TestOptionButton(_ref) {
+  var text = _ref.text,
+    onClick = _ref.onClick,
+    isSelected = _ref.isSelected,
+    isCorrect = _ref.isCorrect,
+    isWrong = _ref.isWrong,
+    showResult = _ref.showResult;
+  var className = 'A_testOption';
+  if (showResult) {
+    if (isCorrect) {
+      className += ' A_testOptionCorrect';
+    } else if (isWrong) {
+      className += ' A_testOptionWrong';
+    } else if (!isSelected) {
+      className += ' A_testOptionDisabled';
+    }
+  } else if (isSelected) {
+    className += ' selected';
+  }
+  return /*#__PURE__*/react.createElement("button", {
+    className: className,
+    onClick: onClick,
+    disabled: showResult
+  }, text);
+};
+/* harmony default export */ const atoms_TestOptionButton = (TestOptionButton);
+;// ./src/javascript/components/molecules/QuestionCard.jsx
+
+
+var toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
+var QuestionCard = function QuestionCard(_ref) {
+  var question = _ref.question,
+    onAnswerSelect = _ref.onAnswerSelect,
+    selectedAnswer = _ref.selectedAnswer,
+    showResult = _ref.showResult;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "M_questionCard"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "W_questionContent"
+  }, question.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "A_testQuestionImage",
+    src: toRoot(question.image),
+    alt: question.question
+  })), /*#__PURE__*/react.createElement("h3", {
+    className: "A_questionText"
+  }, question.question), /*#__PURE__*/react.createElement("div", {
+    className: "W_optionsGrid"
+  }, question.options.map(function (option) {
+    return /*#__PURE__*/react.createElement(atoms_TestOptionButton, {
+      key: option.id,
+      text: option.text,
+      onClick: function onClick() {
+        return !showResult && onAnswerSelect(option.id);
+      },
+      isSelected: selectedAnswer === option.id,
+      isCorrect: showResult && option.isCorrect,
+      isWrong: showResult && selectedAnswer === option.id && !option.isCorrect,
+      showResult: showResult
+    });
+  }))));
+};
+/* harmony default export */ const molecules_QuestionCard = (QuestionCard);
+;// ./src/javascript/components/molecules/ResultCard.jsx
+
+var ResultCard = function ResultCard(_ref) {
+  var result = _ref.result,
+    onClose = _ref.onClose;
+  if (!result) return null;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "M_resultCard"
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: onClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), result.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: result.image,
+    alt: result.title,
+    className: "A_testQuestionImage"
+  })), /*#__PURE__*/react.createElement("h3", {
+    className: "A_resultTitle"
+  }, result.title), /*#__PURE__*/react.createElement("p", {
+    className: "A_resultDescription"
+  }, result.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroFinish",
+    type: "button",
+    onClick: onClose
+  }, /*#__PURE__*/react.createElement("p", null, "\u0421\u0443\u043F\u0435\u0440")));
+};
+/* harmony default export */ const molecules_ResultCard = (ResultCard);
+;// ./src/javascript/components/organisms/QuizModal.jsx
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -17433,9 +17634,182 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
-var toRoot = function toRoot(p) {
+
+// Внутренние пути делаем корне-абсолютными, чтобы обложка теста грузилась
+// независимо от того, с какой страницы открыт тест.
+var QuizModal_toRoot = function toRoot(p) {
   return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
 };
+var QuizModal = function QuizModal(_ref) {
+  var _testData$card, _testData$card2, _testData$card3;
+  var isOpen = _ref.isOpen,
+    onClose = _ref.onClose,
+    testData = _ref.testData;
+  var _useState = (0,react.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    started = _useState2[0],
+    setStarted = _useState2[1];
+  var _useState3 = (0,react.useState)(0),
+    _useState4 = _slicedToArray(_useState3, 2),
+    currentQuestionIndex = _useState4[0],
+    setCurrentQuestionIndex = _useState4[1];
+  var _useState5 = (0,react.useState)(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    selectedAnswer = _useState6[0],
+    setSelectedAnswer = _useState6[1];
+  var _useState7 = (0,react.useState)(false),
+    _useState8 = _slicedToArray(_useState7, 2),
+    showResult = _useState8[0],
+    setShowResult = _useState8[1];
+  var _useState9 = (0,react.useState)(0),
+    _useState0 = _slicedToArray(_useState9, 2),
+    score = _useState0[0],
+    setScore = _useState0[1];
+  var _useState1 = (0,react.useState)(false),
+    _useState10 = _slicedToArray(_useState1, 2),
+    isFinished = _useState10[0],
+    setIsFinished = _useState10[1];
+  (0,react.useEffect)(function () {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      // Сброс состояния при закрытии модалки
+      setStarted(false);
+      setCurrentQuestionIndex(0);
+      setSelectedAnswer(null);
+      setShowResult(false);
+      setScore(0);
+      setIsFinished(false);
+    }
+    return function () {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+  if (!isOpen || !testData) return null;
+  var questions = testData.questions || [];
+  var results = testData.results || [];
+  var currentQuestion = questions[currentQuestionIndex];
+  var isLastQuestion = currentQuestionIndex === questions.length - 1;
+  var handleAnswerSelect = function handleAnswerSelect(answerId) {
+    if (showResult) return;
+    setSelectedAnswer(answerId);
+    setShowResult(true);
+    var selectedOption = currentQuestion.options.find(function (opt) {
+      return opt.id === answerId;
+    });
+    if (selectedOption !== null && selectedOption !== void 0 && selectedOption.isCorrect) {
+      setScore(score + 1);
+    }
+    setTimeout(function () {
+      if (isLastQuestion) {
+        setIsFinished(true);
+      } else {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedAnswer(null);
+        setShowResult(false);
+      }
+    }, 1500);
+  };
+  var getResult = function getResult() {
+    var totalScore = score;
+    var result = results.find(function (result) {
+      return totalScore >= result.minScore && totalScore <= result.maxScore;
+    });
+
+    // Добавляем случайное изображение из вопросов теста
+    if (result && questions.length > 0) {
+      var randomIndex = Math.floor(Math.random() * questions.length);
+      result.image = QuizModal_toRoot(questions[randomIndex].image);
+    }
+    return result;
+  };
+  var handleClose = function handleClose() {
+    onClose();
+  };
+
+  // Данные для стартового экрана: из testsIndex (meta), иначе из карточки теста.
+  var intro = testData.meta || {
+    title: (_testData$card = testData.card) === null || _testData$card === void 0 ? void 0 : _testData$card.title,
+    description: (_testData$card2 = testData.card) === null || _testData$card2 === void 0 ? void 0 : _testData$card2.description,
+    image: (_testData$card3 = testData.card) === null || _testData$card3 === void 0 ? void 0 : _testData$card3.image
+  };
+  return /*#__PURE__*/react.createElement("div", {
+    className: "O_quizModal",
+    onClick: handleClose
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "W_quizModalContent",
+    onClick: function onClick(e) {
+      return e.stopPropagation();
+    }
+  }, !started ? /*#__PURE__*/react.createElement("div", {
+    className: "M_testIntro"
+  }, /*#__PURE__*/react.createElement("button", {
+    className: "A_quizBack",
+    type: "button",
+    onClick: handleClose,
+    "aria-label": "\u041D\u0430\u0437\u0430\u0434"
+  }, /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  })), intro.image && /*#__PURE__*/react.createElement("div", {
+    className: "A_testImageContainer"
+  }, /*#__PURE__*/react.createElement("img", {
+    className: "A_testQuestionImage",
+    src: QuizModal_toRoot(intro.image),
+    alt: intro.title || ''
+  })), /*#__PURE__*/react.createElement("h1", {
+    className: "A_testIntroTitle"
+  }, intro.title), intro.description && /*#__PURE__*/react.createElement("p", {
+    className: "A_testIntroDesc"
+  }, intro.description), /*#__PURE__*/react.createElement("button", {
+    className: "A_button A_testIntroStart",
+    type: "button",
+    onClick: function onClick() {
+      return setStarted(true);
+    }
+  }, /*#__PURE__*/react.createElement("p", null, "\u041D\u0430\u0447\u0430\u0442\u044C \u0442\u0435\u0441\u0442"), /*#__PURE__*/react.createElement("img", {
+    src: "/images/arrowRight.svg",
+    alt: ""
+  }))) : !isFinished ? /*#__PURE__*/react.createElement(molecules_QuestionCard, {
+    question: currentQuestion,
+    onAnswerSelect: handleAnswerSelect,
+    selectedAnswer: selectedAnswer,
+    showResult: showResult
+  }) : /*#__PURE__*/react.createElement(molecules_ResultCard, {
+    result: getResult(),
+    onClose: handleClose
+  })));
+};
+/* harmony default export */ const organisms_QuizModal = (QuizModal);
+;// ./src/javascript/components/SearchBar.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function SearchBar_slicedToArray(r, e) { return SearchBar_arrayWithHoles(r) || SearchBar_iterableToArrayLimit(r, e) || SearchBar_unsupportedIterableToArray(r, e) || SearchBar_nonIterableRest(); }
+function SearchBar_nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function SearchBar_unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return SearchBar_arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? SearchBar_arrayLikeToArray(r, a) : void 0; } }
+function SearchBar_arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function SearchBar_iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function SearchBar_arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
+
+
+
+var SearchBar_toRoot = function toRoot(p) {
+  return !p || /^https?:\/\//.test(p) ? p : '/' + p.replace(/^\.?\/?/, '');
+};
+
+// Полные данные тестов (вопросы + результаты) по id — для открытия теста модалкой
+var testsContext = __webpack_require__(519);
+var testsById = {};
+testsContext.keys().forEach(function (key) {
+  var data = testsContext(key);
+  testsById[data.id] = data;
+});
 var articlesContext = __webpack_require__(385);
 var articlesData = articlesContext.keys().map(function (key) {
   var _article$blocks;
@@ -17450,41 +17824,50 @@ var articlesData = articlesContext.keys().map(function (key) {
     link: "./article/".concat(article.id, ".html")
   };
 });
-var ResultCard = function ResultCard(_ref) {
+var SearchBar_ResultCard = function ResultCard(_ref) {
   var image = _ref.image,
     title = _ref.title,
-    link = _ref.link;
+    link = _ref.link,
+    onClick = _ref.onClick;
   return /*#__PURE__*/react.createElement("a", {
-    href: toRoot(link),
-    className: "M_searchResultCard"
+    href: SearchBar_toRoot(link),
+    className: "M_searchResultCard",
+    onClick: onClick ? function (e) {
+      e.preventDefault();
+      onClick();
+    } : undefined
   }, /*#__PURE__*/react.createElement("div", {
     className: "W_searchResultImage"
   }, image && /*#__PURE__*/react.createElement("img", {
-    src: toRoot(image),
+    src: SearchBar_toRoot(image),
     alt: title
   })), /*#__PURE__*/react.createElement("p", null, title));
 };
 var SearchBar = function SearchBar() {
   var _useState = (0,react.useState)(''),
-    _useState2 = _slicedToArray(_useState, 2),
+    _useState2 = SearchBar_slicedToArray(_useState, 2),
     query = _useState2[0],
     setQuery = _useState2[1];
   var _useState3 = (0,react.useState)(false),
-    _useState4 = _slicedToArray(_useState3, 2),
+    _useState4 = SearchBar_slicedToArray(_useState3, 2),
     open = _useState4[0],
     setOpen = _useState4[1];
   var _useState5 = (0,react.useState)(false),
-    _useState6 = _slicedToArray(_useState5, 2),
+    _useState6 = SearchBar_slicedToArray(_useState5, 2),
     focused = _useState6[0],
     setFocused = _useState6[1];
   var _useState7 = (0,react.useState)(false),
-    _useState8 = _slicedToArray(_useState7, 2),
+    _useState8 = SearchBar_slicedToArray(_useState7, 2),
     expanded = _useState8[0],
     setExpanded = _useState8[1];
   var _useState9 = (0,react.useState)(false),
-    _useState0 = _slicedToArray(_useState9, 2),
+    _useState0 = SearchBar_slicedToArray(_useState9, 2),
     mobileOpen = _useState0[0],
     setMobileOpen = _useState0[1];
+  var _useState1 = (0,react.useState)(null),
+    _useState10 = SearchBar_slicedToArray(_useState1, 2),
+    activeTest = _useState10[0],
+    setActiveTest = _useState10[1];
   var ref = (0,react.useRef)(null);
   var inputRef = (0,react.useRef)(null);
   var expandTimer = (0,react.useRef)(null);
@@ -17534,6 +17917,15 @@ var SearchBar = function SearchBar() {
     setQuery(e.target.value);
     setOpen(true);
   };
+  var openTest = function openTest(id) {
+    var data = testsById[id];
+    var meta = testsIndex_namespaceObject.find(function (t) {
+      return t.id === id;
+    });
+    if (data) setActiveTest(_objectSpread(_objectSpread({}, data), {}, {
+      meta: meta
+    }));
+  };
   var goToSearchPage = function goToSearchPage() {
     if (query.trim()) {
       window.location.href = "/search.html?q=".concat(encodeURIComponent(query.trim()));
@@ -17554,7 +17946,7 @@ var SearchBar = function SearchBar() {
     }, /*#__PURE__*/react.createElement("h3", null, "\u041C\u0435\u0441\u0442\u0430 \u0438 events"), /*#__PURE__*/react.createElement("div", {
       className: "C_searchGrid"
     }, filteredPlaces.map(function (p) {
-      return /*#__PURE__*/react.createElement(ResultCard, {
+      return /*#__PURE__*/react.createElement(SearchBar_ResultCard, {
         key: p.id,
         image: "https://static-maps.yandex.ru/1.x/?ll=".concat(p.coordinates[1], ",").concat(p.coordinates[0], "&z=15&size=300,300&l=map"),
         title: p.name,
@@ -17565,7 +17957,7 @@ var SearchBar = function SearchBar() {
     }, /*#__PURE__*/react.createElement("h3", null, "\u0421\u0442\u0430\u0442\u044C\u0438"), /*#__PURE__*/react.createElement("div", {
       className: "C_searchGrid"
     }, filteredArticles.map(function (a) {
-      return /*#__PURE__*/react.createElement(ResultCard, {
+      return /*#__PURE__*/react.createElement(SearchBar_ResultCard, {
         key: a.id,
         image: a.image,
         title: a.title,
@@ -17576,11 +17968,14 @@ var SearchBar = function SearchBar() {
     }, /*#__PURE__*/react.createElement("h3", null, "\u0422\u0435\u0441\u0442\u044B"), /*#__PURE__*/react.createElement("div", {
       className: "C_searchGrid"
     }, filteredTests.map(function (t) {
-      return /*#__PURE__*/react.createElement(ResultCard, {
+      return /*#__PURE__*/react.createElement(SearchBar_ResultCard, {
         key: t.id,
         image: t.image,
         title: t.title,
-        link: "./learning.html?test=".concat(t.id)
+        link: "./learning.html?test=".concat(t.id),
+        onClick: function onClick() {
+          return openTest(t.id);
+        }
       });
     }))));
   };
@@ -17628,7 +18023,13 @@ var SearchBar = function SearchBar() {
     onClick: function onClick(e) {
       if (e.target === e.currentTarget) closeMobile();
     }
-  }, renderSections()));
+  }, renderSections()), /*#__PURE__*/react.createElement(organisms_QuizModal, {
+    isOpen: !!activeTest,
+    testData: activeTest,
+    onClose: function onClose() {
+      return setActiveTest(null);
+    }
+  }));
 };
 /* harmony default export */ const components_SearchBar = (SearchBar);
 ;// ./src/javascript/searchApp.jsx
