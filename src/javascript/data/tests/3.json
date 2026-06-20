@@ -1,121 +1,284 @@
 {
   "id": 3,
   "card": {
-    "image": "images/tests/test3.jpg",
+    "image": "images/tests/test3.png",
     "readTime": "5 минут",
-    "tags": ["Кошки", "Про животных"],
-    "title": "Ты точно живёшь с питомцем? 10 фактов, которые ломают мозг",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Тест для настоящего догмамы и догпапы",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test3/1.png",
-      "question": "Почему кошка может внезапно укусить во время ласки?",
+      "question": "Сколько фотографий собаки у тебя в телефоне?",
       "options": [
-        { "id": "a", "text": "Злится", "isCorrect": false },
-        { "id": "b", "text": "Играет", "isCorrect": false },
-        { "id": "c", "text": "Наступила сенсорная перегрузка от прикосновений", "isCorrect": true },
-        { "id": "d", "text": "Просит еду", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Больше, чем фоток людей, и мне ни капли не стыдно",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Штук пять, я нормальный человек",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Пара сотен, всё под контролем",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "У меня нет собаки (тогда зачем ты тут)",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test3/2.png",
-      "question": "Почему собака иногда «улыбается» во сне?",
+      "question": "Что ты говоришь собаке, уходя из дома?",
       "options": [
-        { "id": "a", "text": "Видит хозяина", "isCorrect": false },
-        { "id": "b", "text": "Фаза сна с активной мимикой и движениями", "isCorrect": true },
-        { "id": "c", "text": "Реагирует на шум", "isCorrect": false },
-        { "id": "d", "text": "Притворяется", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "«Пока» и всё",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Ничего, это же собака",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Целый монолог про то, когда вернёшься и чтобы вела себя хорошо",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Оставляю записку на холодильнике",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test3/3.png",
-      "question": "Почему кошка пьёт из крана, игнорируя миску?",
+      "question": "Как ты на самом деле зовёшь свою собаку дома?",
       "options": [
-        { "id": "a", "text": "Играет", "isCorrect": false },
-        { "id": "b", "text": "Любит звук воды", "isCorrect": false },
-        { "id": "c", "text": "Инстинкт выбирать проточную воду как более безопасную", "isCorrect": true },
-        { "id": "d", "text": "Не видит миску", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Строго по имени",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "По имени плюс сорок прозвищ, которые родились сами собой",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "По паспорту",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "«Эй, ты»",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test3/4.png",
-      "question": "Почему собака нюхает человека дольше обычного?",
+      "question": "Собака смотрит, как ты ешь. Что происходит дальше?",
       "options": [
-        { "id": "a", "text": "Ищет еду", "isCorrect": false },
-        { "id": "b", "text": "Считывает гормональный фон и эмоции", "isCorrect": true },
-        { "id": "c", "text": "Узнаёт одежду", "isCorrect": false },
-        { "id": "d", "text": "Проверяет запах духов", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Спокойно игнорирую",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Игнорирую, но дрожащей рукой",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Ухожу есть в другую комнату",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сдаюсь на третьей секунде зрительного контакта",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test3/5.png",
-      "question": "Почему кошка спит на голове человека?",
+      "question": "Кто по факту спит на кровати?",
       "options": [
-        { "id": "a", "text": "Выше — безопаснее", "isCorrect": false },
-        { "id": "b", "text": "Мягче", "isCorrect": false },
-        { "id": "c", "text": "Теплее и сильнее ощущается запах владельца", "isCorrect": true },
-        { "id": "d", "text": "Привычка", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Только я",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Я и партнёр, всё цивилизованно",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Я на самом краю, пёс по центру, удобно всем кроме меня",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Собака на своём лежаке (наглая ложь)",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test3/6.png",
-      "question": "Почему собака выбирает одного члена семьи «главным»?",
+      "question": "Реакция, когда кто-то говорит «это же просто собака»:",
       "options": [
-        { "id": "a", "text": "Кто кормит", "isCorrect": false },
-        { "id": "b", "text": "Кто играет", "isCorrect": false },
-        { "id": "c", "text": "Кто даёт больше предсказуемости и спокойствия", "isCorrect": true },
-        { "id": "d", "text": "Кто строже", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Спокойно соглашаюсь",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Вежливо молчу",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Меняю тему",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Внутри медленно стираю этого человека из друзей",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test3/7.png",
-      "question": "Почему кошки любят ронять предметы?",
+      "question": "Собака приболела. Твои действия:",
       "options": [
-        { "id": "a", "text": "Вредничают", "isCorrect": false },
-        { "id": "b", "text": "Проверяют реакцию и свойства предмета как добычи", "isCorrect": true },
-        { "id": "c", "text": "Скучают", "isCorrect": false },
-        { "id": "d", "text": "Мстят", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Жду, само пройдёт",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Гуглю симптомы, впадаю в панику, отменяю все планы и мчу к ветеринару",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Звоню маме",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Жду до утра",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test3/8.png",
-      "question": "Почему собака может лизать пол?",
+      "question": "Сколько на деле стоит «недорогая собака»?",
       "options": [
-        { "id": "a", "text": "Ищет еду", "isCorrect": false },
-        { "id": "b", "text": "Признак стресса или проблем с ЖКТ", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Чистит язык", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Корм, игрушки, ветеринар, груминг, и ты уже без денег, но абсолютно счастлив",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Совсем недорого",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Вполне терпимо",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Бесплатно, мне её подарили",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test3/9.png",
-      "question": "Почему кошка может «залипать» на вентилятор?",
+      "question": "Проходишь мимо другой собаки на улице. Что делаешь?",
       "options": [
-        { "id": "a", "text": "Боится", "isCorrect": false },
-        { "id": "b", "text": "Слушает звук", "isCorrect": false },
-        { "id": "c", "text": "Отслеживает повторяющееся движение как потенциальную добычу", "isCorrect": true },
-        { "id": "d", "text": "Любит ветер", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Просто иду дальше",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Мельком смотрю",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Перехожу на другую сторону",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Здороваюсь с чужой собакой раньше, чем с её хозяином",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test3/10.png",
-      "question": "Почему собака приносит вам тапок?",
+      "question": "Главный признак, что ты настоящий догродитель:",
       "options": [
-        { "id": "a", "text": "Играет", "isCorrect": false },
-        { "id": "b", "text": "Хочет гулять", "isCorrect": false },
-        { "id": "c", "text": "Предлагает социальный контакт через предмет с вашим запахом", "isCorrect": true },
-        { "id": "d", "text": "Путает с игрушкой", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "У тебя есть собака",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Ты её кормишь по часам",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Ты уже прочитал весь этот тест голосом своей собаки",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Ты ходишь на работу ради неё",
+          "isCorrect": false
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Новичок в мире питомцев",
-      "description": "Питомцы полны сюрпризов — тебе ещё многое предстоит узнать!"
+      "title": "Догродитель в зачатке",
+      "description": "Связь с собакой ещё крепнет — но всё впереди!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Знаток питомцев",
-      "description": "Ты неплохо разбираешься в поведении животных!"
+      "title": "Уверенный догмама/догпапа",
+      "description": "Ты любишь свою собаку всем сердцем, и это видно!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Эксперт по питомцам",
-      "description": "Ты отлично понимаешь своих питомцев!"
+      "title": "Догмама/догпапа года",
+      "description": "Поздравляем: собака для тебя — полноценный член семьи. И она это знает!"
     }
   ]
 }

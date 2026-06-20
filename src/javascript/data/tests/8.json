@@ -1,121 +1,284 @@
 {
   "id": 8,
   "card": {
-    "image": "images/tests/test8.jpg",
+    "image": "images/tests/test8.png",
     "readTime": "5 минут",
-    "tags": ["Собаки", "Про растения"],
-    "title": "Собака и дом: 10 смертельных вещей, которые ты не считаешь опасными",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Собачий интернет: тренды, тиктоки и аккаунты",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test8/1.png",
-      "question": "Почему ксилит опасен?",
+      "question": "«Tax» в собачьих пабликах это:",
       "options": [
-        { "id": "a", "text": "Аллергия", "isCorrect": false },
-        { "id": "b", "text": "Резко снижает сахар в крови", "isCorrect": true },
-        { "id": "c", "text": "Ядовит запах", "isCorrect": false },
-        { "id": "d", "text": "Тяжёлый", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Налог на содержание собаки",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Шутка, что за вход надо «заплатить» фоткой своего пса",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Название корма",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Редкая порода",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test8/2.png",
-      "question": "Чем опасен виноград?",
+      "question": "Что значит коммент «он довёл меня до слёз» под видео с собакой?",
       "options": [
-        { "id": "a", "text": "Косточки", "isCorrect": false },
-        { "id": "b", "text": "Вызывает острую почечную недостаточность", "isCorrect": true },
-        { "id": "c", "text": "Кожура", "isCorrect": false },
-        { "id": "d", "text": "Сахар", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Видео слишком грустное",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Пёс кого-то укусил",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Собака сделала что-то настолько милое, что зритель растрогался",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Видео скучное",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test8/3.png",
-      "question": "Почему лук опасен?",
+      "question": "Один из самых популярных форматов тиктока с собаками это:",
       "options": [
-        { "id": "a", "text": "Запах", "isCorrect": false },
-        { "id": "b", "text": "Разрушает эритроциты", "isCorrect": true },
-        { "id": "c", "text": "Горький", "isCorrect": false },
-        { "id": "d", "text": "Твёрдый", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Собака «отвечает» на вопросы хозяина прямо в камеру",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Лекции о породах",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Вечерние новости",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Прогноз погоды",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test8/4.png",
-      "question": "Чем опасны батарейки?",
+      "question": "«POV: ты собака» означает, что видео снято:",
       "options": [
-        { "id": "a", "text": "Металл", "isCorrect": false },
-        { "id": "b", "text": "Химический ожог при разгрызании", "isCorrect": true },
-        { "id": "c", "text": "Тяжёлые", "isCorrect": false },
-        { "id": "d", "text": "Маленькие", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "С точки зрения хозяина",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "С дрона сверху",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Вообще без камеры",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "От лица пса, будто мы смотрим его глазами",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test8/5.png",
-      "question": "Почему шоколад опасен?",
+      "question": "Тренд, где хозяин притворяется, что упал, чтобы проверить реакцию пса, это:",
       "options": [
-        { "id": "a", "text": "Сладкий", "isCorrect": false },
-        { "id": "b", "text": "Теобромин токсичен для собак", "isCorrect": true },
-        { "id": "c", "text": "Жирный", "isCorrect": false },
-        { "id": "d", "text": "Липкий", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Тест на любовь и заботу собаки",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Тест на скорость бега",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Тест на голод",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Тест на качество сна",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test8/6.png",
-      "question": "Чем опасны эфирные масла?",
+      "question": "В чём суть тренда «What the dog doin»?",
       "options": [
-        { "id": "a", "text": "Запах", "isCorrect": false },
-        { "id": "b", "text": "Токсичны при вдыхании и контакте", "isCorrect": true },
-        { "id": "c", "text": "Жирные", "isCorrect": false },
-        { "id": "d", "text": "Липкие", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Дрессируют собаку по команде",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Купают собаку",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Подмечают, как пёс делает что-то странное и уморительное",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Кормят собаку с руки",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test8/7.png",
-      "question": "Почему опасны таблетки на тумбочке?",
+      "question": "Зачем блогеры озвучивают питомцев человеческим голосом?",
       "options": [
-        { "id": "a", "text": "Горькие", "isCorrect": false },
-        { "id": "b", "text": "Собаки часто их съедают как лакомство", "isCorrect": true },
-        { "id": "c", "text": "Маленькие", "isCorrect": false },
-        { "id": "d", "text": "Пахнут", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Так требуют правила площадки",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Чтобы было смешнее, будто пёс реально разговаривает",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Потому что собаки и правда говорят",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Так положено по традиции",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test8/8.png",
-      "question": "Чем опасны носки?",
+      "question": "«Кнопки для общения» в роликах с собаками это:",
       "options": [
-        { "id": "a", "text": "Грязные", "isCorrect": false },
-        { "id": "b", "text": "Риск кишечной непроходимости", "isCorrect": true },
-        { "id": "c", "text": "Пахнут", "isCorrect": false },
-        { "id": "d", "text": "Маленькие", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Кнопки на пульте от телевизора",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Обычные игрушки-пищалки",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Лакомства в форме кнопок",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Звуковые кнопки, на которые пёс жмёт лапой, чтобы «сказать» слово",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test8/9.png",
-      "question": "Почему опасны мусорные пакеты?",
+      "question": "«Puppy dog eyes» как приём в видео это:",
       "options": [
-        { "id": "a", "text": "Шуршат", "isCorrect": false },
-        { "id": "b", "text": "Риск удушья и поедания отходов", "isCorrect": true },
-        { "id": "c", "text": "Пахнут", "isCorrect": false },
-        { "id": "d", "text": "Тонкие", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Болезнь глаз у щенков",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Название породы",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Тот самый умоляющий взгляд, против которого никто не устоит",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Специальный фильтр",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test8/10.png",
-      "question": "Чем опасны чистящие средства на полу?",
+      "question": "Главная причина, почему собачий контент так залетает в интернете:",
       "options": [
-        { "id": "a", "text": "Скользко", "isCorrect": false },
-        { "id": "b", "text": "Токсичны при облизывании лап", "isCorrect": true },
-        { "id": "c", "text": "Пахнут", "isCorrect": false },
-        { "id": "d", "text": "Мокро", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Он сложный и заставляет думать",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Алгоритмы специально настроены против кошек",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Этого никто не знает",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Собаки искренние и делают людей чуточку счастливее",
+          "isCorrect": true
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Новичок в безопасности",
-      "description": "Домашние опасности — серьёзная тема, тебе стоит узнать больше!"
+      "title": "Случайный зритель",
+      "description": "Собачьи тренды пролетают мимо тебя — пора подписаться на пару аккаунтов!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Знаток безопасности",
-      "description": "Ты неплохо разбираешься в домашних опасностях для собак!"
+      "title": "Подписчик со стажем",
+      "description": "Ты неплохо ориентируешься в собачьих трендах и тиктоках!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Эксперт по безопасности",
-      "description": "Ты отлично знаешь, что опасно для собаки дома!"
+      "title": "Алгоритм тебя любит",
+      "description": "Ты знаешь все собачьи тренды и аккаунты наизусть. Tax с тебя!"
     }
   ]
 }

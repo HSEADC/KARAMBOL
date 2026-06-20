@@ -1,121 +1,284 @@
 {
   "id": 5,
   "card": {
-    "image": "images/tests/test5.jpg",
+    "image": "images/tests/test5.png",
     "readTime": "5 минут",
-    "tags": ["Кошки", "Про животных"],
-    "title": "10 привычек питомца, которые на самом деле древние инстинкты",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Породы как они есть на самом деле (по версии интернета)",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test5/1.png",
-      "question": "Почему кошка выбирает самые высокие места в доме?",
+      "question": "Хаски в интернете это собака, которая:",
       "options": [
-        { "id": "a", "text": "Любит высоту", "isCorrect": false },
-        { "id": "b", "text": "Теплее", "isCorrect": false },
-        { "id": "c", "text": "Инстинкт наблюдать территорию с безопасной точки", "isCorrect": true },
-        { "id": "d", "text": "Привычка", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Молчит и беспрекословно слушается",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Орёт человеческим голосом и спорит с хозяином",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Обожает сидеть на одном месте",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Терпеть не может снег",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test5/2.png",
-      "question": "Почему собака закапывает еду в диван или плед?",
+      "question": "Корги знаменит тем, что:",
       "options": [
-        { "id": "a", "text": "Играет", "isCorrect": false },
-        { "id": "b", "text": "Прячет от хозяина", "isCorrect": false },
-        { "id": "c", "text": "Поведение «запаса» на голодные времена", "isCorrect": true },
-        { "id": "d", "text": "Любит мягкое", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Огромный и грозный охранник",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Не любит фотографироваться",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Маленькие лапки, большая попа, режим «булочка»",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Молчун без эмоций",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test5/3.png",
-      "question": "Почему кошка охотится на движущиеся тени?",
+      "question": "Французский бульдог в мемах в основном:",
       "options": [
-        { "id": "a", "text": "Игра", "isCorrect": false },
-        { "id": "b", "text": "Реакция на мельчайшее движение как на добычу", "isCorrect": true },
-        { "id": "c", "text": "Плохое зрение", "isCorrect": false },
-        { "id": "d", "text": "Скука", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Спортсмен-марафонец",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Сторожевой гигант",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Любитель долгих пробежек",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Храпит, пукает и выглядит вечно недовольным",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test5/4.png",
-      "question": "Почему собака трётся о траву спиной?",
+      "question": "Чихуахуа по характеру это:",
       "options": [
-        { "id": "a", "text": "Чешется", "isCorrect": false },
-        { "id": "b", "text": "Маскирует собственный запах", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Охлаждается", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Маленькое тело, гигантская самоуверенность, готов драться со всеми",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Спокойный молчаливый философ",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Ленивый соня",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Тихоня в углу",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test5/5.png",
-      "question": "Почему кошка умывается после еды?",
+      "question": "Золотистый ретривер в интернете это:",
       "options": [
-        { "id": "a", "text": "Чистоплотность", "isCorrect": false },
-        { "id": "b", "text": "Удаляет запах добычи, чтобы не привлекать хищников", "isCorrect": true },
-        { "id": "c", "text": "Привычка", "isCorrect": false },
-        { "id": "d", "text": "Игра", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Злой неприступный охранник",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Нелюдимый одиночка",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Воплощение доброты, всех любит, лучший мальчик планеты",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Кот, случайно родившийся собакой",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test5/6.png",
-      "question": "Почему собака ложится у входной двери?",
+      "question": "Шиба-ину прославилась тем, что:",
       "options": [
-        { "id": "a", "text": "Холодно", "isCorrect": false },
-        { "id": "b", "text": "Контроль точки входа на территорию", "isCorrect": true },
-        { "id": "c", "text": "Ждёт прогулку", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Стала лицом мема Doge",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Ненавидит любые камеры",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Совсем не умеет улыбаться",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Очень крупная и тяжёлая",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test5/7.png",
-      "question": "Почему кошка кусает во время игры?",
+      "question": "Такса в представлении интернета:",
       "options": [
-        { "id": "a", "text": "Злость", "isCorrect": false },
-        { "id": "b", "text": "Тренировка смертельного укуса добычи", "isCorrect": true },
-        { "id": "c", "text": "Баловство", "isCorrect": false },
-        { "id": "d", "text": "Скука", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Высокая и стройная",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Молчаливая скромница",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Совершенно не любит копать",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сосиска на коротких лапках с замашками начальника",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test5/8.png",
-      "question": "Почему собака ходит кругами по новой территории?",
+      "question": "Немецкая овчарка чаще всего:",
       "options": [
-        { "id": "a", "text": "Игра", "isCorrect": false },
-        { "id": "b", "text": "Сканирует запахи и границы", "isCorrect": true },
-        { "id": "c", "text": "Нервничает", "isCorrect": false },
-        { "id": "d", "text": "Ищет хозяина", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Глупенькая и ленивая",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Умница и служака, смотрит на тебя как эйчар на собеседовании",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Боится буквально всего",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Не поддаётся дрессировке",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test5/9.png",
-      "question": "Почему кошка любит узкие проходы и щели?",
+      "question": "Мопс это собака, которая:",
       "options": [
-        { "id": "a", "text": "Интересно", "isCorrect": false },
-        { "id": "b", "text": "Инстинкт укрытия хищника", "isCorrect": true },
-        { "id": "c", "text": "Случайно", "isCorrect": false },
-        { "id": "d", "text": "Игра", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Бегает быстрее всех во дворе",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Худая и поджарая, как борзая",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Совсем не любит спать",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Дышит как старенький компьютер и живёт ради еды",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test5/10.png",
-      "question": "Почему собака лижет раны?",
+      "question": "Бордер-колли в мемах:",
       "options": [
-        { "id": "a", "text": "Привычка", "isCorrect": false },
-        { "id": "b", "text": "Инстинктивная попытка обеззаразить слюной", "isCorrect": true },
-        { "id": "c", "text": "Скука", "isCorrect": false },
-        { "id": "d", "text": "Чешется", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Самый глупый пёс на районе",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Вечный лежебока",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Гений, которому скучно, и он явно умнее тебя",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Не умеет ловить фрисби",
+          "isCorrect": false
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Новичок в инстинктах",
-      "description": "Древние инстинкты питомцев — целый мир, который тебе ещё предстоит открыть!"
+      "title": "Новичок в породах",
+      "description": "Интернет-образы пород для тебя пока загадка — но это легко исправить!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Знаток инстинктов",
-      "description": "Ты неплохо понимаешь природу своего питомца!"
+      "title": "Знаток пород",
+      "description": "Ты неплохо знаешь, как интернет видит каждую породу!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Эксперт по инстинктам",
-      "description": "Ты отлично разбираешься в древних инстинктах животных!"
+      "title": "Гуру собачьих мемов",
+      "description": "Ты насквозь видишь каждую породу глазами интернета. Бордер-колли одобряет!"
     }
   ]
 }

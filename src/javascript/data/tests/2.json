@@ -1,121 +1,284 @@
 {
   "id": 2,
   "card": {
-    "image": "images/tests/test2.jpg",
+    "image": "images/tests/test2.png",
     "readTime": "4 минуты",
-    "tags": ["Собаки", "Про животных"],
-    "title": "Твоя собака делает это не просто так: 10 скрытых причин странного поведения",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Угадай легендарный мем по описанию",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test2/1.png",
-      "question": "Почему собака крутится перед тем как лечь?",
+      "question": "Жёлто-рыжая сиба, вокруг разноцветный текст «такой wow», «много удивлений». Это:",
       "options": [
-        { "id": "a", "text": "Играет", "isCorrect": false },
-        { "id": "b", "text": "Инстинкт приминать траву и проверять безопасность", "isCorrect": true },
-        { "id": "c", "text": "Гонится за хвостом", "isCorrect": false },
-        { "id": "d", "text": "Разминается", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Шлёпа",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Doge",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Гена",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Бонк",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test2/2.png",
-      "question": "Почему собака зевает при разговоре с хозяином?",
+      "question": "Грустноватая сиба с маленькими глазками и кривой улыбкой, говорит с ошибками «no» и «yes». Это:",
       "options": [
-        { "id": "a", "text": "Скучно", "isCorrect": false },
-        { "id": "b", "text": "Снимает стресс и пытается вас успокоить", "isCorrect": true },
-        { "id": "c", "text": "Хочет спать", "isCorrect": false },
-        { "id": "d", "text": "Просит еду", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Cheems",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Doge",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Просто кот",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Бонк",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test2/3.png",
-      "question": "Почему собака приносит игрушку, но не отдаёт?",
+      "question": "Пёс в шляпе сидит в горящей комнате и говорит «This is fine». Мем про:",
       "options": [
-        { "id": "a", "text": "Дразнит", "isCorrect": false },
-        { "id": "b", "text": "Приглашает к совместной игре по своим правилам", "isCorrect": true },
-        { "id": "c", "text": "Защищает ресурс", "isCorrect": false },
-        { "id": "d", "text": "Боится потерять", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Любовь к камину",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Готовку барбекю",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Принятие катастрофы с улыбкой",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Пожарных",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test2/4.png",
-      "question": "Почему собака может лизать воздух?",
+      "question": "Собака косится в сторону с подозрительным выражением, будто услышала чушь. Это:",
       "options": [
-        { "id": "a", "text": "Чует запах", "isCorrect": false },
-        { "id": "b", "text": "Признак тошноты или стресса", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Тренирует язык", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Спящий пёс",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Виноватый пёс",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Doge",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Side-eye dog, косящийся пёс",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test2/5.png",
-      "question": "Почему собака кладёт лапу на хозяина?",
+      "question": "Аккаунт, который оценивает собак и почти всегда ставит больше десяти из десяти со словами «они хорошие собаки». Это:",
       "options": [
-        { "id": "a", "text": "Просит еду", "isCorrect": false },
-        { "id": "b", "text": "Тактильный контакт и проверка внимания", "isCorrect": true },
-        { "id": "c", "text": "Доминирует", "isCorrect": false },
-        { "id": "d", "text": "Хочет играть", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "WeRateDogs",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Dog Shaming",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Cute Emergency",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Thoughts of Dog",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test2/6.png",
-      "question": "Почему собака спит спиной к вам?",
+      "question": "Формат, где пса фотографируют с виноватой мордой рядом с табличкой о его «преступлении» (например «съел диван»):",
       "options": [
-        { "id": "a", "text": "Не доверяет", "isCorrect": false },
-        { "id": "b", "text": "Показывает доверие, закрывая вам тыл", "isCorrect": true },
-        { "id": "c", "text": "Холодно", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Dog rating",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Zoomies",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Dog shaming",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Doggo lingo",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test2/7.png",
-      "question": "Почему собака может «улыбаться»?",
+      "question": "Маленькая собака грозно скалится, но выглядит скорее мило, чем страшно. Интернет зовёт это:",
       "options": [
-        { "id": "a", "text": "Копирует человека", "isCorrect": false },
-        { "id": "b", "text": "Признак расслабления и отсутствия угрозы", "isCorrect": true },
-        { "id": "c", "text": "Показывает зубы", "isCorrect": false },
-        { "id": "d", "text": "Злится", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Doge",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "«Он защищает, он нападает», smol angry doggo",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Cheems",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "This is fine",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test2/8.png",
-      "question": "Почему собака роет постель?",
+      "question": "Пёс лежит, вытянув задние лапы плашмя назад, как лягушка. Поза называется:",
       "options": [
-        { "id": "a", "text": "Ищет еду", "isCorrect": false },
-        { "id": "b", "text": "Создаёт «гнездо» как в природе", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Чешется", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Лоаф",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Зумис",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Сплут (sploot)",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Блеп",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test2/9.png",
-      "question": "Почему собака смотрит на вас во время туалета?",
+      "question": "Когда пса фотографируют так, что он похож на хлеб с лапками, спрятанными под себя, это:",
       "options": [
-        { "id": "a", "text": "Стыдится", "isCorrect": false },
-        { "id": "b", "text": "Ждёт охраны, как в стае", "isCorrect": true },
-        { "id": "c", "text": "Просит помощи", "isCorrect": false },
-        { "id": "d", "text": "Играет", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Лоаф (loaf), собака-булочка",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Сплут",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Млем",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Борк",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test2/10.png",
-      "question": "Почему собака вздыхает и ложится рядом?",
+      "question": "Аккаунт, который пишет от лица пса трогательные мысли вроде «ты лучший человек». Это:",
       "options": [
-        { "id": "a", "text": "Устала", "isCorrect": false },
-        { "id": "b", "text": "Признак комфорта и удовлетворения", "isCorrect": true },
-        { "id": "c", "text": "Скучно", "isCorrect": false },
-        { "id": "d", "text": "Просит прогулку", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Dog Shaming",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "WeRateDogs",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Doge",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Thoughts of Dog",
+          "isCorrect": true
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Собачий новичок",
-      "description": "Собаки — удивительные существа, и тебе ещё предстоит узнать их секреты!"
+      "title": "Случайный прохожий",
+      "description": "Легендарные мемы пока проходят мимо тебя — пора залипнуть в ленту!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Собачий знаток",
-      "description": "Ты неплохо разбираешься в собачьей психологии!"
+      "title": "Любитель мемов",
+      "description": "Ты неплохо разбираешься в собачьих мемах!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Собачий эксперт",
-      "description": "Ты отлично понимаешь свою собаку!"
+      "title": "Хранитель мемов",
+      "description": "Ты знаешь каждый легендарный собачий мем в лицо. Such wow!"
     }
   ]
 }

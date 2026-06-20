@@ -1,121 +1,284 @@
 {
   "id": 7,
   "card": {
-    "image": "images/tests/test7.jpg",
+    "image": "images/tests/test7.png",
     "readTime": "6 минут",
-    "tags": ["Кошки", "Про растения"],
-    "title": "Эти растения могут медленно убивать кошку у тебя дома",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Московская собака: городской выживальщик",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test7/1.png",
-      "question": "Самое опасное растение для кошек:",
+      "question": "Главный сезонный враг собачьих лап в Москве зимой:",
       "options": [
-        { "id": "a", "text": "Фикус", "isCorrect": false },
-        { "id": "b", "text": "Алоэ", "isCorrect": false },
-        { "id": "c", "text": "Лилии", "isCorrect": true },
-        { "id": "d", "text": "Пальма", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Снег",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Голуби",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Реагенты, которыми засыпают тротуары",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Лёд на пруду",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test7/2.png",
-      "question": "Чем опасна диффенбахия?",
+      "question": "Как по правилам должна ехать собака в московском метро?",
       "options": [
-        { "id": "a", "text": "Запах", "isCorrect": false },
-        { "id": "b", "text": "Ожог слизистой кристаллами оксалата", "isCorrect": true },
-        { "id": "c", "text": "Пыльца", "isCorrect": false },
-        { "id": "d", "text": "Листья", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "В наморднике и на коротком поводке, мелкая в переноске",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Любая и без ограничений",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Только крупная",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Только полностью без поводка",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test7/3.png",
-      "question": "Чем опасен спатифиллум?",
+      "question": "Любимое место сбора собачников в спальном районе:",
       "options": [
-        { "id": "a", "text": "Пыльца", "isCorrect": false },
-        { "id": "b", "text": "Кристаллы, травмирующие рот и гортань", "isCorrect": true },
-        { "id": "c", "text": "Запах", "isCorrect": false },
-        { "id": "d", "text": "Корни", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Подъезд",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Площадка для выгула или «тот самый газон»",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Парковка у дома",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Ближайший магазин",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test7/4.png",
-      "question": "Почему опасен алоэ?",
+      "question": "Что делает почти каждый московский пёс при виде самоката или курьера?",
       "options": [
-        { "id": "a", "text": "Колючки", "isCorrect": false },
-        { "id": "b", "text": "Вызывает рвоту и диарею у кошек", "isCorrect": true },
-        { "id": "c", "text": "Запах", "isCorrect": false },
-        { "id": "d", "text": "Листья", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Полностью игнорирует",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Радостно бежит навстречу",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Прячется за хозяина",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Провожает яростным взглядом, иногда с лаем",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test7/5.png",
-      "question": "Чем опасен фикус?",
+      "question": "Что пёс чаще всего пытается слизать прямо с московского асфальта?",
       "options": [
-        { "id": "a", "text": "Пыль", "isCorrect": false },
-        { "id": "b", "text": "Млечный сок токсичен", "isCorrect": true },
-        { "id": "c", "text": "Листья острые", "isCorrect": false },
-        { "id": "d", "text": "Корни", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Ничего, мой пёс идеально воспитан",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Чистый снег",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Кусок шаурмы или непонятную находку у метро",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Опавшие листья",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test7/6.png",
-      "question": "Почему опасны тюльпаны?",
+      "question": "Что нужно московской собаке для прогулки в межсезонье?",
       "options": [
-        { "id": "a", "text": "Листья", "isCorrect": false },
-        { "id": "b", "text": "Луковицы наиболее токсичны", "isCorrect": true },
-        { "id": "c", "text": "Запах", "isCorrect": false },
-        { "id": "d", "text": "Пыльца", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Вообще ничего",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Дождевик или комбинезон, иначе будет грязевая ванна",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Только поводок",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Зонтик",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test7/7.png",
-      "question": "Чем опасен плющ?",
+      "question": "Какие парки собачники Москвы чаще всего хвалят для долгих прогулок?",
       "options": [
-        { "id": "a", "text": "Запах", "isCorrect": false },
-        { "id": "b", "text": "Токсичен при поедании листьев", "isCorrect": true },
-        { "id": "c", "text": "Пыльца", "isCorrect": false },
-        { "id": "d", "text": "Корни", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Любой свой двор",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Торговый центр",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Большие парки вроде Битцы, Лосиного Острова, Коломенского",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Набережная в Сити",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test7/8.png",
-      "question": "Почему опасен олеандр?",
+      "question": "Как выглядит типичная встреча двух собак на узком тротуаре?",
       "options": [
-        { "id": "a", "text": "Пыльца", "isCorrect": false },
-        { "id": "b", "text": "Содержит сердечные гликозиды", "isCorrect": true },
-        { "id": "c", "text": "Листья колючие", "isCorrect": false },
-        { "id": "d", "text": "Запах", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Запутывают хозяев поводками в один общий клубок",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Спокойно и культурно расходятся",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Вообще не замечают друг друга",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Дружно убегают",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test7/9.png",
-      "question": "Чем опасен каланхоэ?",
+      "question": "Что обязательно носит с собой ответственный московский собачник?",
       "options": [
-        { "id": "a", "text": "Листья", "isCorrect": false },
-        { "id": "b", "text": "Влияет на сердечный ритм", "isCorrect": true },
-        { "id": "c", "text": "Запах", "isCorrect": false },
-        { "id": "d", "text": "Пыльца", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Зонт на всякий случай",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Термос с чаем",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Зеркальце",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Пакетики, чтобы убрать за питомцем",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test7/10.png",
-      "question": "Почему даже вода из вазы с лилиями опасна?",
+      "question": "Главный признак того, что собака настоящая москвичка:",
       "options": [
-        { "id": "a", "text": "Грязная", "isCorrect": false },
-        { "id": "b", "text": "Содержит токсичную пыльцу", "isCorrect": true },
-        { "id": "c", "text": "Цветёт", "isCorrect": false },
-        { "id": "d", "text": "Запах", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Любит исключительно тишину",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Гуляет только за городом",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Боится проезжающих машин",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Не боится ни метро, ни толпы, ни вечной стройки за окном",
+          "isCorrect": true
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Новичок в ботанике",
-      "description": "Опасные растения — серьёзная тема, тебе стоит узнать больше!"
+      "title": "Приезжий щенок",
+      "description": "Городские джунгли пока в новинку — но Москва быстро всему учит!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Знаток растений",
-      "description": "Ты неплохо разбираешься в опасных растениях!"
+      "title": "Бывалый горожанин",
+      "description": "Ты неплохо знаешь правила собачьей жизни в большом городе!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Эксперт по безопасности",
-      "description": "Ты отлично знаешь, какие растения опасны для кошек!"
+      "title": "Коренной москвич на четырёх лапах",
+      "description": "Метро, реагенты, курьеры — тебя и твоего пса ничем не удивить!"
     }
   ]
 }

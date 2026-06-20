@@ -1,121 +1,284 @@
 {
   "id": 4,
   "card": {
-    "image": "images/tests/test4.jpg",
+    "image": "images/tests/test4.png",
     "readTime": "4 минуты",
-    "tags": ["Собаки", "Про животных"],
-    "title": "Почему твой питомец ведёт себя как персонаж TikTok",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Запрещёнка: что собакам нельзя (но они очень хотят)",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test4/1.png",
-      "question": "Почему кот садится прямо перед экраном?",
+      "question": "Шоколад для собаки это:",
       "options": [
-        { "id": "a", "text": "Тепло", "isCorrect": false },
-        { "id": "b", "text": "Реагирует на движение как на живую добычу", "isCorrect": true },
-        { "id": "c", "text": "Ревнует", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Полезный десерт",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Можно, но совсем чуть-чуть",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Настоящий яд, особенно горький и тёмный",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Зависит от породы",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test4/2.png",
-      "question": "Почему собака «говорит» разными звуками?",
+      "question": "Виноград и изюм собакам:",
       "options": [
-        { "id": "a", "text": "Каприз", "isCorrect": false },
-        { "id": "b", "text": "Пытается копировать интонации человека", "isCorrect": true },
-        { "id": "c", "text": "Болезнь", "isCorrect": false },
-        { "id": "d", "text": "Скука", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Опасны, могут ударить по почкам",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Отличный сладкий перекус",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Можно, если без косточек",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Только зелёный сорт",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test4/3.png",
-      "question": "Почему кот резко атакует ноги из-за угла?",
+      "question": "Ксилит (подсластитель из жвачки и выпечки) для собаки это:",
       "options": [
-        { "id": "a", "text": "Злится", "isCorrect": false },
-        { "id": "b", "text": "Засадная охота — природный паттерн", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Мстит", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Безобидная сладость",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Витаминка",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Лёгкое лакомство",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Очень опасное вещество даже в малой дозе",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test4/4.png",
-      "question": "Почему собака приносит одну и ту же игрушку?",
+      "question": "Лук и чеснок для пса:",
       "options": [
-        { "id": "a", "text": "Других нет", "isCorrect": false },
-        { "id": "b", "text": "Самый сильный запах «стаи» на ней", "isCorrect": true },
-        { "id": "c", "text": "Привычка", "isCorrect": false },
-        { "id": "d", "text": "Любит цвет", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Полезны для иммунитета",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Токсичны, бьют по крови",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Можно в составе супа",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Безопасны, если варёные",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test4/5.png",
-      "question": "Почему кошка сидит в раковине?",
+      "question": "Куриные трубчатые кости можно?",
       "options": [
-        { "id": "a", "text": "Холодно", "isCorrect": false },
-        { "id": "b", "text": "Форма даёт ощущение укрытия", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Лучше нет, они колются и крошатся осколками",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Конечно, это же собака",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Только варёные",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сколько угодно",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test4/6.png",
-      "question": "Почему собака кладёт подбородок на колени?",
+      "question": "Сырое дрожжевое тесто это:",
       "options": [
-        { "id": "a", "text": "Просит еду", "isCorrect": false },
-        { "id": "b", "text": "Запрашивает контакт и внимание", "isCorrect": true },
-        { "id": "c", "text": "Устала", "isCorrect": false },
-        { "id": "d", "text": "Играет", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Безопасная еда",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Полезные углеводы",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Можно небольшой кусочек",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Опасно, бродит и раздувает живот изнутри",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test4/7.png",
-      "question": "Почему кот «разговаривает» ночью?",
+      "question": "Авокадо собакам:",
       "options": [
-        { "id": "a", "text": "Скучно", "isCorrect": false },
-        { "id": "b", "text": "Пик активности хищника приходится на сумерки", "isCorrect": true },
-        { "id": "c", "text": "Болен", "isCorrect": false },
-        { "id": "d", "text": "Голоден", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Суперфуд на каждый день",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Лучше избегать",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Можно только мякоть без ограничений",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Обязательно для шерсти",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test4/8.png",
-      "question": "Почему собака следует за вами в туалет?",
+      "question": "Кофе и энергетики для пса:",
       "options": [
-        { "id": "a", "text": "Любопытно", "isCorrect": false },
-        { "id": "b", "text": "Инстинкт не оставлять члена стаи одного", "isCorrect": true },
-        { "id": "c", "text": "Просит еду", "isCorrect": false },
-        { "id": "d", "text": "Боится", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Бодрят его так же мило, как нас",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Можно один глоток",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Опасны, кофеин им сильно вредит",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Можно, если без сахара",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test4/9.png",
-      "question": "Почему кот ложится на клавиатуру?",
+      "question": "Собака стащила со стола вашу шаурму. Что плохого?",
       "options": [
-        { "id": "a", "text": "Тепло", "isCorrect": false },
-        { "id": "b", "text": "Перекрывает объект, который забирает ваше внимание", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Ничего, шаурма это любовь",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Острое, жирное и лук внутри легко посадят ей живот",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Станет сильнее и быстрее",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Подобреет характером",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test4/10.png",
-      "question": "Почему собака резко встряхивается, даже когда сухая?",
+      "question": "Главное правило обращения с «запрещёнкой»:",
       "options": [
-        { "id": "a", "text": "Чешется", "isCorrect": false },
-        { "id": "b", "text": "Сбрасывает стресс и «перезагружает» нервную систему", "isCorrect": true },
-        { "id": "c", "text": "Играет", "isCorrect": false },
-        { "id": "d", "text": "Привычка", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Если жалобно просит глазами, значит можно",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Что вкусно нам, то полезно и ей",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Можно всё, только по чуть-чуть",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сомневаешься, не давай и спроси ветеринара",
+          "isCorrect": true
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "TikTok-новичок",
-      "description": "Твой питомец — звезда, но ты ещё не разгадал все его секреты!"
+      "title": "Опасный кормилец",
+      "description": "Тут стоит срочно подтянуть знания — от этого зависит здоровье пса!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "TikTok-знаток",
-      "description": "Ты неплохо понимаешь вирусное поведение своего питомца!"
+      "title": "Внимательный хозяин",
+      "description": "Ты неплохо знаешь, что собакам нельзя, но есть куда расти!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "TikTok-эксперт",
-      "description": "Ты точно знаешь, почему твой питомец — звезда интернета!"
+      "title": "Защитник собачьей миски",
+      "description": "Ты отлично знаешь все запрещёнки и бережёшь своего пса!"
     }
   ]
 }

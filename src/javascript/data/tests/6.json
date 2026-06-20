@@ -3,119 +3,282 @@
   "card": {
     "image": "images/tests/test6.png",
     "readTime": "5 минут",
-    "tags": ["Собаки", "Про животных"],
-    "title": "То, что делает твой питомец, есть только у хищников",
+    "tags": [
+      "Собаки",
+      "Про животных"
+    ],
+    "title": "Что значит этот собачий жест (язык тела по-мемному)",
     "date": "1 декабря 2025"
   },
   "questions": [
     {
       "id": 1,
       "image": "images/tests/test_process/test6/1.png",
-      "question": "Почему кошка «замирает» перед прыжком?",
+      "question": "Собака приносит тебе свою игрушку. Это значит:",
       "options": [
-        { "id": "a", "text": "Боится", "isCorrect": false },
-        { "id": "b", "text": "Фиксация дистанции до добычи", "isCorrect": true },
-        { "id": "c", "text": "Игра", "isCorrect": false },
-        { "id": "d", "text": "Устала", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Она дарит тебе самое дорогое и зовёт играть",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Игрушка сломалась",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Она на тебя злится",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Ей стало жарко",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 2,
       "image": "images/tests/test_process/test6/2.png",
-      "question": "Почему собака несёт добычу (игрушку) в укромное место?",
+      "question": "Пёс наклоняет голову набок, когда ты говоришь. Перевод:",
       "options": [
-        { "id": "a", "text": "Прячет", "isCorrect": false },
-        { "id": "b", "text": "Поведение поедания в безопасности", "isCorrect": true },
-        { "id": "c", "text": "Игра", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "«Мне совершенно всё равно»",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "«Я устал, отстань»",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "«Я внимательно делаю вид, что тебя понимаю»",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "«Срочно покорми»",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 3,
       "image": "images/tests/test_process/test6/3.png",
-      "question": "Почему кошка атакует из-за угла?",
+      "question": "Собака внезапно носится по квартире кругами как ошпаренная. Это:",
       "options": [
-        { "id": "a", "text": "Весело", "isCorrect": false },
-        { "id": "b", "text": "Засадная тактика хищника", "isCorrect": true },
-        { "id": "c", "text": "Злость", "isCorrect": false },
-        { "id": "d", "text": "Скука", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Признак болезни",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Голод",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Обида на хозяина",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Зумис, выброс энергии и чистого счастья",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 4,
       "image": "images/tests/test_process/test6/4.png",
-      "question": "Почему собака трясёт игрушку из стороны в сторону?",
+      "question": "Пёс трётся об тебя и заваливается всем телом. Это:",
       "options": [
-        { "id": "a", "text": "Игра", "isCorrect": false },
-        { "id": "b", "text": "Имитация убийства добычи", "isCorrect": true },
-        { "id": "c", "text": "Злость", "isCorrect": false },
-        { "id": "d", "text": "Привычка", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Агрессия",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "«Ты мой, я тебя официально присвоил»",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "Просьба немедленно уйти",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сильная усталость",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 5,
       "image": "images/tests/test_process/test6/5.png",
-      "question": "Почему кошка следит за каждым движением пальцев?",
+      "question": "Виноватая морда, прижатые уши, отведённый взгляд. Скорее всего:",
       "options": [
-        { "id": "a", "text": "Интерес", "isCorrect": false },
-        { "id": "b", "text": "Микродвижения воспринимаются как добыча", "isCorrect": true },
-        { "id": "c", "text": "Игра", "isCorrect": false },
-        { "id": "d", "text": "Скука", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Он медитирует",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Он абсолютно счастлив",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Он уже что-то натворил и прекрасно это знает",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Он крепко спит",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 6,
       "image": "images/tests/test_process/test6/6.png",
-      "question": "Почему собака замирает, услышав шорох?",
+      "question": "Собака валится на спину и показывает живот. Это значит:",
       "options": [
-        { "id": "a", "text": "Боится", "isCorrect": false },
-        { "id": "b", "text": "Фокусировка на потенциальной добыче", "isCorrect": true },
-        { "id": "c", "text": "Слушает хозяина", "isCorrect": false },
-        { "id": "d", "text": "Привычка", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Ей плохо и больно",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Она злится",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Она собралась уходить",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Доверие и «чеши пузо немедленно»",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 7,
       "image": "images/tests/test_process/test6/7.png",
-      "question": "Почему кошка приносит игрушку в зубах?",
+      "question": "Пёс ходит за тобой из комнаты в комнату, даже в туалет. Это:",
       "options": [
-        { "id": "a", "text": "Игра", "isCorrect": false },
-        { "id": "b", "text": "Перенос добычи в безопасное место", "isCorrect": true },
-        { "id": "c", "text": "Просит внимания", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Режим «собака-липучка», ты её целая вселенная",
+          "isCorrect": true
+        },
+        {
+          "id": "b",
+          "text": "Слежка с подозрением",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Он заблудился в квартире",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Он голоден",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 8,
       "image": "images/tests/test_process/test6/8.png",
-      "question": "Почему собака обнюхивает воздух, подняв голову?",
+      "question": "Собака зевает, хотя спать явно не собирается. Часто это:",
       "options": [
-        { "id": "a", "text": "Игра", "isCorrect": false },
-        { "id": "b", "text": "Ловит воздушные запаховые следы", "isCorrect": true },
-        { "id": "c", "text": "Скука", "isCorrect": false },
-        { "id": "d", "text": "Устала", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Обычная усталость",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Голод",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Способ снять напряжение, сигнал «мне неуютно»",
+          "isCorrect": true
+        },
+        {
+          "id": "d",
+          "text": "Чистая радость",
+          "isCorrect": false
+        }
       ]
     },
     {
       "id": 9,
       "image": "images/tests/test_process/test6/9.png",
-      "question": "Почему кошка бьёт лапой быстро и резко?",
+      "question": "Хвост виляет низко и неуверенно. Это значит:",
       "options": [
-        { "id": "a", "text": "Злость", "isCorrect": false },
-        { "id": "b", "text": "Способ оглушить добычу", "isCorrect": true },
-        { "id": "c", "text": "Игра", "isCorrect": false },
-        { "id": "d", "text": "Случайно", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "Безудержная радость",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "Злость и угроза",
+          "isCorrect": false
+        },
+        {
+          "id": "c",
+          "text": "Сонливость",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "Сомнение и лёгкая тревога, «я не уверен»",
+          "isCorrect": true
+        }
       ]
     },
     {
       "id": 10,
       "image": "images/tests/test_process/test6/10.png",
-      "question": "Почему собака предпочитает скрипящие игрушки?",
+      "question": "Пёс приносит поводок и роняет его тебе на ноги. Перевод очевиден:",
       "options": [
-        { "id": "a", "text": "Громко", "isCorrect": false },
-        { "id": "b", "text": "Звук напоминает писк раненой добычи", "isCorrect": true },
-        { "id": "c", "text": "Привычка", "isCorrect": false },
-        { "id": "d", "text": "Цвет нравится", "isCorrect": false }
+        {
+          "id": "a",
+          "text": "«Поводок мешает, убери»",
+          "isCorrect": false
+        },
+        {
+          "id": "b",
+          "text": "«Гулять. Сейчас. Без обсуждений»",
+          "isCorrect": true
+        },
+        {
+          "id": "c",
+          "text": "«Я слишком устал»",
+          "isCorrect": false
+        },
+        {
+          "id": "d",
+          "text": "«Мне это надоело»",
+          "isCorrect": false
+        }
       ]
     }
   ],
@@ -123,20 +286,20 @@
     {
       "minScore": 0,
       "maxScore": 3,
-      "title": "Новичок в мире хищников",
-      "description": "Хищные инстинкты питомцев — целый мир, который тебе ещё предстоит открыть!"
+      "title": "Переводчик-новичок",
+      "description": "Язык тела собаки пока ставит тебя в тупик — но вы научитесь понимать друг друга!"
     },
     {
       "minScore": 4,
       "maxScore": 7,
-      "title": "Знаток хищников",
-      "description": "Ты неплохо понимаешь хищную натуру своего питомца!"
+      "title": "Понимающий хозяин",
+      "description": "Ты неплохо считываешь сигналы своей собаки!"
     },
     {
       "minScore": 8,
       "maxScore": 10,
-      "title": "Эксперт по хищникам",
-      "description": "Ты отлично разбираешься в повадках хищников!"
+      "title": "Собачий телепат",
+      "description": "Ты понимаешь пса без слов — он явно выбрал правильного человека!"
     }
   ]
 }
